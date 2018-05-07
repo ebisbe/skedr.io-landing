@@ -9,3 +9,8 @@ npm-debug.log
 
 # Nuxt generate
 dist
+
+template
+.DS_Store
+yarn-error.log
+.vscode

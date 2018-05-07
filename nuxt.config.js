@@ -1,7 +1,7 @@
 const pkg = require('./package')
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   /*
   ** Headers of the page
@@ -13,7 +13,11 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700,200' },
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' }
+    ]
   },
 
   /*
@@ -24,12 +28,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: ['@/assets/css/bootstrap.min.css', '@/assets/css/now-ui-kit.scss', '@/assets/css/demo.css'],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  // plugins: [{ src: '~/plugins/font-awesome' }],
 
   /*
   ** Nuxt.js modules
@@ -38,7 +42,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    ['bootstrap-vue/nuxt', { css: false }]
   ],
   /*
   ** Axios module configuration

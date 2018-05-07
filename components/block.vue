@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <div :class="{container: useContainer}">
+      <div
+        v-if="title !== '' || desc !== ''"
+        class="row">
+        <div
+          class="col-md-8 ml-auto mr-auto text-center">
+          <h2
+            class="title"
+            v-html="title"/>
+          <h4
+            class="description"
+            v-html="desc"/>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <slot
+          v-for="(row, index) in rows"
+          :row="row"
+          :iteration="index"/>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: 'Block',
+  props: {
+    rows: {
+      type: Array,
+      required: true
+    },
+    title: {
+      type: String,
+      default: ''
+    },
+    desc: {
+      type: String,
+      default: ''
+    },
+    useContainer: {
+      type: Boolean,
+      default: false
+    }
+  }
+}
+</script>
