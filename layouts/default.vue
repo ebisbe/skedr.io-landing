@@ -1,7 +1,9 @@
 <template>
   <div :class="{'nav-open': navbar_menu_visible}">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-absolute navbar-transparent">
+    <nav
+      :class="{'navbar-transparent': navbarTransparent}"
+      class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
         <div class="dropdown button-dropdown">
           <a
@@ -94,10 +96,20 @@ export default {
     return {
       navbar_menu_visible: false,
       showCloseNavBar: false,
-      toggledMenu: false
+      toggledMenu: false,
+      navbarTransparent: true
     }
   },
+  created: function() {
+    window.addEventListener('scroll', this.isNavbarTransparent)
+  },
+  destroyed: function() {
+    window.removeEventListener('scroll', this.isNavbarTransparent)
+  },
   methods: {
+    isNavbarTransparent() {
+      this.navbarTransparent = window.scrollY <= 500
+    },
     openNavBar() {
       this.toggledMenu = true
       this.navbar_menu_visible = true

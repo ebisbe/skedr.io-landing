@@ -111,8 +111,8 @@
                   v-html="row.desc"/>
                 <div class="card-footer">
                   <a
-                    v-for="brand in row.social"
-                    :key="brand"
+                    v-for="(brand,index) in row.social"
+                    :key="index"
                     :href="brand.link"
                     :class="'btn-'+brand.name"
                     class="btn btn-icon btn-neutral">
