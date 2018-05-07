@@ -1,15 +1,11 @@
 pipelines:
   default:
     - step:
-        name: Build
-        image: kkarczmarczyk/node-yarn
+        image: docker pull lmlt/alpine-aws-node
+        caches:
+          - node
         script:
           - yarn install
           - yarn generate
-        artifacts:
-          - dist/**
-    - step:
-        name: Deploy to production
-        image: cgswong/aws
-        script:
           - aws s3 sync --delete dist/ s3://decoralyte --cache-control "public, max-age=14400"
+
