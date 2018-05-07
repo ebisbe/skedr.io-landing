@@ -160,12 +160,11 @@
               <li>Accesorios & decoración solo</li>
               <li>Listado de compra</li>
             </ul>
-            <a
+            <nuxt-link
               :class="row.color !== '' && row.color !== undefined ? 'btn-neutral': 'btn-primary'"
-              href="#pablo"
+              :to="{name: 'ambiente-id', params: {id: row.slug}}"
               class="btn btn-round">
-              Empieza
-            </a>
+              Empieza</nuxt-link>
           </div>
         </div>
       </div>
@@ -279,12 +278,14 @@ export default {
         list: [
           {
             name: 'Hogar',
+            slug: 'hogar',
             price: 79,
             discount: 70,
             desc: 'Salón / Dormitorio / Terraza'
           },
           {
             name: 'Negocio',
+            slug: 'negocio',
             price: 149,
             discount: 70,
             desc: 'Tienda / Restauración',
