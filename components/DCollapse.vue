@@ -50,6 +50,9 @@ export default {
     name() {
       return 'collapse-' + Math.round(Math.random() * 100000)
     }
+  },
+  created() {
+    this.showCollapse = this.visible
   }
 }
 </script>
