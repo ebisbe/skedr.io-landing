@@ -4,7 +4,7 @@ pipelines:
         name: Build
         image: kkarczmarczyk/node-yarn
         script:
-          - yarn install --production=false
+          - yarn install
           - yarn generate
         artifacts:
           - dist/**
