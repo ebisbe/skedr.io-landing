@@ -1,7 +1,7 @@
 pipelines:
   default:
     - step:
-        image: docker pull lmlt/alpine-aws-node
+        image: lmlt/alpine-aws-node
         caches:
           - node
         script:
