@@ -1,12 +1,15 @@
-image: noxan/docker-node-awscli-yarn
-
 pipelines:
-  branches:
-    master:
-      - step:
-          caches:
-            - node
-          script:
-            - yarn install
-            - yarn generate
-            - aws s3 sync dist/ s3://decoralyte --cache-control "public, max-age=14400" --delete
+  default:
+    - step:
+        name: Build
+        image: kkarczmarczyk/node-yarn
+        script:
+          - yarn install
+          - yarn generate
+        artifacts:
+          - dist/**
+    - step:
+        name: Deploy to production
+        image: cgswong/aws
+        script:
+          - aws s3 sync --delete dist/ s3://decoralyte --cache-control "public, max-age=14400"
