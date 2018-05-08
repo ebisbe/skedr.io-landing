@@ -4,7 +4,6 @@ pipelines:
         image: lmlt/alpine-aws-node
         caches:
           - node
-          - docker
         script:
           - yarn install
           - yarn generate
