@@ -91,11 +91,11 @@
           <div class="row">
             <div class="col-md-5">
               <div class="card-image">
-                <a href="#pablo">
+                <nuxt-link :to="{name: 'interioristas-slug', params: {slug: row.slug}}">
                   <img
                     :src="row.path"
                     class="img img-raised rounded">
-                </a>
+                </nuxt-link>
               </div>
             </div>
             <div class="col-md-7">
@@ -114,10 +114,10 @@
                     v-for="(brand,index) in row.social"
                     :key="index"
                     :href="brand.link"
-                    :class="'btn-'+brand.name"
+                    :class="`btn-${brand.name}`"
                     class="btn btn-icon btn-neutral">
                     <i
-                      :class="'fa-'+brand.name"
+                      :class="`fa-${brand.name}`"
                       class="fa"/></a>
                 </div>
               </div>
@@ -265,6 +265,7 @@ export default {
         list: [
           {
             name: 'Ignacio Lopez',
+            slug: 'ignacio-lopez',
             style: 'Minimal ecléptico',
             path: 'assets/img/olivia.jpg',
             desc:

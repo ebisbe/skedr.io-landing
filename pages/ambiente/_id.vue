@@ -147,6 +147,9 @@ export default {
       ]
     }
   },
+  async fetch({ store, params }) {
+    await store.dispatch('GET_AMBIENTE', { slug: params.id })
+  },
   computed: {
     validQuantity() {
       return this.quantity > 0
