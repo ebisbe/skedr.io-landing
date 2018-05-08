@@ -146,10 +146,10 @@
               class="category"
               v-html="row.name"/>
             <h1 class="card-title">
-              <small>&euro;</small>{{ row.price * (100 - row.discount) / 100 }}
+              {{ row.price * (100 - row.discount) / 100 }}<small>&euro;</small>
               <small
                 class="font-crossed">
-                <s v-html="row.price+'&euro;'"/>
+                <s v-html="`${row.price} &euro;`"/>
               </small>
             </h1>
             <h5 v-html="row.desc"/>

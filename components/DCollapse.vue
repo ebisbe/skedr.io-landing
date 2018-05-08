@@ -6,7 +6,7 @@
         :class="showCollapse ? 'collapsed' : null"
         :aria-expanded="showCollapse ? 'true' : 'false'"
         :aria-controls="name"
-        :href="'#' + name"
+        :href="`#${name}`"
         data-toggle="collapse"
         @click.prevent="showCollapse = !showCollapse">
         {{ title }}
@@ -48,7 +48,7 @@ export default {
   },
   computed: {
     name() {
-      return 'collapse-' + Math.round(Math.random() * 100000)
+      return 'collapse-' + Math.round(Math.random() * 10000000)
     }
   },
   created() {

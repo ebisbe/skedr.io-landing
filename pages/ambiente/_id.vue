@@ -3,7 +3,7 @@
     <div class="page-header page-header-mini">
       <div
         class="page-header-image"
-        style="background-image: url('../assets/img/pp-cov.jpg'); transform: translate3d(0px, 799px, 0px);"/>
+        style="background-image: url('/assets/img/pp-cov.jpg');"/>
     </div>
     <div class="section">
       <div class="container">
@@ -15,17 +15,10 @@
               controls
               indicators>
               <b-carousel-slide
-                img-alt="First Slide"
-                img-src="/assets/img/pp-1.jpg"/>
-              <b-carousel-slide
-                img-alt="First Slide"
-                img-src="/assets/img/pp-2.jpg"/>
-              <b-carousel-slide
-                img-alt="First Slide"
-                img-src="/assets/img/pp-3.jpg"/>
-              <b-carousel-slide
-                img-alt="First Slide"
-                img-src="/assets/img/pp-4.jpg"/>
+                v-for="slide in slides"
+                :key="slide.name"
+                :img-alt="slide.name"
+                :img-src="slide.path"/>
             </b-carousel>
             <p class="blockquote blockquote-primary">
               "And thank you for turning my personal jean jacket into a couture piece. Wear yours with mirrored sunglasses on vacation."
@@ -35,9 +28,13 @@
             </p>
           </div>
           <div class="col-md-6 ml-auto mr-auto">
-            <h2 class="title"> Saint Laurent </h2>
+            <h2 class="title"> 1 habitacion</h2>
             <h5 class="category">Slim-Fit Leather Biker Jacket</h5>
-            <h2 class="main-price">$3,390</h2>
+            <h2 class="main-price">{{ realPrice }}<small>&euro;</small>&nbsp;
+              <small
+                class="font-crossed">
+                <s v-html="`${price} &euro;`"/>
+            </small></h2>
             <div
               id="accordion"
               role="tablist"
@@ -53,88 +50,19 @@
 
             <div class="row pick-size">
               <div class="col-lg-6 col-md-8 col-sm-6">
-                <label>Select color</label>
-                <div class="btn-group bootstrap-select"><button
-                  type="button"
-                  class="dropdown-toggle select-with-transition btn btn-block"
-                  data-toggle="dropdown"
-                  role="button"
-                  title="Black"><span class="filter-option pull-left">Black</span>&nbsp;<span class="bs-caret"><span class="caret"/></span></button><div
-                    class="dropdown-menu open"
-                    role="combobox"><ul
-                      class="dropdown-menu inner"
-                      role="listbox"
-                      aria-expanded="false"><li
-                        data-original-index="0"
-                        class="selected"><a
-                          tabindex="0"
-                          class=""
-                          data-tokens="null"
-                          role="option"
-                          aria-disabled="false"
-                          aria-selected="true"><span class="text">Black</span><span class="now-ui-icons ui-1_check check-mark"/></a></li><li data-original-index="1"><a
-                            tabindex="0"
-                            class=""
-                            data-tokens="null"
-                            role="option"
-                            aria-disabled="false"
-                            aria-selected="false"><span class="text">Gray</span><span class="now-ui-icons ui-1_check check-mark"/></a></li><li data-original-index="2"><a
-                              tabindex="0"
-                              class=""
-                              data-tokens="null"
-                              role="option"
-                              aria-disabled="false"
-                              aria-selected="false"><span class="text">White</span><span class="now-ui-icons ui-1_check check-mark"/></a></li></ul></div><select
-                                class="selectpicker"
-                                data-style="select-with-transition btn btn-block"
-                                data-size="7"
-                                tabindex="-98">
-                                <option value="1">Black</option>
-                                <option value="2">Gray</option>
-                                <option value="3">White</option>
-                </select></div>
+                <label>Habitaciones</label>
+                <b-form-input
+                  id="quantity"
+                  v-model="quantity"
+                  :state="validQuantity"
+                  type="number"
+                  @change="validateQuantity"/>
               </div>
               <div class="col-lg-6 col-md-8 col-sm-6">
-                <label>Select size</label>
-                <div class="btn-group bootstrap-select"><button
-                  type="button"
-                  class="dropdown-toggle select-with-transition btn btn-block"
-                  data-toggle="dropdown"
-                  role="button"
-                  title="Small"><span class="filter-option pull-left">Small </span>&nbsp;<span class="bs-caret"><span class="caret"/></span></button><div
-                    class="dropdown-menu open"
-                    role="combobox"><ul
-                      class="dropdown-menu inner"
-                      role="listbox"
-                      aria-expanded="false"><li
-                        data-original-index="0"
-                        class="selected"><a
-                          tabindex="0"
-                          class=""
-                          data-tokens="null"
-                          role="option"
-                          aria-disabled="false"
-                          aria-selected="true"><span class="text">Small </span><span class="now-ui-icons ui-1_check check-mark"/></a></li><li data-original-index="1"><a
-                            tabindex="0"
-                            class=""
-                            data-tokens="null"
-                            role="option"
-                            aria-disabled="false"
-                            aria-selected="false"><span class="text">Medium</span><span class="now-ui-icons ui-1_check check-mark"/></a></li><li data-original-index="2"><a
-                              tabindex="0"
-                              class=""
-                              data-tokens="null"
-                              role="option"
-                              aria-disabled="false"
-                              aria-selected="false"><span class="text">Large</span><span class="now-ui-icons ui-1_check check-mark"/></a></li></ul></div><select
-                                class="selectpicker"
-                                data-style="select-with-transition btn btn-block"
-                                data-size="7"
-                                tabindex="-98">
-                                <option value="1">Small </option>
-                                <option value="2">Medium</option>
-                                <option value="3">Large</option>
-                </select></div>
+                <label>Pagarás:</label>
+                <h5>
+                  {{ realPrice }}&euro; x {{ quantity }}/hab. = {{ realPrice * quantity }}&euro;
+                </h5>
               </div>
             </div>
             <div class="row justify-content-end">
@@ -191,6 +119,15 @@ export default {
   components: { DCollapse },
   data() {
     return {
+      price: 79,
+      discount: 70,
+      quantity: 1,
+      slides: [
+        { name: 'First slide', path: '/assets/img/pp-1.jpg' },
+        { name: 'Second slide', path: '/assets/img/pp-2.jpg' },
+        { name: 'Third slide', path: '/assets/img/pp-3.jpg' },
+        { name: 'Fourth slide', path: '/assets/img/pp-4.jpg' }
+      ],
       details: [
         {
           title: 'Description',
@@ -208,6 +145,21 @@ export default {
             '<ul><li>Storm and midnight-blue stretch cotton-blend</li><li>Notch lapels, functioning buttoned cuffs, two front flap pockets, single vent, internal pocket</li><li>Two button fastening</li><li>84% cotton, 14% nylon, 2% elastane</li><li>Dry clean</li></ul>'
         }
       ]
+    }
+  },
+  computed: {
+    validQuantity() {
+      return this.quantity > 0
+    },
+    realPrice() {
+      return this.price * (100 - this.discount) / 100
+    }
+  },
+  methods: {
+    validateQuantity(newValue) {
+      if (newValue < 1) {
+        this.quantity = 1
+      }
     }
   }
 }
