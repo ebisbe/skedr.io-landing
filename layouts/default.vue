@@ -39,8 +39,7 @@
         <div class="navbar-translate">
           <a
             class="navbar-brand"
-            href="/"
-            target="_blank">
+            href="/">
             Decoralyte
           </a>
           <button
