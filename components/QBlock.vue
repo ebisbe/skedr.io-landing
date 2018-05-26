@@ -15,7 +15,9 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div
+      v-if="rows.length"
+      class="container">
       <div class="row">
         <slot
           v-for="(row, index) in rows"
@@ -27,11 +29,11 @@
 </template>
 <script>
 export default {
-  name: 'Block',
+  name: 'QBlock',
   props: {
     rows: {
       type: Array,
-      required: true
+      default: () => []
     },
     title: {
       type: String,

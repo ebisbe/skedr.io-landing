@@ -73,7 +73,7 @@
   </div>
 </template>
 <script>
-import block from '~/components/block'
+import block from '~/components/QBlock'
 
 export default {
   name: 'InterioristaSlug',

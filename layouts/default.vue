@@ -5,42 +5,11 @@
       :class="{'navbar-transparent': navbarTransparent}"
       class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
-        <div class="dropdown button-dropdown">
-          <a
-            id="navbarDropdown"
-            class="dropdown-toggle">
-            <span class="button-bar"/>
-            <span class="button-bar"/>
-            <span class="button-bar"/>
-          </a>
-          <div
-            class="dropdown-menu"
-            aria-labelledby="navbarDropdown">
-            <a class="dropdown-header">Dropdown header</a>
-            <a
-              class="dropdown-item"
-              href="#">Action</a>
-            <a
-              class="dropdown-item"
-              href="#">Another action</a>
-            <a
-              class="dropdown-item"
-              href="#">Something else here</a>
-            <div class="dropdown-divider"/>
-            <a
-              class="dropdown-item"
-              href="#">Separated link</a>
-            <div class="dropdown-divider"/>
-            <a
-              class="dropdown-item"
-              href="#">One more separated link</a>
-          </div>
-        </div>
         <div class="navbar-translate">
           <a
             class="navbar-brand"
             href="/">
-            Decoralyte
+            Lethal Clan
           </a>
           <button
             :class="{'navbar-toggler': true, 'toggled': toggledMenu}"
@@ -58,22 +27,15 @@
           class="collapse navbar-collapse has-image"
           data-color="orange">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="../index.html"
-                target="_blank">
-                <i class="now-ui-icons design_app"/>
-                <p>Components</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn btn-primary"
-                href="https://www.creative-tim.com/product/now-ui-kit-pro"
-                target="_blank">
-                <p>Register</p>
-              </a>
+            <li
+              v-for="menu in menus"
+              :key="menu.name"
+              class="nav-item">
+              <nuxt-link
+                :to="menu.path"
+                :class="menu.class" >
+                <p v-html="menu.name"/>
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -81,6 +43,45 @@
     </nav>
     <!-- End Navbar -->
     <nuxt/>
+
+    <footer class="footer footer-default ">
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.creative-tim.com">
+                Creative Tim
+              </a>
+            </li>
+            <li>
+              <a href="http://presentation.creative-tim.com">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="http://blog.creative-tim.com">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="https://www.creative-tim.com/license">
+                License
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright">
+          &copy;
+          {{ year }}, Designed by
+          <a
+            href="http://www.invisionapp.com"
+            target="_blank">Invision</a>. Coded by
+          <a
+            href="https://www.creative-tim.com"
+            target="_blank">Creative Tim</a>.
+        </div>
+      </div>
+    </footer>
     <div
       v-if="showCloseNavBar"
       id="bodyClick"
@@ -96,7 +97,34 @@ export default {
       navbar_menu_visible: false,
       showCloseNavBar: false,
       toggledMenu: false,
-      navbarTransparent: true
+      navbarTransparent: true,
+      menus: [
+        {
+          name: 'Agenda',
+          path: 'agenda',
+          class: 'nav-link'
+        },
+        {
+          name: 'Tarifas',
+          path: 'tarifas',
+          class: 'nav-link'
+        },
+        {
+          name: 'Faq',
+          path: 'faq',
+          class: 'nav-link'
+        },
+        {
+          name: 'Registro',
+          path: 'registro',
+          class: 'nav-link btn btn-primary'
+        }
+      ]
+    }
+  },
+  computed: {
+    year() {
+      return new Date().getFullYear()
     }
   },
   created: function() {

@@ -1,10 +1,10 @@
 {
-  "name": "decoralyte",
+  "name": "lethal-clan",
   "version": "1.0.0",
-  "description": "Interiorismo online",
+  "description": "Competicion",
   "author": "Enric Bisbe Gil",
   "private": true,
-  "frontend": "decoralyte",
+  "frontend": "lethal-clan",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
