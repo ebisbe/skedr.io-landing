@@ -62,7 +62,7 @@
     </div>
     <q-block
       class="features-4"
-      title="¡¡ QUÉDATE CON NOSOTROS HASTA EL FINAL!!"
+      title="¡¡ DISFRUTA HASTA EL FINAL!!"
       desc="Una vez realizada la entrega de premios ya es hora del festival. <strong>Disfruta</strong>con nosotros del cierra de fiesta <strong>con comida, bebida y DJ</strong>." />
     <googlemaps-map
       ref="map"

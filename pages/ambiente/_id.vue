@@ -114,7 +114,7 @@
 </template>
 
 <script>
-import DCollapse from '~/components/DCollapse.vue'
+import DCollapse from '~/components/QCollapse.vue'
 export default {
   components: { DCollapse },
   data() {

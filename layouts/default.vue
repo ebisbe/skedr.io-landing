@@ -116,6 +116,12 @@ export default {
           class: 'nav-link'
         },
         {
+          name: 'Normativa',
+          path: 'normativa',
+          icon: '',
+          class: 'nav-link'
+        },
+        {
           name: 'Faq',
           path: 'faq',
           icon: 'travel_info',

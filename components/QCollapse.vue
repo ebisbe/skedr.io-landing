@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'DCollapse',
+  name: 'QCollapse',
   props: {
     title: {
       type: String,
