@@ -34,6 +34,10 @@
               <nuxt-link
                 :to="menu.path"
                 :class="menu.class" >
+                <i
+                  v-if="menu.icon"
+                  :class="menu.icon"
+                  class="now-ui-icons"/>
                 <p v-html="menu.name"/>
               </nuxt-link>
             </li>
@@ -102,16 +106,19 @@ export default {
         {
           name: 'Agenda',
           path: 'agenda',
+          icon: 'education_agenda-bookmark',
           class: 'nav-link'
         },
         {
           name: 'Tarifas',
           path: 'tarifas',
+          icon: 'business_money-coins',
           class: 'nav-link'
         },
         {
           name: 'Faq',
           path: 'faq',
+          icon: 'travel_info',
           class: 'nav-link'
         },
         {
