@@ -33,7 +33,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  // plugins: [{ src: '~/plugins/font-awesome' }],
+  plugins: ['~/plugins/google-maps'],
 
   /*
   ** Nuxt.js modules

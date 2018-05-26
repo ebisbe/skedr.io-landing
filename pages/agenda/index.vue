@@ -64,6 +64,24 @@
       class="features-4"
       title="¡¡ QUÉDATE CON NOSOTROS HASTA EL FINAL!!"
       desc="Una vez realizada la entrega de premios ya es hora del festival. <strong>Disfruta</strong>con nosotros del cierra de fiesta <strong>con comida, bebida y DJ</strong>." />
+    <googlemaps-map
+      ref="map"
+      :center.sync="center"
+      :zoom.sync="zoom"
+      class="map"
+    >
+      <!-- User Position -->
+      <googlemaps-user-position
+        @update:position="setUserPosition" />
+
+      <!-- Marker -->
+      <googlemaps-marker
+        :position="{
+          lat: 41.5115825,
+          lng: 2.2375854
+        }"
+        title="Ares Arena" />
+    </googlemaps-map>
   </div>
 </template>
 <script>
@@ -72,6 +90,28 @@ import QBlock from '~/components/QBlock'
 
 export default {
   name: 'Agenda',
-  components: { QHeaderSmall, QBlock }
+  components: { QHeaderSmall, QBlock },
+  data() {
+    return {
+      markers: [],
+      center: {
+        lat: 41.5115825,
+        lng: 2.2375854
+      },
+      userPosition: null,
+      zoom: 14
+    }
+  },
+  methods: {
+    setUserPosition(position) {
+      this.userPosition = position
+    }
+  }
 }
 </script>
+
+<style>
+.map {
+  height: 55vh;
+}
+</style>
