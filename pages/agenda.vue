@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="images/jeff-sheldon-271733-unsplash.jpg">
+    <q-header-small bg-image="/images/jeff-sheldon-271733-unsplash.jpg">
       <h1 class="title">Agenda</h1>
       <h3><strong>21 y 22 de Julio</strong> en Sant Fost de Campsentelles</h3>
     </q-header-small>
@@ -11,7 +11,7 @@
     <div
       id="pricing-5"
       class="pricing-5 section-pricing-5 section-image"
-      style="background-image: url('assets/img/bg31.jpg')">
+      style="background-image: url('/assets/img/bg31.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-md-4">

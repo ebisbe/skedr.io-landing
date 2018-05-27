@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="images/eva-blue-42498-unsplash.jpg">
+    <q-header-small bg-image="/images/eva-blue-42498-unsplash.jpg">
       <h1 class="title">Lethal Clan</h1>
     </q-header-small>
     <div class="section section-">
@@ -40,7 +40,7 @@
     </div>
     <div
       class="subscribe-line subscribe-line-image"
-      style="background-image: url('assets/img/bg7.jpg');">
+      style="background-image: url('/assets/img/bg7.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">

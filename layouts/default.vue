@@ -105,31 +105,31 @@ export default {
       menus: [
         {
           name: 'Agenda',
-          path: 'agenda',
+          path: '/agenda',
           icon: 'education_agenda-bookmark',
           class: 'nav-link'
         },
         {
           name: 'Tarifas',
-          path: 'tarifas',
+          path: '/tarifas',
           icon: 'business_money-coins',
           class: 'nav-link'
         },
         {
           name: 'Normativa',
-          path: 'normativa',
+          path: '/normativa',
           icon: '',
           class: 'nav-link'
         },
         {
           name: 'Faq',
-          path: 'faq',
+          path: '/faq',
           icon: 'travel_info',
           class: 'nav-link'
         },
         {
           name: 'Registro',
-          path: 'registro',
+          path: '/registro',
           class: 'nav-link btn btn-primary'
         }
       ]

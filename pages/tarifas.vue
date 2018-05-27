@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="images/sam-truong-dan-627874-unsplash.jpg">
+    <q-header-small bg-image="/images/sam-truong-dan-627874-unsplash.jpg">
       <h1>Tarifas</h1>
       <h4>No es sólo una competición, disfruta de un fin de semana completo</h4>
     </q-header-small>
