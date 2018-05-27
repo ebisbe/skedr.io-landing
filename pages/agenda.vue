@@ -91,6 +91,19 @@ import QBlock from '~/components/QBlock'
 export default {
   name: 'Agenda',
   components: { QHeaderSmall, QBlock },
+  head() {
+    return {
+      title: 'Agenda del evento - Lethal Clan',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Compite con nosotros el fin de semana del 21 y 22 de Julio en la localidad de Sant Fost de Campsentelles'
+        }
+      ]
+    }
+  },
   data() {
     return {
       markers: [],

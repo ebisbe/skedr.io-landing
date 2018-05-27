@@ -15,9 +15,9 @@
             </ol>
           </div>
           <div class="col-md-5 mr-auto">
-            <img 
+            <img
               class="rounded img-raised"
-              src="images/rawpixel-661924-unsplash.jpg" 
+              src="images/rawpixel-661924-unsplash.jpg"
               alt="En Lethal Clan formaras parte de un equipo.">
           </div>
         </div>
@@ -93,6 +93,19 @@
 import QHeaderSmall from '~/components/QHeaderSmall'
 export default {
   name: 'Normativa',
-  components: { QHeaderSmall }
+  components: { QHeaderSmall },
+  head() {
+    return {
+      title: 'Normativa del evento - Lethal Clan',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Nuestra normativa te explica como funciona el evento, des del check-in el primer dia, el desarrollo y las puntuaciones de la competicion. No te olvides de leer la conducta del competidor.'
+        }
+      ]
+    }
+  }
 }
 </script>

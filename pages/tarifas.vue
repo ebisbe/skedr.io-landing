@@ -103,8 +103,15 @@ export default {
   components: { QHeaderSmall },
   head() {
     return {
-      title: 'Tarifas',
-      meta: [{ hid: 'description', name: 'description', content: 'My custom description' }]
+      title: 'Tarifas para competir - Lethal Clan',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Disfruta de un fin de semana de competición completo con tu Clan por 250€, tambien tienes alojamiento por 10€/persona.'
+        }
+      ]
     }
   }
 }

@@ -24,6 +24,19 @@ import QCollapse from '~/components/QCollapse'
 export default {
   name: 'Faq',
   components: { QHeaderSmall, QCollapse },
+  head() {
+    return {
+      title: 'Preguntas más frecuentes - Lethal Clan',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            'Te respondemos las preguntas más frecuentes pero si tienes cualquier otra pregunta no dudes en contactar con nosotros.'
+        }
+      ]
+    }
+  },
   data() {
     return {
       faqs: [
