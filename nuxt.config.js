@@ -51,6 +51,11 @@ module.exports = {
     // See https://github.com/nuxt-community/axios-module#options
   },
 
+  generate: {
+    minify: {
+      removeOptionalTags: false
+    }
+  },
   /*
   ** Build configuration
   */
