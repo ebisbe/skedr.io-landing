@@ -141,10 +141,14 @@ export default {
     }
   },
   created: function() {
-    window.addEventListener('scroll', this.isNavbarTransparent)
+    if (process.browser) {
+      window.addEventListener('scroll', this.isNavbarTransparent)
+    }
   },
   destroyed: function() {
-    window.removeEventListener('scroll', this.isNavbarTransparent)
+    if (process.browser) {
+      window.removeEventListener('scroll', this.isNavbarTransparent)
+    }
   },
   methods: {
     isNavbarTransparent() {
