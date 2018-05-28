@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="/images/glenn-carstens-peters-190592-unsplash.jpg">
+    <q-header-small class-name="gleen-cartens">
       <h1>Normativa y Reglas del Evento</h1>
     </q-header-small>
     <div class="section">
@@ -17,7 +17,7 @@
           <div class="col-md-5 mr-auto">
             <img
               class="rounded img-raised"
-              src="/images/rawpixel-661924-unsplash.jpg"
+              src="~/assets/img/rawpixel-661924-unsplash.jpg"
               alt="En Lethal Clan formaras parte de un equipo.">
           </div>
         </div>
@@ -109,3 +109,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.gleen-cartens {
+  background-image: url(~/assets/img/glenn-carstens-peters-190592-unsplash.jpg);
+}
+</style>

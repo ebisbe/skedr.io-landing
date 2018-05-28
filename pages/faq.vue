@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="/images/evan-dennis-75563-unsplash.jpg">
+    <q-header-small class-name="evan-dennis">
       <h1>Preguntas más frecuentes</h1>
       <h4>No te quedes con ninguna duda</h4>
     </q-header-small>
@@ -74,3 +74,8 @@ export default {
   }
 }
 </script>
+<style>
+.evan-dennis {
+  background-image: url(~/assets/img/evan-dennis-75563-unsplash.jpg);
+}
+</style>

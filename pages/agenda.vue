@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="/images/jeff-sheldon-271733-unsplash.jpg">
+    <q-header-small class-name="jeff-sheldon">
       <h1 class="title">Agenda</h1>
       <h3><strong>21 y 22 de Julio</strong> en Sant Fost de Campsentelles</h3>
     </q-header-small>
@@ -10,8 +10,7 @@
       desc="La competición se realizará el fin de semana del <strong>21 y el 22 de Julio</strong> en la localidad de <strong>Sant Fost de Campsentelles</strong>" />
     <div
       id="pricing-5"
-      class="pricing-5 section-pricing-5 section-image"
-      style="background-image: url('/assets/img/bg31.jpg')">
+      class="pricing-5 section-pricing-5 section-image">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -126,5 +125,12 @@ export default {
 <style>
 .map {
   height: 55vh;
+}
+.jeff-sheldon {
+  background-image: url(~/assets/img/jeff-sheldon-271733-unsplash.jpg);
+}
+
+#pricing-5 {
+  /*background-image: url(~/assets/img/bg31.jpg);*/
 }
 </style>

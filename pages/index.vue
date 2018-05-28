@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="/images/eva-blue-42498-unsplash.jpg">
+    <q-header-small class-name="eva-blue">
       <h1 class="title">Lethal Clan</h1>
     </q-header-small>
     <div class="section">
@@ -31,8 +31,7 @@
       <q-block
         use-container
         title="!SERÉIS TAN FUERTES <br>COMO VUESTRO ESLABÓN MÁS DÉBIL!"
-        class="subscribe-line subscribe-line-image"
-        style="background-image: url('/images/victor-freitas-572867-unsplash.jpg');"/>
+        class="subscribe-line subscribe-line-image victor-freitas1"/>
       <div class="section section-">
         <div class="container">
           <div class="text-center">
@@ -75,8 +74,7 @@
         </div>
       </div>
       <div
-        class="subscribe-line subscribe-line-image"
-        style="background-image: url('/images/victor-freitas-604832-unsplash.jpg');">
+        class="subscribe-line subscribe-line-image victor-freitas2">
         <div class="container">
           <div class="row">
             <div class="col-md-6 ml-auto mr-auto">
@@ -161,7 +159,8 @@ export default {
               color: 'icon-warning',
               icon: 'ui-1_calendar-60',
               question: 'Cuando es la competicion?',
-              answer: 'El 21 y 22 de Julio. Des de las 8h del sabado hasta el mediodia del domingo. Guardate la tarde para el cierre de fiesta.',
+              answer:
+                'El 21 y 22 de Julio. Des de las 8h del sabado hasta el mediodia del domingo. Guardate la tarde para el cierre de fiesta.',
               route: { name: 'agenda' }
             },
             {
@@ -197,3 +196,16 @@ export default {
   }
 }
 </script>
+
+<style>
+.eva-blue {
+  background-image: url(~/assets/img/eva-blue-42498-unsplash.jpg);
+}
+.victor-freitas1 {
+  background-image: url('~/assets/img/victor-freitas-572867-unsplash.jpg');
+}
+
+.victor-freitas2 {
+  background-image: url('~/assets/img/victor-freitas-604832-unsplash.jpg');
+}
+</style>

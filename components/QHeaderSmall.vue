@@ -1,7 +1,8 @@
 <template>
   <div class="page-header page-header-small">
     <div
-      :style="`background-image: url('${bgImage}')`"
+      :style="bgImageStyle"
+      :class="className"
       class="page-header-image"
       data-parallax="true"
     />
@@ -16,7 +17,16 @@ export default {
   props: {
     bgImage: {
       type: String,
-      required: true
+      default: ''
+    },
+    className: {
+      type: String,
+      default: ''
+    }
+  },
+  computed: {
+    bgImageStyle() {
+      return this.bgImage !== '' ? `background: url('${this.bgImage}')` : ''
     }
   }
 }

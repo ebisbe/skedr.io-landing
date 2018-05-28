@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <q-header-small bg-image="/images/sam-truong-dan-627874-unsplash.jpg">
+    <q-header-small class-name="sam-truong">
       <h1>Tarifas</h1>
       <h4>No es sólo una competición, disfruta de un fin de semana completo</h4>
     </q-header-small>
@@ -116,3 +116,8 @@ export default {
   }
 }
 </script>
+<style>
+.sam-truong {
+  background-image: url(~/assets/img/sam-truong-dan-627874-unsplash.jpg);
+}
+</style>
