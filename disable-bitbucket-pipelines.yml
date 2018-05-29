@@ -5,7 +5,6 @@ pipelines:
         caches:
           - node
         script:
-          - apt-get install libpng-dev
           - yarn install
           - yarn deploy
 
