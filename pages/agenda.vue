@@ -2,7 +2,7 @@
   <div class="wrapper">
     <q-header-small class-name="jeff-sheldon">
       <h1 class="title">Agenda</h1>
-      <h3><strong>21 y 22 de Julio</strong> en Sant Fost de Campsentelles</h3>
+      <h3><strong>Un fin de semana completo</strong> en Sant Fost de Campsentelles</h3>
     </q-header-small>
     <q-block
       class="features-4"
@@ -14,8 +14,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h2 class="title">El sábado 21 se realizará la 1ª Fase</h2>
-            <p class="description">Y el domingo 22 de Julio los <strong>CLANES más fuertes</strong> se batirán para lograr el ansiado premio, los clanes más débiles serán eliminados.</p>
+            <h2 class="title">El sábado se realizará la 1ª Fase</h2>
+            <p class="description">Y el domingo los <strong>CLANES más fuertes</strong> se batirán para lograr el ansiado premio, los clanes más débiles serán eliminados.</p>
             <p class="description">El domingo se entregará a todos los atletas la bolsa del competidor y las medallas, y a los <strong>CLANES ganadores</strong> se les entregará también su correspondiente trofeo.</p>
           </div>
           <div class="col-md-7 ml-auto mr-auto">
@@ -28,7 +28,7 @@
                     <div class="card card-pricing card-raised">
                       <div class="card-body">
                         <h6 class="category">1r Día</h6>
-                        <h1 class="card-title">21 Julio</h1>
+                        <h1 class="card-title">Sábado</h1>
                         <ul>
                           <li><b>8:00-9:00h</b> Check in</li>
                           <li><b>9:30-13:30h</b> 1a Fase</li>
@@ -42,7 +42,7 @@
                     <div class="card card-pricing card-raised">
                       <div class="card-body">
                         <h6 class="category">2o Día</h6>
-                        <h1 class="card-title">22 Julio</h1>
+                        <h1 class="card-title">Domingo</h1>
                         <ul>
                           <li><b>9:00-13:00h</b> Fase Final</li>
                           <li><b>13:30-14:00h</b> Entrega Premios</li>

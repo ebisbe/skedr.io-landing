@@ -126,11 +126,11 @@ export default {
           path: '/faq',
           icon: 'travel_info',
           class: 'nav-link'
-        },
-        {
-          name: 'Registro',
-          path: '/registro',
-          class: 'nav-link btn btn-primary'
+          // },
+          // {
+          //   name: 'Registro',
+          //   path: '/registro',
+          //   class: 'nav-link btn btn-primary'
         }
       ]
     }
