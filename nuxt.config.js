@@ -13,10 +13,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700,200' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
@@ -27,7 +24,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: ['@/assets/css/bootstrap.min.css', '@/assets/css/now-ui-kit.scss', '@/assets/css/demo.css'],
+  css: [
+    '@/assets/css/bootstrap.min.css',
+    '@/assets/css/now-ui-kit.scss',
+    '@/assets/css/demo.css',
+    '@/assets/css/montserrat.css'
+  ],
 
   /*
   ** Plugins to load before mounting the App
@@ -60,6 +62,10 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: {
+      allChunks: true
+    },
+
     /*
     ** You can extend webpack config here
     */
