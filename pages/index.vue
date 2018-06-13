@@ -1,73 +1,66 @@
 <template>
   <div class="wrapper">
-    <q-header-small class-name="eva-blue">
-      <h1 class="title">Lethal Clan</h1>
+    <q-header-small class-name="raw-pixel">
+      <h1 class="title">Skedr.io</h1>
+      <h3>Autoimport and autoschedule for Flickr Groups<br><strong>Rediscover</strong> your free time</h3>
     </q-header-small>
-    <div >
-      <q-block
-        :rows="what.items"
-        :title="what.title"
-        :desc="what.desc"
-        class="section">
-        <div
-          slot-scope="{row}"
-          class="col-md-4">
-          <div class="info info-hover">
-            <div
-              :class="row.color"
-              class="icon icon-circle">
-              <i
-                :class="row.icon"
-                class="now-ui-icons"/>
-            </div>
-            <h4
-              class="info-title"
-              v-html="row.title"/>
-            <p
-              class="description"
-              v-html="row.desc"/>
-          </div>
+    <div class="">
+      <br>
+      <br>
+      <div>
+        <div class="col-md-8 mr-auto ml-auto text-center">
+          <h2
+            class="title"
+            v-html="atention.title"/>
+          <h4
+            class="description"
+            v-html="atention.desc"/>
         </div>
-      </q-block>
-      <q-block
-        use-container
-        title="!SERÉIS TAN FUERTES <br>COMO VUESTRO ESLABÓN MÁS DÉBIL!"
-        class="subscribe-line subscribe-line-image victor-freitas1"/>
-      <div class="section">
-        <div class="container">
-          <div class="text-center">
-            <h3
-              class="title"
-              v-html="title"/>
-          </div>
-          <div
-            v-for="(row, ri) in questions"
-            :key="ri"
-            class="row">
-            <div
-              v-for="(question, i) in row.items"
-              :key="i"
-              :class="{'ml-auto': i === 0, 'mr-auto' : i === 1}"
-              class="col-md-4">
-              <div class="info info-horizontal">
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="features-7 section-image sid-verma">
+        <div class="container-fluid">
+          <a name="features"/>
+          <div class="row">
+            <div class="col-md-6 px-0">
+              <div class="col-sm-12">
                 <div
-                  :class="question.color"
-                  class="icon">
-                  <i
-                    :class="question.icon"
-                    class="now-ui-icons"/>
+                  v-for="item in interest"
+                  :key="item.title"
+                  class="info info-horizontal">
+                  <div class="icon">
+                    <i
+                      :class="item.icon"
+                      class="now-ui-icons "/>
+                  </div>
+                  <div class="description">
+                    <h4
+                      class="info-title"
+                      v-html="item.title"/>
+                    <p
+                      class="description"
+                      style="font-weight:400;"
+                      v-html="item.desc" />
+                  </div>
                 </div>
-                <div class="description">
-                  <h4
-                    class="info-title"
-                    v-html="question.question"/>
-                  <p v-html="question.answer"/>
-                  <p v-if="question.route !== undefined">
-                    <nuxt-link
-                      :to="question.route">
-                      Más información
-                    </nuxt-link>
-                  </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="image-container">
+                <div
+                  class="device device-macbook device-spacegray">
+                  <div class="device-frame">
+                    <img
+                      class="device-content"
+                      src="~/assets/img/View_photostream_desktop.png">
+                  </div>
+                  <div class="device-stripe"/>
+                  <div class="device-header"/>
+                  <div class="device-sensors"/>
+                  <div class="device-btns"/>
+                  <div class="device-power"/>
                 </div>
               </div>
             </div>
@@ -75,47 +68,88 @@
         </div>
       </div>
     </div>
-    <div
-      class="subscribe-line subscribe-line-image victor-freitas2">
+    <div class="features-6">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 ml-auto mr-auto">
-            <div class="text-center">
-              <h4 class="title">Subscribe to our Newsletter</h4>
-              <p class="description">
-                Join our newsletter and get news in your inbox every week! We hate spam too, so no worries about this.
-              </p>
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2
+              class="title"
+              v-html="desire.title"/>
+            <h4
+              class="description"
+              v-html="desire.desc"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div
+              v-for="item in desire.items.slice(0,2)"
+              :key="item"
+              class="info info-horizontal">
+              <div
+                :class="item.color"
+                class="icon">
+                <i
+                  :class="item.icon"
+                  class="now-ui-icons"/>
+              </div>
+              <div class="description">
+                <h5
+                  class="info-title"
+                  v-html="item.title"/>
+                <p v-html="item.desc"/>
+              </div>
             </div>
-            <div class="card card-raised card-form-horizontal">
-              <div class="card-body">
-                <form
-                  method=""
-                  action="">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="input-group">
-                        <div class="input-group-prepend">
-                          <span class="input-group-text"><i class="now-ui-icons ui-1_email-85"/></span>
-                        </div>
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Your Email...">
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <button
-                        type="button"
-                        class="btn btn-primary btn-round btn-block">Subscribe</button>
-                    </div>
-                  </div>
-                </form>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="phone-container"
+              style="height:600px;">
+              <div
+                class="device device-google-pixel device-black scale">
+                <div class="device-frame">
+                  <img
+                    class="device-content"
+                    src="~/assets/img/View_photostream.png">
+                </div>
+                <div class="device-stripe"/>
+                <div class="device-header"/>
+                <div class="device-sensors"/>
+                <div class="device-btns"/>
+                <div class="device-power"/>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              v-for="item in desire.items.slice(2,4)"
+              :key="item"
+              class="info info-horizontal">
+              <div
+                :class="item.color"
+                class="icon">
+                <i
+                  :class="item.icon"
+                  class="now-ui-icons"/>
+              </div>
+              <div class="description">
+                <h5
+                  class="info-title"
+                  v-html="item.title"/>
+                <p v-html="item.desc"/>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <q-block
+      :title="cta.title"
+      :cta_link="cta.link"
+      :cta_text="cta.text"
+      use-container
+      class="subscribe-line subscribe-line-image aaron-burden"/>
+
   </div>
 </template>
 
@@ -127,86 +161,85 @@ export default {
   components: { QHeaderSmall, QBlock },
   data() {
     return {
-      what: {
-        title: 'Lethal Clan es una competicion por equipos',
+      atention: {
+        title: 'Make the most of every day',
+        desc: 'The new Skedr app helps you <br><strong>spend less time</strong> managing your Flickr groups.'
+      },
+      interest: [
+        {
+          title: 'For Profesionals',
+          desc: 'Share hundreds of photos to any group without worrying about group restrictions. Ever.',
+          icon: 'shopping_delivery-fast'
+        },
+        {
+          title: 'For enthusiats',
+          desc:
+            "Gain views and likes sharing easily to more groups. Don't waste your time and improve your photography.",
+          icon: 'objects_spaceship'
+        },
+        {
+          title: 'For begginers',
+          desc:
+            "Improve your photography through other photographers eyes. Share and discover. And don't forget to have fun!",
+          icon: 'design_image'
+        }
+      ],
+      desire: {
+        title: 'We have improved your share workflow',
         desc:
-          'El eslabón más débil puede llevar tu equipo a la catástrofe pero el eslabón más fuerte no te garantiza la supervivencia del CLAN, sólo el trabajo en equipo puede llevar a tu CLAN a alzarse con el triunfo.',
+          "We think Flickr is a great tool and groups is a great way to enjoy other people photos. But let's face it, the experience is terrible.<br> We have improved that part.",
         items: [
           {
-            title: 'Equipos mixtos',
-            desc: 'Los equipos estaran formados bajo la regla 3-2, 3 chicos y 2 chicas o 3 chicas y 2 chicos',
-            icon: 'sport_user-run',
+            title: 'Autoschedule built-in',
+            desc:
+              "We autoschedule every time a photo is pushed to a group and fails due to group restrictions. We won't miss it.",
+            icon: 'emoticons_satisfied',
             color: 'icon-success'
           },
           {
-            title: 'Forma el equipo mas Lethal',
-            desc: 'Las pruebas están relacionadas con el Crosstraining, las OCR, el trailrunning, Bootcamp.',
-            icon: 'objects_diamond',
+            title: 'Tag your groups',
+            desc:
+              'When you upload a tagged photo, it will be added to your groups automatically. One shot configuration.',
+            icon: 'loader_refresh',
             color: 'icon-danger'
           },
           {
-            title: 'Experiancia única',
-            desc: 'Disfruta de un fin de semana de competicion y buen rollo.',
-            icon: 'emoticons_satisfied',
+            title: 'Scheduled photos',
+            desc: "Schedule view brings your schedule to life and makes it easy to see what's ahead in time.",
+            icon: 'education_paper',
             color: 'icon-info'
+          },
+          {
+            title: 'Engage with more users',
+            desc:
+              'Sharing photos to more groups will make your photos more visible at Flickr. Gaining views and likes.',
+            icon: 'objects_spaceship',
+            color: 'icon-warning'
           }
         ]
       },
-      title: 'Preguntas más importantes',
-      questions: [
-        {
-          items: [
-            {
-              color: 'icon-warning',
-              icon: 'ui-1_calendar-60',
-              question: 'Cuando es la competicion?',
-              answer:
-                '<strong>Aún por definir</strong>. La competición será desde las 8h del sabado hasta el mediodia del domingo. Guardate la tarde para el cierre de fiesta.',
-              route: { name: 'agenda' }
-            },
-            {
-              color: 'icon-success',
-              icon: 'location_pin',
-              question: 'Donde es la competición?',
-              answer: 'En Sant Fost de Campcentelles, entre Mollet del Valles y la Serralada de Marina.',
-              route: { name: 'agenda' }
-            }
-          ]
-        },
-        {
-          items: [
-            {
-              color: 'icon-danger',
-              icon: 'business_money-coins',
-              question: 'Cuanto cuesta la competición?',
-              answer: 'Cada Clan debe pagar 250€ para competir. Un clan consta de 5 integrantes.',
-              route: { name: 'tarifas' }
-            },
-            {
-              color: 'icon-info',
-              icon: 'travel_info',
-              question: 'Tengo más dudas',
-              route: { name: 'faq' },
-              answer:
-                'Puedes leer todas las preguntas más frecuentes. Pero si tienes más dudas contacta directamente con nosotros.'
-            }
-          ]
-        }
-      ]
+      cta: {
+        title: 'Want to feel the new experience?',
+        text: 'Sign up',
+        link: 'https://app.skedr.io/signup'
+      }
     }
   }
 }
 </script>
 
 <style>
-.eva-blue {
-  background-image: url(~/assets/img/eva-blue-42498-unsplash.jpg);
+.raw-pixel {
+  background-image: url(~/assets/img/averie-woodard-111831-unsplash.jpg);
 }
-.victor-freitas1 {
-  background-image: url('~/assets/img/victor-freitas-572867-unsplash.jpg');
+.sid-verma {
+  background-image: url(~/assets/img/sid-verma-396977-unsplash.jpg);
 }
-
-.victor-freitas2 {
-  background-image: url('~/assets/img/victor-freitas-604832-unsplash.jpg');
+.aaron-burden {
+  background-image: url(~/assets/img/aaron-burden-269382-unsplash.jpg);
+}
+.scale {
+  transform-origin: top left;
+  transform: scale(0.75) !important;
 }
 </style>

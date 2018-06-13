@@ -28,7 +28,8 @@ module.exports = {
     '@/assets/css/bootstrap.min.css',
     '@/assets/css/now-ui-kit.scss',
     '@/assets/css/demo.css',
-    '@/assets/css/montserrat.css'
+    '@/assets/css/montserrat.css',
+    'devices.css'
   ],
 
   /*
@@ -106,8 +107,7 @@ module.exports = {
                   verbose: true
                 },
                 webp: {
-                  quality: 75,
-                  resize: { width: 1920, height: 1080 }
+                  quality: 75
                 }
               }
             }

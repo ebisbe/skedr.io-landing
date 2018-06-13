@@ -9,7 +9,7 @@
           <a
             class="navbar-brand"
             href="/">
-            Lethal Clan
+            Skedr.io
           </a>
           <button
             :class="{'navbar-toggler': true, 'toggled': toggledMenu}"
@@ -31,7 +31,18 @@
               v-for="menu in menus"
               :key="menu.name"
               class="nav-item">
+              <a
+                v-if="menu.external"
+                :href="menu.path"
+                :class="menu.class">
+                <i
+                  v-if="menu.icon"
+                  :class="menu.icon"
+                  class="now-ui-icons"/>
+                <p v-html="menu.name"/>
+              </a>
               <nuxt-link
+                v-else
                 :to="menu.path"
                 :class="menu.class" >
                 <i
@@ -51,38 +62,11 @@
     <footer class="footer footer-default ">
       <div class="container">
         <nav>
-          <ul>
-            <li>
-              <a href="https://www.creative-tim.com">
-                Creative Tim
-              </a>
-            </li>
-            <li>
-              <a href="http://presentation.creative-tim.com">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com">
-                Blog
-              </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license">
-                License
-              </a>
-            </li>
-          </ul>
+          <ul/>
         </nav>
         <div class="copyright">
           &copy;
-          {{ year }}, Designed by
-          <a
-            href="http://www.invisionapp.com"
-            target="_blank">Invision</a>. Coded by
-          <a
-            href="https://www.creative-tim.com"
-            target="_blank">Creative Tim</a>.
+          2017-{{ year }}, Skedr.io
         </div>
       </div>
     </footer>
@@ -104,33 +88,16 @@ export default {
       navbarTransparent: true,
       menus: [
         {
-          name: 'Agenda',
-          path: '/agenda',
-          icon: 'education_agenda-bookmark',
-          class: 'nav-link'
+          name: 'Login',
+          external: true,
+          path: 'https://app.skedr.io',
+          class: 'nav-link btn btn-simple btn-primary'
         },
         {
-          name: 'Tarifas',
-          path: '/tarifas',
-          icon: 'business_money-coins',
-          class: 'nav-link'
-        },
-        {
-          name: 'Normativa',
-          path: '/normativa',
-          icon: '',
-          class: 'nav-link'
-        },
-        {
-          name: 'Faq',
-          path: '/faq',
-          icon: 'travel_info',
-          class: 'nav-link'
-          // },
-          // {
-          //   name: 'Registro',
-          //   path: '/registro',
-          //   class: 'nav-link btn btn-primary'
+          name: 'Sign up',
+          external: true,
+          path: 'https://app.skedr.io/singup',
+          class: 'nav-link btn btn-primary'
         }
       ]
     }

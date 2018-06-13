@@ -12,6 +12,11 @@
           <h4
             class="description"
             v-html="desc"/>
+          <a
+            v-if="cta_link"
+            :href="cta_link"
+            class="btn btn-primary btn-round"
+            v-html="cta_text"/>
         </div>
       </div>
     </div>
@@ -46,6 +51,14 @@ export default {
     useContainer: {
       type: Boolean,
       default: false
+    },
+    cta_link: {
+      type: String,
+      default: ''
+    },
+    cta_text: {
+      type: String,
+      default: 'Read more'
     }
   }
 }
