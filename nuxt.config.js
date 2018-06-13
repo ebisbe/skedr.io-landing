@@ -35,22 +35,32 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['~/plugins/google-maps'],
+  plugins: [
+    /*'~/plugins/google-maps'*/
+  ],
 
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
+    //'@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
-    ['bootstrap-vue/nuxt', { css: false }]
+    //['bootstrap-vue/nuxt', { css: false }]
+    ['@nuxtjs/google-analytics']
   ],
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  'google-analytics': {
+    id: 'UA-53011336-4',
+    debug: {
+      sendHitTask: process.env.NODE_ENV === 'production'
+    }
   },
 
   generate: {
