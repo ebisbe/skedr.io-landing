@@ -54,7 +54,7 @@
                   <div class="device-frame">
                     <img
                       class="device-content"
-                      src="~/assets/img/View_photostream_desktop.png">
+                      src="~/assets/img/View_photostream_desktop_small.png">
                   </div>
                   <div class="device-stripe"/>
                   <div class="device-header"/>

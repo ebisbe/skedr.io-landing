@@ -115,9 +115,9 @@ module.exports = {
                   quality: '65-90',
                   speed: 1,
                   verbose: true
-                },
-                webp: {
-                  quality: 75
+                  // },
+                  // webp: {
+                  //   quality: 75
                 }
               }
             }
