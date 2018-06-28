@@ -84,7 +84,7 @@
           <div class="col-md-4">
             <div
               v-for="item in desire.items.slice(0,2)"
-              :key="item"
+              :key="item.title"
               class="info info-horizontal">
               <div
                 :class="item.color"
@@ -123,7 +123,7 @@
           <div class="col-md-4">
             <div
               v-for="item in desire.items.slice(2,4)"
-              :key="item"
+              :key="item.title"
               class="info info-horizontal">
               <div
                 :class="item.color"
