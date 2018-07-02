@@ -1,5 +1,7 @@
 <template>
-  <div :class="{'nav-open': navbar_menu_visible}">
+  <div
+    id="page-home"
+    :class="{'nav-open': navbar_menu_visible}">
     <!-- Navbar -->
     <nav
       :class="{'navbar-transparent': navbarTransparent}"
@@ -65,6 +67,10 @@
           <ul/>
         </nav>
         <div class="copyright">
+          Get in touch at
+          <a href="mailto:info@skedr.io">info@skedr.io</a>
+          &nbsp;
+          &nbsp;
           &copy;
           2017-{{ year }}, Skedr.io
         </div>
@@ -88,10 +94,15 @@ export default {
       navbarTransparent: true,
       menus: [
         {
+          name: 'Features',
+          path: '#features',
+          class: 'nav-link '
+        },
+        {
           name: 'Login',
           external: true,
           path: 'https://app.skedr.io',
-          class: 'nav-link btn btn-simple btn-primary'
+          class: 'nav-link btn btn-primary'
         },
         {
           name: 'Sign up',
@@ -136,3 +147,18 @@ export default {
   }
 }
 </script>
+
+<style>
+#page-home:before {
+  content: '';
+  width: 6em;
+  height: 6em;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: url(~/assets/img/beta-label-bottom-right.svg) center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+</style>

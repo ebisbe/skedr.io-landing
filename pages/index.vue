@@ -22,7 +22,6 @@
       <br>
       <div class="features-7 section-image sid-verma">
         <div class="container-fluid">
-          <a name="features"/>
           <div class="row">
             <div class="col-md-6 px-0">
               <div class="col-sm-12">
@@ -68,7 +67,9 @@
         </div>
       </div>
     </div>
-    <div class="features-6">
+    <div 
+      id="features" 
+      class="features-6">
       <div class="container">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
