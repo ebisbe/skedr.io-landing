@@ -1,7 +1,7 @@
 {
   "name": "skedr.io",
   "version": "1.0.0",
-  "description": "Competicion",
+  "description": "Share easily to Flickr Groups with Skedr.io",
   "author": "Enric Bisbe Gil",
   "private": true,
   "scripts": {
