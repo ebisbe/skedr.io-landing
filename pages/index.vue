@@ -67,8 +67,8 @@
         </div>
       </div>
     </div>
-    <div 
-      id="features" 
+    <div
+      id="features"
       class="features-6">
       <div class="container">
         <div class="row">
@@ -168,7 +168,7 @@ export default {
       },
       interest: [
         {
-          title: 'For Profesionals',
+          title: 'For profesionals',
           desc: 'Share hundreds of photos to any group without worrying about group restrictions. Ever.',
           icon: 'shopping_delivery-fast'
         },
