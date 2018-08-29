@@ -107,7 +107,7 @@ export default {
         {
           name: 'Sign up',
           external: true,
-          path: 'https://app.skedr.io/singup',
+          path: 'https://app.skedr.io/signup',
           class: 'nav-link btn btn-primary'
         }
       ]
