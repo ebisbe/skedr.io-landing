@@ -7,8 +7,8 @@ export default {
   },
   menu: {
     features: 'Features',
-    login: 'Login',
-    signup: 'Sign up'
+    login: 'Log in',
+    signup: 'Sign in'
   },
   home: {
     atention: {
@@ -68,7 +68,7 @@ export default {
     },
     cta: {
       title: 'Want to feel the new experience?',
-      text: 'Sign up',
+      text: 'Sign in',
       link: 'https://app.skedr.io/signup'
     }
   }
