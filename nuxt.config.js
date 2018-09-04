@@ -63,7 +63,34 @@ module.exports = {
     //'@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     //['bootstrap-vue/nuxt', { css: false }]
-    ['@nuxtjs/google-analytics']
+    ['@nuxtjs/google-analytics'],
+    [
+      'nuxt-i18n',
+      {
+        baseUrl: 'https://skedr.io',
+        lazy: true,
+        defaultLocale: 'en',
+        langDir: 'locales/',
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'i18n_redirected'
+        },
+        locales: [
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en.js'
+          },
+          {
+            name: 'Español',
+            code: 'es',
+            iso: 'es-ES',
+            file: 'es.js'
+          }
+        ]
+      }
+    ]
   ],
   /*
   ** Axios module configuration
@@ -147,7 +174,6 @@ module.exports = {
 
   router: {
     scrollBehavior(to, from, savedPosition) {
-      console.log(to)
       if (to.hash) {
         return { selector: to.hash }
       } else {

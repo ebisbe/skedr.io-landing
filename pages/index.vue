@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper">
     <q-header-small class-name="raw-pixel">
-      <h1 class="title">Skedr.io</h1>
-      <h3>Autoimport and autoschedule for Flickr Groups<br><strong>Rediscover</strong> your free time</h3>
+      <h1 class="title">{{ $t('app_name') }} </h1>
+      <h3><span v-html="$t('slogan')"/><br><span v-html="$t('slogan2')"/></h3>
     </q-header-small>
     <div class="">
       <br>
@@ -11,10 +11,10 @@
         <div class="col-md-8 mr-auto ml-auto text-center">
           <h2
             class="title"
-            v-html="atention.title"/>
+            v-html="$t('home.atention.title')"/>
           <h4
             class="description"
-            v-html="atention.desc"/>
+            v-html="$t('home.atention.desc')"/>
         </div>
       </div>
       <br>
@@ -26,7 +26,7 @@
             <div class="col-md-6 px-0">
               <div class="col-sm-12">
                 <div
-                  v-for="item in interest"
+                  v-for="item in $t('home.interest')"
                   :key="item.title"
                   class="info info-horizontal">
                   <div class="icon">
@@ -75,16 +75,16 @@
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2
               class="title"
-              v-html="desire.title"/>
+              v-html="$t('home.desire.title')"/>
             <h4
               class="description"
-              v-html="desire.desc"/>
+              v-html="$t('home.desire.desc')"/>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
             <div
-              v-for="item in desire.items.slice(0,2)"
+              v-for="item in $t('home.desire.items').slice(0,2)"
               :key="item.title"
               class="info info-horizontal">
               <div
@@ -123,7 +123,7 @@
           </div>
           <div class="col-md-4">
             <div
-              v-for="item in desire.items.slice(2,4)"
+              v-for="item in $t('home.desire.items').slice(2,4)"
               :key="item.title"
               class="info info-horizontal">
               <div
@@ -145,9 +145,9 @@
       </div>
     </div>
     <q-block
-      :title="cta.title"
-      :cta_link="cta.link"
-      :cta_text="cta.text"
+      :title="$t('home.cta.title')"
+      :cta_link="$t('home.cta.link')"
+      :cta_text="$t('home.cta.text')"
       use-container
       class="subscribe-line subscribe-line-image aaron-burden"/>
 
@@ -159,73 +159,7 @@ import QHeaderSmall from '~/components/QHeaderSmall'
 import QBlock from '~/components/QBlock'
 
 export default {
-  components: { QHeaderSmall, QBlock },
-  data() {
-    return {
-      atention: {
-        title: 'Make the most of every day',
-        desc: 'The new Skedr app helps you <br><strong>spend less time</strong> managing your Flickr groups.'
-      },
-      interest: [
-        {
-          title: 'For profesionals',
-          desc: 'Share hundreds of photos to any group without worrying about group restrictions. Ever.',
-          icon: 'shopping_delivery-fast'
-        },
-        {
-          title: 'For enthusiats',
-          desc:
-            "Gain views and likes sharing easily to more groups. Don't waste your time and improve your photography.",
-          icon: 'objects_spaceship'
-        },
-        {
-          title: 'For begginers',
-          desc:
-            "Improve your photography through other photographers eyes. Share and discover. And don't forget to have fun!",
-          icon: 'design_image'
-        }
-      ],
-      desire: {
-        title: 'We have improved your share workflow',
-        desc:
-          "We think Flickr is a great tool and groups is a great way to enjoy other people photos. But let's face it, the experience is terrible.<br> We have improved that part.",
-        items: [
-          {
-            title: 'Autoschedule built-in',
-            desc:
-              "We autoschedule every time a photo is pushed to a group and fails due to group restrictions. We won't miss it.",
-            icon: 'emoticons_satisfied',
-            color: 'icon-success'
-          },
-          {
-            title: 'Tag your groups',
-            desc:
-              'When you upload a tagged photo, it will be added to your groups automatically. One shot configuration.',
-            icon: 'loader_refresh',
-            color: 'icon-danger'
-          },
-          {
-            title: 'Scheduled photos',
-            desc: "Schedule view brings your schedule to life and makes it easy to see what's ahead in time.",
-            icon: 'education_paper',
-            color: 'icon-info'
-          },
-          {
-            title: 'Engage with more users',
-            desc:
-              'Sharing photos to more groups will make your photos more visible at Flickr. Gaining views and likes.',
-            icon: 'objects_spaceship',
-            color: 'icon-warning'
-          }
-        ]
-      },
-      cta: {
-        title: 'Want to feel the new experience?',
-        text: 'Sign up',
-        link: 'https://app.skedr.io/signup'
-      }
-    }
-  }
+  components: { QHeaderSmall, QBlock }
 }
 </script>
 

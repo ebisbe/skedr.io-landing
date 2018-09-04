@@ -10,9 +10,8 @@
         <div class="navbar-translate">
           <a
             class="navbar-brand"
-            href="/">
-            Skedr.io
-          </a>
+            href="/"
+            v-html="$t('app_name')"/>
           <button
             :class="{'navbar-toggler': true, 'toggled': toggledMenu}"
             type="button"
@@ -41,7 +40,7 @@
                   v-if="menu.icon"
                   :class="menu.icon"
                   class="now-ui-icons"/>
-                <p v-html="menu.name"/>
+                <p v-html="$t(`menu.${menu.name}`)"/>
               </a>
               <nuxt-link
                 v-else
@@ -51,7 +50,7 @@
                   v-if="menu.icon"
                   :class="menu.icon"
                   class="now-ui-icons"/>
-                <p v-html="menu.name"/>
+                <p v-html="$t(`menu.${menu.name}`)"/>
               </nuxt-link>
             </li>
           </ul>
@@ -64,15 +63,23 @@
     <footer class="footer footer-default ">
       <div class="container">
         <nav>
-          <ul/>
+          <ul>
+            <li>
+              <nuxt-link
+                v-for="locale in $i18n.locales"
+                v-if="locale.code !== $i18n.locale"
+                :key="locale.code"
+                :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
+            </li>
+          </ul>
         </nav>
         <div class="copyright">
-          Get in touch at
+          <span v-html="$t('layout.contact')"/>&nbsp;
           <a href="mailto:info@skedr.io">info@skedr.io</a>
           &nbsp;
           &nbsp;
           &copy;
-          2017-{{ year }}, Skedr.io
+          2017-{{ year }}, {{ $t('app_name') }}
         </div>
       </div>
     </footer>
@@ -94,18 +101,18 @@ export default {
       navbarTransparent: true,
       menus: [
         {
-          name: 'Features',
+          name: 'features',
           path: '#features',
           class: 'nav-link '
         },
         {
-          name: 'Login',
+          name: 'login',
           external: true,
           path: 'https://app.skedr.io',
           class: 'nav-link btn btn-primary'
         },
         {
-          name: 'Sign up',
+          name: 'signup',
           external: true,
           path: 'https://app.skedr.io/signup',
           class: 'nav-link btn btn-primary'
