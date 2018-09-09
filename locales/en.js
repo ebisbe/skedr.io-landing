@@ -7,6 +7,7 @@ export default {
   },
   menu: {
     features: 'Features',
+    pricing: 'Pricing',
     login: 'Log in',
     signup: 'Sign in'
   },
@@ -68,8 +69,22 @@ export default {
     },
     cta: {
       title: 'Want to feel the new experience?',
-      text: 'Sign in',
-      link: 'https://app.skedr.io/signup'
+      desc:
+        'While we are in Beta the product will be completely free. We want more users to enjoy the product and give us feedback to improve it.',
+      text: 'Register',
+      link: 'https://app.skedr.io/signup',
+      plans: [
+        {
+          name: 'Amateur',
+          price: 0,
+          features: ['<strong>Unlimited</strong> support', '<strong>250</strong> photo shares']
+        },
+        {
+          name: 'Professional',
+          price: 3,
+          features: ['<strong>Unlimited</strong> support', '<strong>Unlimited</strong> photo shares']
+        }
+      ]
     }
   }
 }

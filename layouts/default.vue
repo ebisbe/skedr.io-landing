@@ -103,7 +103,12 @@ export default {
         {
           name: 'features',
           path: '#features',
-          class: 'nav-link '
+          class: 'nav-link'
+        },
+        {
+          name: 'pricing',
+          path: '#pricing',
+          class: 'nav-link'
         },
         {
           name: 'login',

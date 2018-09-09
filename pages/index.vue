@@ -145,12 +145,45 @@
       </div>
     </div>
     <q-block
+      id="pricing"
       :title="$t('home.cta.title')"
-      :cta_link="$t('home.cta.link')"
-      :cta_text="$t('home.cta.text')"
+      :desc="$t('home.cta.desc')"
       use-container
-      class="subscribe-line subscribe-line-image aaron-burden"/>
+      class="subscribe-line subscribe-line-image aaron-burden">
+      <div
+        slot="container"
+        class="row">
+        <div
+          v-for="(plan, index) in $t('home.cta.plans')"
+          :key="plan"
+          :class="{ 'col-md-4': true, 'ml-auto': index === 0, 'mx-auto': index === 1 }">
+          <div
+            :class="{'card': true, 'card-pricing': true, 'card-raised': index === 1 }"
+            :data-background-color="index === 1 ? 'orange' : null">
+            <div class="card-body">
+              <h5
+                class="category"
+                v-html="plan.name"/>
+              <h1 class="card-title">Free</h1>
+              <!-- <h1 class="card-title"><small>$</small> {{ plan.price }} <small>/mo</small></h1> -->
+              <ul v-if="plan.features.length">
+                <li
+                  v-for="feature in plan.features"
+                  :key="feature"
+                  v-html="feature"/>
+              </ul>
+              <a
+                :href="$t('home.cta.link')"
+                :class="index === 0 ? 'btn-primary' : 'btn-neutral'"
+                class="btn btn-round">
+                {{ $t('home.cta.text') }}
+              </a>
+            </div>
+          </div>
+        </div>
 
+      </div>
+    </q-block>
   </div>
 </template>
 

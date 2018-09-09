@@ -20,15 +20,8 @@
         </div>
       </div>
     </div>
-    <div
-      v-if="rows.length"
-      class="container">
-      <div class="row">
-        <slot
-          v-for="(row, index) in rows"
-          :row="row"
-          :iteration="index"/>
-      </div>
+    <div class="container">
+      <slot name="container"/>
     </div>
   </div>
 </template>
@@ -36,10 +29,6 @@
 export default {
   name: 'QBlock',
   props: {
-    rows: {
-      type: Array,
-      default: () => []
-    },
     title: {
       type: String,
       default: ''
