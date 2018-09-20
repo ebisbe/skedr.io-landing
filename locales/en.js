@@ -1,6 +1,6 @@
 export default {
   app_name: 'Skedr.io',
-  slogan: 'Autoimport and autoschedule for Flickr Groups',
+  slogan: 'Automated import and shedule for Flickr Groups',
   slogan2: '<strong>Rediscover</strong> your free time',
   layout: {
     contact: 'Get in touch at'
@@ -9,12 +9,12 @@ export default {
     features: 'Features',
     pricing: 'Pricing',
     login: 'Log in',
-    signup: 'Sign in'
+    signup: 'Sign up'
   },
   home: {
     atention: {
       title: 'Make the most of every day',
-      desc: 'The new Skedr app helps you <br><strong>spend less time</strong> managing your Flickr groups.'
+      desc: 'The new Skedr app helps you <br><strong>spend less time</strong> sharing photos to Flickr groups.'
     },
     interest: [
       {
