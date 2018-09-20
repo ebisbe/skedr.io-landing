@@ -34,7 +34,7 @@
               class="nav-item">
               <a
                 v-if="menu.external"
-                :href="menu.path"
+                :href="localePath(menu.path)"
                 :class="menu.class">
                 <i
                   v-if="menu.icon"
@@ -102,12 +102,17 @@ export default {
       menus: [
         {
           name: 'features',
-          path: '#features',
+          path: '/#features',
           class: 'nav-link'
         },
         {
           name: 'pricing',
-          path: '#pricing',
+          path: '/#pricing',
+          class: 'nav-link'
+        },
+        {
+          name: 'faq',
+          path: 'faq',
           class: 'nav-link'
         },
         {

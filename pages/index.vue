@@ -155,7 +155,7 @@
         class="row">
         <div
           v-for="(plan, index) in $t('home.cta.plans')"
-          :key="plan"
+          :key="plan.name"
           :class="{ 'col-md-4': true, 'ml-auto': index === 0, 'mx-auto': index === 1 }">
           <div
             :class="{'card': true, 'card-pricing': true, 'card-raised': index === 1 }"
@@ -192,7 +192,13 @@ import QHeaderSmall from '~/components/QHeaderSmall'
 import QBlock from '~/components/QBlock'
 
 export default {
-  components: { QHeaderSmall, QBlock }
+  components: { QHeaderSmall, QBlock },
+  head() {
+    return {
+      title: this.$t('slogan'),
+      meta: [{ hid: 'description', name: 'description', content: this.$t('home.attention.desc') }]
+    }
+  }
 }
 </script>
 

@@ -13,7 +13,6 @@
 </template>
 <script>
 export default {
-  name: 'QHeaderSmall',
   props: {
     bgImage: {
       type: String,

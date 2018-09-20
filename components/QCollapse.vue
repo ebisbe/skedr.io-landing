@@ -1,5 +1,7 @@
 <template>
-  <div class="card card-plain">
+  <div
+    :id="name"
+    class="card card-plain">
     <div
       class="card-header">
       <a
@@ -25,8 +27,8 @@
 </template>
 
 <script>
+import _kebabCase from 'lodash/kebabCase'
 export default {
-  name: 'QCollapse',
   props: {
     title: {
       type: String,
@@ -48,11 +50,18 @@ export default {
   },
   computed: {
     name() {
-      return 'collapse-' + Math.round(Math.random() * 10000000)
+      return _kebabCase(this.title)
     }
   },
   created() {
     this.showCollapse = this.visible
+  },
+  mounted() {
+    if (process.browser) {
+      if (window.location.href.includes(this.name)) {
+        this.showCollapse = true
+      }
+    }
   }
 }
 </script>

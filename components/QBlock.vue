@@ -27,7 +27,6 @@
 </template>
 <script>
 export default {
-  name: 'QBlock',
   props: {
     title: {
       type: String,
