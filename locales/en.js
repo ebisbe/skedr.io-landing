@@ -187,5 +187,9 @@ export default {
         ]
       }
     ]
+  },
+  singleShare: {
+    title: 'Sharing an existing photo',
+    subtitle: 'From your photostream to many Flickr groups'
   }
 }

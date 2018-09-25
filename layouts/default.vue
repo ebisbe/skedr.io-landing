@@ -1,7 +1,7 @@
 <template>
   <div
     id="page-home"
-    :class="{'nav-open': navbar_menu_visible}">
+    :class="{'nav-open': navbar_menu_visible, 'blog-post': true}">
     <!-- Navbar -->
     <nav
       :class="{'navbar-transparent': navbarTransparent}"

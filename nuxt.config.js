@@ -82,13 +82,13 @@ module.exports = {
             code: 'en',
             iso: 'en-US',
             file: 'en.js'
-          },
-          {
-            name: 'Español',
-            code: 'es',
-            iso: 'es-ES',
-            file: 'es.js'
           }
+          // {
+          //   name: 'Español',
+          //   code: 'es',
+          //   iso: 'es-ES',
+          //   file: 'es.js'
+          // }
         ]
       }
     ]
