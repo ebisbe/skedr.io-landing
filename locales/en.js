@@ -132,12 +132,12 @@ export default {
           {
             question: 'What is Automated scheduling?',
             answer:
-              "Try again the binding of a photo to a group in the future ( based on the posting limits by that group configuration ). Flickr's API tells us that a particular photo has not been added to a group with the a code error. For the case we are using it is number 5. More information about error codes can be found here  https://www.flickr.com/services/api/flickr.groups.pools.add.html )."
+              "Retrying in the future share a photo to a group. The date to share the photo is based on the posting limits by that group configuration.<br><br> Flickr's API tells us that a particular photo has not been added to a group with the a code error. For the case we are using it is number 5. More information about error codes can be found here  (<a href='https://www.flickr.com/services/api/flickr.groups.pools.add.html'>https://www.flickr.com/services/api/flickr.groups.pools.add.html</a>) ."
           },
           {
             question: 'What is Group Tagging?',
             answer:
-              'Bind any tag of your choice to one or more groups. Every photo with that tag will be added to every group that has been tagged. \n For example: If you choose #landscape to be bind to 3 groups related to Landscape photography when a photo with that tag is uploaded to your photostream it will be added to those 3 groups.'
+              'Bind any tag of your choice to one or more groups. Every photo with that tag will be added to every group that has been tagged.<br><br> For example: If you choose #landscape to be bind to 3 groups related to Landscape photography when a photo with that tag is uploaded to your photostream it will be added to those 3 groups.'
           }
         ]
       },

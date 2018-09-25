@@ -13,10 +13,10 @@
               <h3
                 class="title"
                 v-html="$t('singleShare.title')"/>
-              <p>When you need to share an existing photo from your Flicks photostream into many groups, traditionally you need to ----------------   one by one. Skedr saves significant time, by enabling this in few minutes in one go.
+              <p>When you need to share an existing photo from your Flickr photostream into many groups, traditionally, you need to select one by one and pray that you don't reach the posting limit for any group.
                 <br>
                 <br>
-                You just need to decide the photo you want to share and which groups you want to share the photo to.  You need to be already a member all those groups where you want to share the photo.
+                Sharing images into your prefered groups from Flickr is really easy. The benefit of doing it with Skedr is that you will automatically benefit from the <strong><a href="/faq#1-what-is-automated-scheduling">automated scheduler</a></strong> feature. Let's get stared!
               </p>
             </div>
           </div>
@@ -30,9 +30,11 @@
                 <h3>Where do you start?</h3>
                 <p>To share a single photo you can find them through your <a
                   href="https://app.skedr.io/photostream"
-                  target="_blank">Photostream</a> or viewing all images from one of your <a
+                  target="_blank">Photostream</a>* or viewing all images from one of your <a
                     href="https://app.skedr.io/groups"
-                    target="_blank">Groups</a> ( and clicking the Forward button). In both cases you will see that each image has a Sked button.</p>
+                    target="_blank">Groups</a>* ( and clicking the arrow button). In both cases you will see that each image has a Sked button.</p>
+                <p><i>*You need to be logged into Skedr account</i></p>
+                <br>
                 <div class="image-container sked-button"/>
               </div>
             </div>
@@ -43,7 +45,7 @@
         <div class="container">
           <div class="section-story-overview">
             <div class="row">
-              <div class="col-md-8 ml-auto mr-auto"><p>Let's dig into the Share functionality by pressing the Sked button of any of your photos. A popup menu will open with all your groups. It's pretty simple to use but let's see what we currently have.</p></div>
+              <div class="col-md-8 ml-auto mr-auto"><p>Let's dig into the Share functionality by pressing the Sked button of any of your photos. A popup menu will open with all your groups.</p></div>
             </div>
           </div>
         </div>
@@ -54,7 +56,13 @@
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>Dialog menu</h3>
-                <p>First there is the title with the name of the photo you are willing to share, then there's a search bar to filter through your groups, the group list and when you have selected one or more groups it appears a bottom bar with a button to share the selected image to that many groups. Each group from the list has it's name, photo ( with a link to that groups page ), members count, pool count and posting limits for that group. From there we select a few groups and we click the confirm button.</p>
+                <p>Selecting the groups it's pretty simple but let's see see what we currently have:</p>
+                <ul>
+                  <li><strong>Title:</strong> name of the photo you are willing to share.</li>
+                  <li><strong>Search bar:</strong> to filter through your groups and find the correct one.</li>
+                  <li><strong>Group list:</strong> Each group from the list has it's name, photo ( with a link to that groups page ), members count, pool count and posting limits for that group.</li>
+                  <li><strong>Bottom toolbar:</strong> A list of selected groups and the send button.</li>
+                </ul>
                 <div class="image-container sked-dialog"/>
               </div>
             </div>
@@ -66,9 +74,12 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>Choosing groups and Share</h3>
-                <p>Choose into which groups do you want to share the image and click the Share button at the bottom toolbar of the dialog menu.</p>
+                <h3>Choosing which groups you will share your photo</h3>
+                <p>Choose into which groups do you want to share the photo and click the Share button at the bottom toolbar of the dialog menu.</p>
                 <div class="image-container sked-upload"/>
+                <br>
+                <br>
+                <p>If you still have doubts about this, write to <a href="mailto:info@skedr.io">info@skedr.io</a> for  more help.</p>
               </div>
             </div>
           </div>
@@ -93,7 +104,7 @@
                   </div>
                   <div class="col-md-8">
                     <h4 class="card-title">Enric Bisbe Gil</h4>
-                    <p class="description">I've been trying to figure out the bed design for the master bedroom at our Hidden Hills compound...I like good music from Youtube.</p>
+                    <p class="description"><a href="https://github.com/ebisbe">Developer</a> and <a href="https://www.flickr.com/photos/enric-bisbe">Photography enthusiast</a>. Creator of Skedr.io with the porpuse of helping others. </p>
                   </div>
                   <!-- <div class="col-md-2">
                     <button
