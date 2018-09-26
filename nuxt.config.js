@@ -110,7 +110,8 @@ module.exports = {
   generate: {
     minify: {
       removeOptionalTags: false
-    }
+    },
+    routes: ['/articles/share-single-photo']
   },
   vendor: ['image-webpack-loader'],
   /*
