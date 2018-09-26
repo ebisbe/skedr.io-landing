@@ -2,8 +2,10 @@
 <template>
   <div class="wrapper">
     <q-header-small class-name="ben-white">
-      <h1 class="title">{{ $t('singleShare.title') }} </h1>
-      <h3 v-html="$t('singleShare.subtitle')"/>
+      <h1
+        class="title"
+        v-html="article.title"/>
+      <h3 v-html="article.subtitle"/>
     </q-header-small>
     <div class="section">
       <div class="">
@@ -12,12 +14,8 @@
             <div class="col-md-8 ml-auto mr-auto">
               <h3
                 class="title"
-                v-html="$t('singleShare.title')"/>
-              <p>When you need to share an existing photo from your Flickr photostream into many groups, traditionally, you need to select one by one and pray that you don't reach the posting limit for any group.
-                <br>
-                <br>
-                Sharing images into your prefered groups from Flickr is really easy. The benefit of doing it with Skedr is that you will automatically benefit from the <strong><a href="/faq#1-what-is-automated-scheduling">automated scheduler</a></strong> feature. Let's get stared!
-              </p>
+                v-html="article.title"/>
+              <p v-html="article.introduction" />
             </div>
           </div>
         </div>
@@ -47,16 +45,10 @@
                     class="image-fluid"
                     src="~/assets/img/sked-button.png">
                 </b-modal>
+                <br>
+                <br>
+                <p>Let's dig into the Share functionality by pressing the Sked button of any of your photos. A popup menu will open with all your groups.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-blog">
-        <div class="container">
-          <div class="section-story-overview">
-            <div class="row">
-              <div class="col-md-8 ml-auto mr-auto"><p>Let's dig into the Share functionality by pressing the Sked button of any of your photos. A popup menu will open with all your groups.</p></div>
             </div>
           </div>
         </div>
@@ -69,8 +61,8 @@
                 <h3>Dialog menu</h3>
                 <p>Selecting the groups it's pretty simple but let's see see what we currently have:</p>
                 <ul>
-                  <li><strong>Title:</strong> name of the photo you are willing to share.</li>
-                  <li><strong>Search bar:</strong> to filter through your groups and find the correct one.</li>
+                  <li><strong>Title:</strong> Name of the photo you want to share.</li>
+                  <li><strong>Search bar:</strong> To filter through your groups and find the correct one.</li>
                   <li><strong>Group list:</strong> Each group from the list has it's name, photo ( with a link to that groups page ), members count, pool count and posting limits for that group.</li>
                   <li><strong>Bottom toolbar:</strong> A list of selected groups and the send button.</li>
                 </ul>
@@ -228,9 +220,13 @@
 import QHeaderSmall from '@/components/QHeaderSmall'
 export default {
   components: { QHeaderSmall },
+  validate({ params }) {
+    console.log(params.slug)
+    return true
+  },
   head() {
     return {
-      title: this.$t('singleShare.title'),
+      title: this.article.title,
       meta: [
         {
           hid: 'description',
@@ -238,6 +234,11 @@ export default {
           content: 'Sharing images into your prefered groups from Flickr is really easy.'
         }
       ]
+    }
+  },
+  computed: {
+    article() {
+      return this.$t('articles').filter(article => article.slug === this.$route.params.slug)[0]
     }
   }
 }

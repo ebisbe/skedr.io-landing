@@ -188,8 +188,14 @@ export default {
       }
     ]
   },
-  singleShare: {
-    title: 'Sharing an existing photo',
-    subtitle: 'From your photostream to many Flickr groups'
-  }
+  articles: [
+    {
+      slug: 'share-single-photo',
+      author: 'Enric Bisbe Gil',
+      title: 'Sharing an existing photo',
+      subtitle: 'From your photostream to many Flickr groups',
+      introduction:
+        'When you need to share an existing photo from your Flickr photostream into many groups, traditionally, you need to select one by one and pray that you don\'t reach the posting limit for any group.<br><br>Sharing images into your prefered groups from Flickr is really easy. The benefit of doing it with Skedr is that you will automatically benefit from the <strong><a href="/faq#1-what-is-automated-scheduling">automated scheduler</a></strong> feature. Let\'s get stared!'
+    }
+  ]
 }
