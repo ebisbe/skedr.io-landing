@@ -1,7 +1,7 @@
 
 <template>
   <div class="wrapper">
-    <q-header-small class-name="raw-pixel">
+    <q-header-small class-name="ben-white">
       <h1 class="title">{{ $t('singleShare.title') }} </h1>
       <h3 v-html="$t('singleShare.subtitle')"/>
     </q-header-small>
@@ -231,14 +231,20 @@ export default {
   head() {
     return {
       title: this.$t('singleShare.title'),
-      meta: [{ hid: 'description', name: 'description', content: this.$t('home.attention.desc') }]
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Sharing images into your prefered groups from Flickr is really easy.'
+        }
+      ]
     }
   }
 }
 </script>
 
 <style>
-.raw-pixel {
+.ben-white {
   background-image: url(~/assets/img/ben-white-226176-unsplash.jpg);
 }
 .sked-button {
