@@ -35,7 +35,18 @@
                     target="_blank">Groups</a>* ( and clicking the arrow button). In both cases you will see that each image has a Sked button.</p>
                 <p><i>*You need to be logged into Skedr account</i></p>
                 <br>
-                <div class="image-container sked-button"/>
+                <div
+                  v-b-modal.sked-button
+                  class="image-container sked-button"/>
+                <b-modal
+                  id="sked-button"
+                  size="lg"
+                  hide-header
+                  hide-footer>
+                  <img
+                    class="image-fluid"
+                    src="~/assets/img/sked-button.png">
+                </b-modal>
               </div>
             </div>
           </div>
@@ -63,7 +74,18 @@
                   <li><strong>Group list:</strong> Each group from the list has it's name, photo ( with a link to that groups page ), members count, pool count and posting limits for that group.</li>
                   <li><strong>Bottom toolbar:</strong> A list of selected groups and the send button.</li>
                 </ul>
-                <div class="image-container sked-dialog"/>
+                <div
+                  v-b-modal.sked-dialog
+                  class="image-container sked-dialog"/>
+                <b-modal
+                  id="sked-dialog"
+                  size="lg"
+                  hide-header
+                  hide-footer>
+                  <img
+                    class="image-fluid"
+                    src="~/assets/img/sked-dialog.png">
+                </b-modal>
               </div>
             </div>
           </div>
@@ -76,7 +98,18 @@
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>Choosing which groups you will share your photo</h3>
                 <p>Choose into which groups do you want to share the photo and click the Share button at the bottom toolbar of the dialog menu.</p>
-                <div class="image-container sked-upload"/>
+                <div
+                  v-b-modal.sked-sharing-photos
+                  class="image-container sked-sharing-photos"/>
+                <b-modal
+                  id="sked-sharing-photos"
+                  size="lg"
+                  hide-header
+                  hide-footer>
+                  <img
+                    class="image-fluid"
+                    src="~/assets/img/sked-sharing-photos.png">
+                </b-modal>
                 <br>
                 <br>
                 <p>If you still have doubts about this, write to <a href="mailto:info@skedr.io">info@skedr.io</a> for  more help.</p>
@@ -206,7 +239,7 @@ export default {
 
 <style>
 .raw-pixel {
-  background-image: url(~/assets/img/averie-woodard-111831-unsplash.jpg);
+  background-image: url(~/assets/img/ben-white-226176-unsplash.jpg);
 }
 .sked-button {
   background-image: url(~/assets/img/sked-button.png);
@@ -214,7 +247,12 @@ export default {
 .sked-dialog {
   background-image: url(~/assets/img/sked-dialog.png);
 }
-.sked-upload {
+.sked-sharing-photos {
   background-image: url(~/assets/img/sked-sharing-photos.png);
+}
+.sked-button:hover,
+.sked-dialog:hover,
+.sked-sharing-photos:hover {
+  cursor: pointer;
 }
 </style>
