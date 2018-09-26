@@ -82,13 +82,13 @@ module.exports = {
             code: 'en',
             iso: 'en-US',
             file: 'en.js'
-          },
-          {
-            name: 'Español',
-            code: 'es',
-            iso: 'es-ES',
-            file: 'es.js'
           }
+          // {
+          //   name: 'Español',
+          //   code: 'es',
+          //   iso: 'es-ES',
+          //   file: 'es.js'
+          // }
         ]
       }
     ]
@@ -110,7 +110,8 @@ module.exports = {
   generate: {
     minify: {
       removeOptionalTags: false
-    }
+    },
+    routes: ['/articles/share-single-photo']
   },
   vendor: ['image-webpack-loader'],
   /*

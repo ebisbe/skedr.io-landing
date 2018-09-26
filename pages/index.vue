@@ -184,6 +184,47 @@
 
       </div>
     </q-block>
+    <div
+      id="blogs-1"
+      class="blogs-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 ml-auto mr-auto">
+            <h2 class="title">Latest Blogposts</h2>
+            <br>
+            <div class="card card-plain card-blog">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="card-image">
+                    <img
+                      class="img img-raised rounded"
+                      src="~/assets/img/ben-white-226176-unsplash.jpg">
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <h3 class="card-title">
+                    <a
+                      :href="`/articles/${$t('articles[0].slug')}`"
+                      v-html="$t('articles[0].title')"/>
+                  </h3>
+                  <p
+                    class="card-description"
+                    v-html="$t('articles[0].introduction')"/>
+                  <p class="card-description">
+                    <a :href="`/articles/${$t('articles[0].slug')}`"> Read More </a>
+                  </p>
+                  <p class="author">
+                    by
+                    <b v-html="$t('articles[0].author')"/>
+                    , 2 days ago
+
+                </p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
