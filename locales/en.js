@@ -20,7 +20,7 @@ export default {
     interest: [
       {
         title: 'For professionals',
-        desc: 'Share hundreds of photos to any group without worrying about group restrictions. Ever.',
+        desc: 'Share easily your work to any group because we will do it for you. Ever',
         icon: 'shopping_delivery-fast'
       },
       {
