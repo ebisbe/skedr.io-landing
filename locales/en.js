@@ -19,24 +19,24 @@ export default {
     },
     interest: [
       {
-        title: 'For profesionals',
+        title: 'For professionals',
         desc: 'Share hundreds of photos to any group without worrying about group restrictions. Ever.',
         icon: 'shopping_delivery-fast'
       },
       {
-        title: 'For enthusiats',
+        title: 'For enthusiasts',
         desc: "Gain views and likes sharing easily to more groups. Don't waste your time and improve your photography.",
         icon: 'objects_spaceship'
       },
       {
-        title: 'For begginers',
+        title: 'For beginners',
         desc:
           "Improve your photography through other photographers eyes. Share and discover. And don't forget to have fun!",
         icon: 'design_image'
       }
     ],
     desire: {
-      title: 'We have improved your share workflow',
+      title: 'We have improved your photos share workflow',
       desc:
         "We think Flickr is a great tool and groups is a great way to enjoy other people photos. But let's face it, the experience is terrible.<br> We have improved that part.",
       items: [
