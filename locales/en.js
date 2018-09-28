@@ -72,7 +72,7 @@ export default {
       title: 'Want to feel the new experience?',
       desc:
         'While we are in Beta the product will be completely free. We want more users to enjoy the product and give us feedback to improve it.',
-      text: 'Register',
+      text: 'Sign up',
       link: 'https://app.skedr.io/signup',
       plans: [
         {
