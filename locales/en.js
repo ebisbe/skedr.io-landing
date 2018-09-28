@@ -25,7 +25,7 @@ export default {
       },
       {
         title: 'For enthusiasts',
-        desc: "Gain views and likes sharing easily to more groups. Don't waste your time and improve your photography.",
+        desc: "Gain views and likes by sharing easily to more groups. Don't waste your time and improve your photography.",
         icon: 'objects_spaceship'
       },
       {
