@@ -68,7 +68,7 @@
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>How to configure each group</h3>
-                <p>To configure each group you have to go <a href="https://app.skedr.io/groups">app.skedr.io/groups</a> then choose a group clicking the forward button ( -> ) or filtering with the filter at the toolbar.</p>
+                <p>To configure each group you have to go <a href="https://app.skedr.io/groups">app.skedr.io/groups</a> then choose a group clicking the forward button ( -> ). To find faster your groups filter with the search option at the toolbar.</p>
                 <div
                   v-b-modal.filter-groups
                   class="image-container filter-groups"/>

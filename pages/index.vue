@@ -200,8 +200,8 @@
                 <div class="col-md-5">
                   <div class="card-image">
                     <img
-                      class="img img-raised rounded"
-                      src="~/assets/img/ben-white-226176-unsplash.jpg">
+                      :src="article.img"
+                      class="img img-raised rounded">
                   </div>
                 </div>
                 <div class="col-md-7">
