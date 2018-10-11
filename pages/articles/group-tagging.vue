@@ -1,7 +1,7 @@
 
 <template>
   <div class="wrapper">
-    <q-header-small class-name="main">
+    <q-header-small class-name="article-main">
       <h1
         class="title"
         v-html="article.title"/>
@@ -280,7 +280,7 @@ export default {
 </script>
 
 <style>
-.main {
+.article-main {
   background-image: url(~/assets/img/articles/group-tagging/main.jpg);
 }
 .image-tags {
