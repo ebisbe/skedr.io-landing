@@ -1,7 +1,7 @@
 
 <template>
   <div class="wrapper">
-    <q-header-small class-name="ben-white">
+    <q-header-small class-name="main">
       <h1
         class="title"
         v-html="article.title"/>
@@ -280,8 +280,8 @@ export default {
 </script>
 
 <style>
-.ben-white {
-  background-image: url(~/assets/img/ben-white-226176-unsplash.jpg);
+.main {
+  background-image: url(~/assets/img/articles/group-tagging/main.jpg);
 }
 .image-tags {
   background-image: url(~/assets/img/articles/group-tagging/1-image-tags.png);
