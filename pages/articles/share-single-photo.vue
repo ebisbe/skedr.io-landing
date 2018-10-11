@@ -238,7 +238,7 @@ export default {
   },
   computed: {
     article() {
-      return this.$t('articles').filter(article => article.slug === this.$route.params.slug)[0]
+      return this.$t('articles').filter(article => article.slug === 'share-single-photo')[0]
     }
   }
 }

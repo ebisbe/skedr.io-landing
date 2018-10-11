@@ -111,7 +111,7 @@ module.exports = {
     minify: {
       removeOptionalTags: false
     },
-    routes: ['/articles/share-single-photo']
+    routes: ['/articles/share-single-photo', '/articles/group-tagging']
   },
   vendor: ['image-webpack-loader'],
   /*

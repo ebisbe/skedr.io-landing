@@ -25,7 +25,8 @@ export default {
       },
       {
         title: 'For enthusiasts',
-        desc: "Gain views and likes by sharing easily to more groups. Don't waste your time and improve your photography.",
+        desc:
+          "Gain views and likes by sharing easily to more groups. Don't waste your time and improve your photography.",
         icon: 'objects_spaceship'
       },
       {
@@ -190,10 +191,22 @@ export default {
   },
   articles: [
     {
+      slug: 'group-tagging',
+      author: 'Enric Bisbe Gil',
+      title: 'Group tagging',
+      subtitle: 'Sharing made easy',
+      img: require('~/assets/img/articles/group-tagging/main.jpg'),
+      publishedAt: 89124912,
+      introduction:
+        'In the <a href="/articles/share-single-photo">first article</a> we explained how to share photos from your photostream. In this article, we will explain how to automatically share your new photos to each of your desired groups. Are you ready?'
+    },
+    {
       slug: 'share-single-photo',
       author: 'Enric Bisbe Gil',
       title: 'Sharing an existing photo',
       subtitle: 'From your photostream to many Flickr groups',
+      img: require('~/assets/img/ben-white-226176-unsplash.jpg'),
+      publishedAt: 123415151,
       introduction:
         'When you need to share an existing photo from your Flickr photostream into many groups, traditionally, you need to select one by one and pray that you don\'t reach the posting limit for any group.<br><br>Sharing images into your prefered groups from Flickr is really easy. The benefit of doing it with Skedr is that you will automatically benefit from the <strong><a href="/faq#1-what-is-automated-scheduling">automated scheduler</a></strong> feature. Let\'s get stared!'
     }
