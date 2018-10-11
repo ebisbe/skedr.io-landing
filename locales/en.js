@@ -73,7 +73,7 @@ export default {
       desc:
         'While we are in Beta the product will be completely free. We want more users to enjoy the product and give us feedback to improve it.',
       text: 'Sign up',
-      link: 'https://app.skedr.io/signup',
+      link: 'https://app.skedr.io/auth/sign-up',
       plans: [
         {
           name: 'Amateur',
