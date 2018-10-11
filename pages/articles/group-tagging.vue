@@ -26,57 +26,75 @@
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>Where do you start?</h3>
-                <p>To share a single photo you can find them through your <a
-                  href="https://app.skedr.io/photostream"
-                  target="_blank">Photostream</a>* or viewing all images from one of your <a
-                    href="https://app.skedr.io/groups"
-                    target="_blank">Groups</a>* ( and clicking the arrow button). In both cases you will see that each image has a Sked button.</p>
-                <p><i>*You need to be logged into Skedr account</i></p>
+                <p>In order to use this feature you have to add tags to your photos when uploading them. That’s a requirement because we will use your tags to bind them to your groups. Flickr automatically adds tags to your photos based on their AI algorithm but, for the moment ( Oct 2018 ), those tags are hidden from the API so we cannot see them through the API. This is something we need to be careful because you may see that some of your photos have tags but their are not all valid. Let’s take for example one of my photos ( <a
+                  href="https://www.flickr.com/photos/enric-bisbe/29869174207"
+                  target="_blank">https://www.flickr.com/photos/enric-bisbe/29869174207</a> ) </p>
+                <p><i><small>*You need to be logged into Skedr account</small></i></p>
                 <br>
                 <div
                   v-b-modal.sked-button
-                  class="image-container sked-button"/>
+                  class="image-container image-tags"/>
                 <b-modal
                   id="sked-button"
-                  size="lg"
                   hide-header
                   hide-footer>
                   <img
-                    class="image-fluid"
-                    src="~/assets/img/sked-button.png">
+                    class="image-fluid image-tags"
+                    src="~/assets/img/articles/group-tagging/1-image-tags.png">
                 </b-modal>
                 <br>
                 <br>
-                <p>Let's dig into the Share functionality by pressing the Sked button of any of your photos. A popup menu will open with all your groups.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-blog">
-        <div class="container">
-          <div class="section-story-overview">
-            <div class="row">
-              <div class="col-md-8 ml-auto mr-auto">
-                <h3>Dialog menu</h3>
-                <p>Selecting the groups it's pretty simple but let's see see what we currently have:</p>
+                <p><strong>The ones you add will show up in dark gray</strong>. Flickr’s friendly robots will try to help out by adding some for you; these will appear with just a gray outline.</p>
+                <p>Tags should represent something related to the photo you are uploading and that can be related to a group you are participating and willing to share an image.</p>
+                <p>If we follow the tags from the image you will see that we have: bird, wildlife, ngc and perching. I like to share all my birds photos to Birding groups but I also share them to Natural lovers groups or National geographic ones. So we have the following schema:</p>
+
                 <ul>
-                  <li><strong>Title:</strong> Name of the photo you want to share.</li>
-                  <li><strong>Search bar:</strong> To filter through your groups and find the correct one.</li>
-                  <li><strong>Group list:</strong> Each group from the list has it's name, photo ( with a link to that groups page ), members count, pool count and posting limits for that group.</li>
-                  <li><strong>Bottom toolbar:</strong> A list of selected groups and the send button.</li>
+                  <li><strong>Bird</strong>: Birding groups ( 7 groups * ).</li>
+                  <li><strong>Wildlife</strong>: Natural lovers all kind of animals not just birds ( 4 groups * ).</li>
+                  <li><strong>ngc</strong>: National geographic groups. ( 3 groups * )</li>
+                  <li><strong>perching</strong>: Perching birds groups. This group is for birds only and that have to be perching on a branch or cable. ( 1 group * )</li>
                 </ul>
+                <p>With four tags we could be easily sharing this photo to at least 15 different groups (*) just in one step. <i><small>* Those numbers are just for a sample.</small></i></p>
+                <p><strong>Remember!</strong> You can add tags while uploading the photo to Flickr or later on. We will have all the information updated no matter when they were tagged.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-blog">
+        <div class="container">
+          <div class="section-story-overview">
+            <div class="row">
+              <div class="col-md-8 ml-auto mr-auto">
+                <h3>How to configure each group</h3>
+                <p>To configure each group you have to go <a href="https://app.skedr.io/groups">app.skedr.io/groups</a> then choose a group clicking the forward button ( -> ) or filtering with the filter at the toolbar.</p>
                 <div
-                  v-b-modal.sked-dialog
-                  class="image-container sked-dialog"/>
+                  v-b-modal.filter-groups
+                  class="image-container filter-groups"/>
                 <b-modal
-                  id="sked-dialog"
+                  id="filter-groups"
                   size="lg"
                   hide-header
                   hide-footer>
                   <img
                     class="image-fluid"
-                    src="~/assets/img/sked-dialog.png">
+                    src="~/assets/img/articles/group-tagging/2-filter-groups.png">
+                </b-modal>
+                <br>
+                <br>
+                <p>There you will be able to see all the photos you have added to that group.</p>
+                <div
+                  v-b-modal.groups-view
+                  class="image-container groups-view"/>
+                <b-modal
+                  id="groups-view"
+                  size="lg"
+                  hide-header
+                  hide-footer>
+                  <img
+                    class="image-fluid"
+                    src="~/assets/img/articles/group-tagging/3-groups-view.png">
                 </b-modal>
               </div>
             </div>
@@ -88,23 +106,40 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>Choosing which groups you will share your photo</h3>
-                <p>Choose into which groups do you want to share the photo and click the Share button at the bottom toolbar of the dialog menu.</p>
+                <h3>Choosing which tags</h3>
+                <p>Click the [ ADD ] button to open a popup with all the tags you have in the photos from the current pool.</p>
                 <div
-                  v-b-modal.sked-sharing-photos
-                  class="image-container sked-sharing-photos"/>
+                  v-b-modal.choosing-tags
+                  class="image-container choosing-tags"/>
                 <b-modal
-                  id="sked-sharing-photos"
+                  id="choosing-tags"
                   size="lg"
                   hide-header
                   hide-footer>
                   <img
                     class="image-fluid"
-                    src="~/assets/img/sked-sharing-photos.png">
+                    src="~/assets/img/articles/group-tagging/4-choosing-tags.png">
                 </b-modal>
                 <br>
                 <br>
-                <p>If you still have doubts about this, write to <a href="mailto:info@skedr.io">info@skedr.io</a> for  more help.</p>
+                <p>Select one or more tags and click the save button. We recommend binding just one tag per group. That way it's easier to remeber which tag you used.</p>
+                <br>
+                <br>
+                <div
+                  v-b-modal.result
+                  class="image-container result"/>
+                <b-modal
+                  id="result"
+                  size="lg"
+                  hide-header
+                  hide-footer>
+                  <img
+                    class="image-fluid"
+                    src="~/assets/img/articles/group-tagging/5-result.png">
+                </b-modal>
+                <br>
+                <br>
+                <p>If you still have doubts about this, write to <a href="mailto:info@skedr.io">info@skedr.io</a> for  more help. We are improving this feature to be more easily to see the configuration.</p>
               </div>
             </div>
           </div>
@@ -238,7 +273,7 @@ export default {
   },
   computed: {
     article() {
-      return this.$t('articles').filter(article => article.slug === this.$route.params.slug)[0]
+      return this.$t('articles').filter(article => article.slug === 'group-tagging')[0]
     }
   }
 }
@@ -248,18 +283,22 @@ export default {
 .ben-white {
   background-image: url(~/assets/img/ben-white-226176-unsplash.jpg);
 }
-.sked-button {
-  background-image: url(~/assets/img/sked-button.png);
+.image-tags {
+  background-image: url(~/assets/img/articles/group-tagging/1-image-tags.png);
 }
-.sked-dialog {
-  background-image: url(~/assets/img/sked-dialog.png);
+.filter-groups {
+  background-image: url(~/assets/img/articles/group-tagging/2-filter-groups.png);
 }
-.sked-sharing-photos {
-  background-image: url(~/assets/img/sked-sharing-photos.png);
+.groups-view {
+  background-image: url(~/assets/img/articles/group-tagging/3-groups-view.png);
 }
-.sked-button:hover,
-.sked-dialog:hover,
-.sked-sharing-photos:hover {
+.choosing-tags {
+  background-image: url(~/assets/img/articles/group-tagging/4-choosing-tags.png);
+}
+.result {
+  background-image: url(~/assets/img/articles/group-tagging/5-result.png);
+}
+.image-container:hover {
   cursor: pointer;
 }
 </style>
