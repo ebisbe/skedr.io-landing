@@ -89,6 +89,14 @@ export default {
       ]
     }
   },
+  terms: {
+    title: 'Terms and Conditions - Skedr.io',
+    meta_desc: 'Terms and Conditions for Skedr.io. Last update: October 16, 2018'
+  },
+  policy: {
+    title: 'Privacy Policy - Skedr.io',
+    meta_desc: 'Privacy policy for Skedr.io. Last update: October 16, 2018'
+  },
   faq: {
     title: 'Frequently Asked Questions',
     meta_desc: 'Answers to common questions about Skedr.io for Flickr.',

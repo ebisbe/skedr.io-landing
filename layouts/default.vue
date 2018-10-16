@@ -67,6 +67,7 @@
             <li>
               <a href="/privacy-policy">Privacy policy</a>
             </li>
+            <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
             <li>
               <nuxt-link
                 v-for="locale in $i18n.locales"
@@ -180,5 +181,9 @@ export default {
   background: url(~/assets/img/beta-label-bottom-right.svg) center center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.privacy-policy {
+  background-image: url(~/assets/img/privacy-policy.jpg);
 }
 </style>

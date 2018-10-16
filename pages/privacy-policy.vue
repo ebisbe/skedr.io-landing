@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <q-header-small class-name="evan-dennis">
-      <h1>Privacy Policy</h1>
+    <q-header-small class-name="privacy-policy">
+      <h1 v-html="$t('policy.title')"/>
     </q-header-small>
     <div class="main">
 
@@ -209,14 +209,9 @@ export default {
   components: { QHeaderSmall },
   head() {
     return {
-      title: this.$t('faq.title'),
-      meta: [{ hid: 'description', name: 'description', content: this.$t('faq.meta_desc') }]
+      title: this.$t('policy.title'),
+      meta: [{ hid: 'description', name: 'description', content: this.$t('policy.meta_desc') }]
     }
   }
 }
 </script>
-<style>
-.evan-dennis {
-  background-image: url(~/assets/img/evan-dennis-75563-unsplash.jpg);
-}
-</style>
