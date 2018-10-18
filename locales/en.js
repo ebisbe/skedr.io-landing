@@ -177,6 +177,11 @@ export default {
             question: 'My photos are not added to groups is something wrong?',
             answer:
               'We add photos every hour at 00. If you upload a photo to Flickr at 18:36 you will have to wait until next hour ( 19:00 ).'
+          },
+          {
+            question: 'Do I need to install any software?',
+            answer:
+              'Skedr.io is a web based app so you don’t require to install any software. You can access with any browser in any device. It has been optimized to work in the latests browsers such as Firefox, Chrome, Edge, Safari and Opera. As it runs on browsers you can use it on Mac, Linux or Windows operative systems.'
           }
         ]
       },
