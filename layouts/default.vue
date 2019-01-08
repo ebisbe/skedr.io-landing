@@ -175,7 +175,8 @@ export default {
   width: 6em;
   height: 6em;
   position: fixed;
-  right: 0;
+  left: 0;
+  transform: rotate(90deg);
   bottom: 0;
   z-index: 9999;
   background: url(~/assets/img/beta-label-bottom-right.svg) center center;

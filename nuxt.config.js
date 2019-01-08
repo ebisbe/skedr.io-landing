@@ -4,8 +4,8 @@ module.exports = {
   mode: 'universal',
 
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     title: pkg.name,
     __dangerouslyDisableSanitizers: ['script'],
@@ -28,18 +28,25 @@ module.exports = {
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')`,
         type: 'text/javascript',
         charset: 'utf-8'
+      },
+      {
+        type: 'text/javascript',
+        id: 'hs-script-loader',
+        async: true,
+        defer: true,
+        src: '//js.hs-scripts.com/5313390.js'
       }
     ]
   },
 
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: '#FFFFFF' },
 
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     '@/assets/css/bootstrap.min.css',
     '@/assets/css/now-ui-kit.scss',
@@ -49,15 +56,15 @@ module.exports = {
   ],
 
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [
     /*'~/plugins/google-maps'*/
   ],
 
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     //'@nuxtjs/axios',
@@ -94,8 +101,8 @@ module.exports = {
     ]
   ],
   /*
-  ** Axios module configuration
-  */
+   ** Axios module configuration
+   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
   },
@@ -115,16 +122,16 @@ module.exports = {
   },
   vendor: ['image-webpack-loader'],
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     extractCSS: {
       allChunks: true
     },
 
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
