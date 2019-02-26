@@ -2,7 +2,7 @@
   <div class="wrapper">
     <q-header-small class-name="raw-pixel">
       <h1 class="title">{{ $t('app_name') }} </h1>
-      <h3><span v-html="$t('slogan')"/><br><span v-html="$t('slogan2')"/></h3>
+      <h3><strong v-html="totalShares"/> photos shared from <strong v-html="totalUsers"/> Flickr users</h3>
     </q-header-small>
     <div class="">
       <br>
@@ -11,7 +11,7 @@
         <div class="col-md-8 mr-auto ml-auto text-center">
           <h2
             class="title"
-            v-html="$t('home.atention.title')"/>
+            v-html="$t('slogan2')"/>
           <h4
             class="description"
             v-html="$t('home.atention.desc')"/>
@@ -236,6 +236,10 @@ import QBlock from '~/components/QBlock'
 
 export default {
   components: { QHeaderSmall, QBlock },
+  async asyncData({ $axios }) {
+    const [totalShares, totalUsers] = await Promise.all([$axios.$get('total-shares'), $axios.$get('total-users')])
+    return { totalShares, totalUsers }
+  },
   head() {
     return {
       title: this.$t('slogan'),

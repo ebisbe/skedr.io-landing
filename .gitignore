@@ -14,3 +14,6 @@ template
 .DS_Store
 yarn-error.log
 .vscode
+
+# For production load env vars in while BUILD
+.env

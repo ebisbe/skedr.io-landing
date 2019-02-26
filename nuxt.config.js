@@ -1,4 +1,5 @@
 const pkg = require('./package')
+require('dotenv').config()
 
 module.exports = {
   mode: 'universal',
@@ -66,8 +67,9 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/dotenv',
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    //'@nuxtjs/axios',
+    '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     ['bootstrap-vue/nuxt', { css: false }],
     ['@nuxtjs/google-analytics'],
@@ -105,6 +107,7 @@ module.exports = {
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    baseURL: `https://${process.env.NUXT_ENV_API_ID}.execute-api.eu-west-1.amazonaws.com/${process.env.NUXT_ENV_STAGE}`
   },
 
   'google-analytics': {
