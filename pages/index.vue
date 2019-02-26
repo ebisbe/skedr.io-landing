@@ -240,6 +240,25 @@ export default {
     const [totalShares, totalUsers] = await Promise.all([$axios.$get('total-shares'), $axios.$get('total-users')])
     return { totalShares, totalUsers }
   },
+  data: () => ({
+    timer: null
+  }),
+  mounted() {
+    this.timer = setInterval(async () => {
+      this.getTotals(this.$axios)
+    }, 60000)
+    this.getTotals(this.$axios)
+  },
+  beforeDestroy() {
+    clearInterval(this.timer)
+  },
+  methods: {
+    async getTotals(axios) {
+      const [totalShares, totalUsers] = await Promise.all([axios.$get('total-shares'), axios.$get('total-users')])
+      this.totalShares = totalShares
+      this.totalUsers = totalUsers
+    }
+  },
   head() {
     return {
       title: this.$t('slogan'),
