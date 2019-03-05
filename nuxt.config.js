@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const webpack = require('webpack')
 require('dotenv').config()
 
 module.exports = {
@@ -131,6 +132,12 @@ module.exports = {
     extractCSS: {
       allChunks: true
     },
+
+    plugins: [
+      new webpack.DefinePlugin({
+        'global.GENTLY': false
+      })
+    ],
 
     /*
      ** You can extend webpack config here
