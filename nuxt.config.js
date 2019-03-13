@@ -19,24 +19,19 @@ module.exports = {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        innerHTML: `(function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () {(h.hj.q = h.hj.q || []).push(arguments)}
-      h._hjSettings = {hjid: 743433, hjsv: 6}
-      a = o.getElementsByTagName('head')[0]
-      r = o.createElement('script')
-      r.async = 1
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv
-      a.appendChild(r)
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=')`,
-        type: 'text/javascript',
-        charset: 'utf-8'
-      },
-      {
+        // Live Chat
         type: 'text/javascript',
         id: 'hs-script-loader',
         async: true,
         defer: true,
         src: '//js.hs-scripts.com/5313390.js'
+      },
+      {
+        src: 'https://cdn.logrocket.io/LogRocket.min.js',
+        crossorigin: 'anonymous'
+      },
+      {
+        innerHtml: "window.LogRocket && window.LogRocket.init('zye3nm/skedrio-prod');"
       }
     ]
   },
