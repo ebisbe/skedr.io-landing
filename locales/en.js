@@ -79,12 +79,20 @@ export default {
         {
           name: 'Amateur',
           price: 0,
-          features: ['<strong>Unlimited</strong> support', '<strong>250</strong> photo shares']
+          features: [
+            '<strong>Unlimited</strong> support',
+            '<strong>250</strong> photo shares',
+            'Autoimported comment *'
+          ]
         },
         {
           name: 'Professional',
           price: 3,
-          features: ['<strong>Unlimited</strong> support', '<strong>Unlimited</strong> photo shares']
+          features: [
+            '<strong>Unlimited</strong> support',
+            '<strong>Unlimited</strong> photo shares',
+            'Autoimported comment *'
+          ]
         }
       ]
     }
@@ -119,9 +127,9 @@ export default {
               'No. <br><br>Skedr will never post any photos without your specific instructions. You give specific instructions for each photo by way of Group Tagging  and Skedr will act only when Group Tagging is activated by you.'
           },
           {
-            question: 'Will Skedr steal my pictures?',
+            question: 'Will Skedr steal my photos?',
             answer:
-              'No. <br><br> We just share images to your groups. We don’t download, upload or modify any of your photos.'
+              'No. <br><br> We just share photos to your groups. We don’t download, upload or modify any of your photos.'
           },
           {
             question: 'Will Skedr send messages to any other member on my behalf?',
@@ -132,6 +140,11 @@ export default {
             question: 'Will Skedr join new groups on my behalf?',
             answer:
               'No. <br><br>We plan on the future to share interesting groups for your photos but it will suggest only. You will have to join if you want.'
+          },
+          {
+            question: 'How Skedr handles PRIVATE photos from flickr?',
+            answer:
+              "It will share that photo to the group. Private photos show a LOCK icon.<br><br>In Flickr when you share a private photo from your Photostream to any group that photo is visible to any member of the group. That's a behaviour from Flickr and we cannot do anything with that. If you have many private photos sharing TAGS with public photos you are willing to share send us and email and we will find a solution."
           }
         ]
       },
@@ -147,6 +160,11 @@ export default {
             question: 'What is Group Tagging?',
             answer:
               'Bind any tag of your choice to one or more groups. Every photo with that tag will be added to every group that has been tagged.<br><br> For example: If you choose #landscape to be bind to 3 groups related to Landscape photography when a photo with that tag is uploaded to your photostream it will be added to those 3 groups.'
+          },
+          {
+            question: 'What is Autoimported comment?',
+            answer:
+              "Every time you share a photo with us we automatically add a message like: 'Autoimported with Skedr.io to X groups.'. We do it as a way of promoting our app because we will never add ADS or resell any data. The comment can be deleted but if in the future you share it again will apear again."
           }
         ]
       },
@@ -164,9 +182,9 @@ export default {
               "Skedr.io is a Flickr App ( https://www.flickr.com/services/apps/about/ ) . It's main page is https://www.flickr.com/services/apps/72157686812430944/ . And follows all Community Guidelines"
           },
           {
-            question: 'How will I know what pictures are posted in which groups?',
+            question: 'How will I know what photos are posted in which groups?',
             answer:
-              'In the groups section you can view your last 40 images added to that group. Inside Flickr you can see each of your groups where your photo belongs.'
+              'At the top right of the toolbar there is a Notification center with all notifications from your actions.'
           },
           {
             question: 'We need to upload our photos to Skedr.io?',
@@ -176,7 +194,7 @@ export default {
           {
             question: 'My photos are not added to groups is something wrong?',
             answer:
-              'We add photos every hour at 00. If you upload a photo to Flickr at 18:36 you will have to wait until next hour ( 19:00 ).'
+              'We update all your photos every start of the hour. If you upload a photo to Flickr at 18:36 you will have to wait until the start of next hour ( 19:00 ).'
           },
           {
             question: 'Do I need to install any software?',
@@ -196,7 +214,7 @@ export default {
           {
             question: 'What is the purpose of Skedr.io?',
             answer:
-              'The purpose is to be able to spend less time sharing your images in Flickr. Adding the same photo to groups with different Posting Limits may throttle your tries, so we are automating this for you.'
+              'The purpose is to be able to spend less time sharing your photos in Flickr. Adding the same photo to groups with different Posting Limits may throttle your tries, so we are automating this for you.'
           }
         ]
       }
@@ -221,7 +239,7 @@ export default {
       img: require('~/assets/img/ben-white-226176-unsplash.jpg'),
       publishedAt: 123415151,
       introduction:
-        'When you need to share an existing photo from your Flickr photostream into many groups, traditionally, you need to select one by one and pray that you don\'t reach the posting limit for any group.<br><br>Sharing images into your prefered groups from Flickr is really easy. The benefit of doing it with Skedr is that you will automatically benefit from the <strong><a href="/faq#1-what-is-automated-scheduling">automated scheduler</a></strong> feature. Let\'s get stared!'
+        'When you need to share an existing photo from your Flickr photostream into many groups, traditionally, you need to select one by one and pray that you don\'t reach the posting limit for any group.<br><br>Sharing photos into your prefered groups from Flickr is really easy. The benefit of doing it with Skedr is that you will automatically benefit from the <strong><a href="/faq#1-what-is-automated-scheduling">automated scheduler</a></strong> feature. Let\'s get stared!'
     }
   ]
 }

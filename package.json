@@ -5,6 +5,7 @@
   "author": "Enric Bisbe Gil",
   "private": true,
   "scripts": {
+    "serve": "yarn dev",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
