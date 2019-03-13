@@ -5,21 +5,37 @@
       <h3><strong v-html="totalShares"/> photos shared from <strong v-html="totalUsers"/> Flickr users</h3>
     </q-header-small>
     <div class="">
-      <br>
-      <br>
-      <div>
-        <div class="col-md-8 mr-auto ml-auto text-center">
-          <h2
-            class="title"
-            v-html="$t('slogan2')"/>
-          <h4
-            class="description"
-            v-html="$t('home.atention.desc')"/>
+      <div class="testimonials-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 ml-auto mr-auto text-center">
+              <h2
+                class="title"
+                v-html="$t('slogan2')"/>
+              <h4
+                class="description"
+                v-html="$t('home.atention.desc')"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <q-testimonial
+                :user="user1"
+                testimonial="Skedr.io can handle 80 to 90% of my work, considerably reducing my posting time."/>
+            </div>
+            <div class="col-md-4">
+              <q-testimonial
+                :user="user2"
+                testimonial="I like Skedr.io more than anything because it is easy to use and fast, something that in Flickr costs more to do."/>
+            </div>
+            <div class="col-md-4">
+              <q-testimonial
+                :user="user3"
+                testimonial="I recommend Skedr.io to anyone who loves to spend time taking photos instead of posting them in lots of Flickr groups."/>
+            </div>
+          </div>
         </div>
       </div>
-      <br>
-      <br>
-      <br>
       <div class="features-7 section-image sid-verma">
         <div class="container-fluid">
           <div class="row">
@@ -231,14 +247,27 @@
 </template>
 
 <script>
+import Flickr from 'flickr-sdk'
+
 import QHeaderSmall from '~/components/QHeaderSmall'
 import QBlock from '~/components/QBlock'
+import QTestimonial from '~/components/QTestimonial'
 
 export default {
-  components: { QHeaderSmall, QBlock },
+  components: { QHeaderSmall, QBlock, QTestimonial },
   async asyncData({ $axios }) {
-    const [totalShares, totalUsers] = await Promise.all([$axios.$get('total-shares'), $axios.$get('total-users')])
-    return { totalShares, totalUsers }
+    const flickr = Flickr(process.env.NUXT_ENV_FLICKR_API_ID)
+    const [totalShares, totalUsers, user1, user2, user3] = await Promise.all([
+      $axios.$get('total-shares'),
+      $axios.$get('total-users'),
+      ...['66358983@N07', '123007605@N05', '55346444@N08'].map(user_id =>
+        flickr.people
+          .getInfo({ user_id: user_id })
+          .then(({ body }) => body)
+          .then(({ person }) => person)
+      )
+    ])
+    return { totalShares, totalUsers, user1, user2, user3 }
   },
   data: () => ({
     timer: null
@@ -277,6 +306,11 @@ export default {
 }
 .aaron-burden {
   background-image: url(~/assets/img/aaron-burden-269382-unsplash.jpg);
+}
+.card-avatar .cover {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
 }
 .scale {
   transform-origin: top left;
