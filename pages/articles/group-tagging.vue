@@ -68,7 +68,9 @@
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>How to configure each group</h3>
-                <p>To configure each group you have to go <a href="https://app.skedr.io/groups">app.skedr.io/groups</a> then choose a group clicking the forward button ( -> ). To find faster your groups filter with the search option at the toolbar.</p>
+                <p>To configure each group you have to go <a href="https://app.skedr.io/autoimport-tags">app.skedr.io/autoimport-tags</a> then filter with the search option at the toolbar. Searching groups will first search through the groups you have already joined, there is a checkbox with the label 'Search joined groups only' active by default. If you deactivate the checkbox you will be able to search new groups and join them. </p>
+                <p>Once you know which group do you want to add there's a 'settings' icon where you can manage the tags. Clicking the button will open a dialog. There you can type as many tags as you want. Hitting enter will show you which photos will be added for each particular tag. Once you have added all tags hit save. Automatically we will add all your photos to each required group.</p>
+                <p>By clicking the below image a pop up will show you a better view of the process.</p>
                 <div
                   v-b-modal.filter-groups
                   class="image-container filter-groups"/>
@@ -79,67 +81,8 @@
                   hide-footer>
                   <img
                     class="image-fluid"
-                    src="~/assets/img/articles/group-tagging/2-filter-groups.png">
+                    src="~/assets/img/articles/group-tagging/large.gif">
                 </b-modal>
-                <br>
-                <br>
-                <p>There you will be able to see all the photos you have added to that group.</p>
-                <div
-                  v-b-modal.groups-view
-                  class="image-container groups-view"/>
-                <b-modal
-                  id="groups-view"
-                  size="lg"
-                  hide-header
-                  hide-footer>
-                  <img
-                    class="image-fluid"
-                    src="~/assets/img/articles/group-tagging/3-groups-view.png">
-                </b-modal>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="section-blog">
-        <div class="container">
-          <div class="section-story-overview">
-            <div class="row">
-              <div class="col-md-8 ml-auto mr-auto">
-                <h3>Choosing which tags</h3>
-                <p>Click the [ ADD ] button to open a popup with all the tags you have in the photos from the current pool.</p>
-                <div
-                  v-b-modal.choosing-tags
-                  class="image-container choosing-tags"/>
-                <b-modal
-                  id="choosing-tags"
-                  size="lg"
-                  hide-header
-                  hide-footer>
-                  <img
-                    class="image-fluid"
-                    src="~/assets/img/articles/group-tagging/4-choosing-tags.png">
-                </b-modal>
-                <br>
-                <br>
-                <p>Select one or more tags and click the save button. We recommend binding just one tag per group. That way it's easier to remeber which tag you used.</p>
-                <br>
-                <br>
-                <div
-                  v-b-modal.result
-                  class="image-container result"/>
-                <b-modal
-                  id="result"
-                  size="lg"
-                  hide-header
-                  hide-footer>
-                  <img
-                    class="image-fluid"
-                    src="~/assets/img/articles/group-tagging/5-result.png">
-                </b-modal>
-                <br>
-                <br>
-                <p>If you still have doubts about this, write to <a href="mailto:info@skedr.io">info@skedr.io</a> for  more help. We are improving this feature to be more easily to see the configuration.</p>
               </div>
             </div>
           </div>
@@ -177,77 +120,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="section">
-        <div class="container">
-          <div class="col-md-12">
-            <h2 class="title text-center">Similar Stories</h2>
-            <br>
-            <div
-              id="blogs-1"
-              class="blogs-1">
-              <div class="row">
-                <div class="col-md-10 ml-auto mr-auto">
-                  <div class="card card-plain card-blog">
-                    <div class="row">
-                      <div class="col-md-5">
-                        <div class="card-image">
-                          <img
-                            class="img img-raised rounded"
-                            src="~/assets/img/View_photostream_desktop_small.png">
-                        </div>
-                      </div>
-                      <div class="col-md-7">
-                        <h6 class="category text-info">Enterprise</h6>
-                        <h3 class="card-title">
-                          <a href="#pablo">Warner Music Group buys concert discovery service Songkick</a>
-                        </h3>
-                        <p class="card-description">
-                          Warner Music Group announced today it’s acquiring the selected assets of the music platform Songkick, including its app for finding concerts and the company’s trademark.
-                        </p>
-                        <p class="author">
-                          by
-                          <a href="#pablo">
-                            <b>Sarah Perez</b>
-                          </a>, 2 days ago
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card card-plain card-blog">
-                    <div class="row">
-                      <div class="col-md-7">
-                        <h6 class="category text-danger">
-                          <i class="now-ui-icons now-ui-icons media-2_sound-wave"/> Startup
-                        </h6>
-                        <h3 class="card-title">
-                          <a href="#pablo">Insticator raises $5.2M to help publishers</a>
-                        </h3>
-                        <p class="card-description">
-                          Insticator is announcing that it has raised $5.2 million in Series A funding. The startup allows online publishers to add quizzes, polls and other interactive elements...
-                        </p>
-                        <p class="author">
-                          by
-                          <a href="#pablo">
-                            <b>Anthony Ha</b>
-                          </a>, 5 days ago
-                        </p>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="card-image">
-                          <img
-                            class="img img-raised rounded
-                                            "
-                            src="~/assets/img/View_photostream_desktop_small.png">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
@@ -287,16 +159,7 @@ export default {
   background-image: url(~/assets/img/articles/group-tagging/1-image-tags.png);
 }
 .filter-groups {
-  background-image: url(~/assets/img/articles/group-tagging/2-filter-groups.png);
-}
-.groups-view {
-  background-image: url(~/assets/img/articles/group-tagging/3-groups-view.png);
-}
-.choosing-tags {
-  background-image: url(~/assets/img/articles/group-tagging/4-choosing-tags.png);
-}
-.result {
-  background-image: url(~/assets/img/articles/group-tagging/5-result.png);
+  background-image: url(~/assets/img/articles/group-tagging/large.gif);
 }
 .image-container:hover {
   cursor: pointer;
