@@ -31,7 +31,9 @@ module.exports = {
         crossorigin: 'anonymous'
       },
       {
-        innerHtml: "window.LogRocket && window.LogRocket.init('zye3nm/skedrio-prod');"
+        innerHTML: "window.LogRocket && window.LogRocket.init('zye3nm/skedrio-prod');",
+        type: 'text/javascript',
+        charset: 'utf-8'
       }
     ]
   },
