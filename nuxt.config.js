@@ -31,7 +31,7 @@ module.exports = {
         crossorigin: 'anonymous'
       },
       {
-        innerHTML: "window.LogRocket && window.LogRocket.init('zye3nm/skedrio-prod');",
+        innerHTML: "window.LogRocket && window.LogRocket.init('zye3nm/skedrio-prod', { rootHostname: 'skedr.io' });",
         type: 'text/javascript',
         charset: 'utf-8'
       }
