@@ -1,6 +1,6 @@
 export default {
   app_name: 'Skedr.io',
-  slogan: 'Automated import and shedule for Flickr Groups',
+  slogan: 'Automated import and schedule for Flickr Groups',
   slogan2: '<strong>Rediscover</strong> your free time',
   layout: {
     contact: 'Get in touch at'
