@@ -19,14 +19,6 @@ module.exports = {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
       {
-        // Live Chat
-        type: 'text/javascript',
-        id: 'hs-script-loader',
-        async: true,
-        defer: true,
-        src: '//js.hs-scripts.com/5313390.js'
-      },
-      {
         src: 'https://cdn.logrocket.io/LogRocket.min.js',
         crossorigin: 'anonymous'
       },
@@ -34,6 +26,15 @@ module.exports = {
         innerHTML: "window.LogRocket && window.LogRocket.init('zye3nm/skedrio-prod', { rootHostname: 'skedr.io' });",
         type: 'text/javascript',
         charset: 'utf-8'
+      },
+      {
+        innerHTML:
+          '!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});',
+        type: 'text/javascript'
+      },
+      {
+        innerHTML: "window.Beacon('init', '9d640825-f226-46b1-9a92-dbed14392554')",
+        typ: 'text/javascript'
       }
     ]
   },
