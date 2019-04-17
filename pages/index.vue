@@ -1,8 +1,13 @@
 <template>
   <div class="wrapper">
     <q-header-small class-name="raw-pixel">
-      <h1 class="title">{{ $t('app_name') }} </h1>
-      <h3><strong v-html="totalShares"/> photos shared from <strong v-html="totalUsers"/> Flickr users</h3>
+      <h1 class="title">
+        <img
+          :alt="$t('app_name')"
+          src="/skedr-full-logo.png"
+          height="100">
+      </h1>
+      <h3><strong v-html="totalShares"/> photos delivered from <strong v-html="totalUsers"/> Flickr users</h3>
     </q-header-small>
     <div class="">
       <div class="testimonials-3">
