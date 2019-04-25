@@ -29,8 +29,12 @@ module.exports = {
       },
       {
         innerHTML:
-          '"use strict";!function() {var t = window.driftt = window.drift = window.driftt || [];if (!t.init) {if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],t.factory = function(e) {return function() {var n = Array.prototype.slice.call(arguments);return n.unshift(e), t.push(n), t;};}, t.methods.forEach(function(e) {t[e] = t.factory(e);}), t.load = function(t) {var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";var i = document.getElementsByTagName("script")[0];i.parentNode.insertBefore(o, i);};}}();drift.SNIPPET_VERSION = \'0.3.1\';drift.load(\'3cx2khhmpzmp\');',
+          '!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});',
         type: 'text/javascript'
+      },
+      {
+        innerHTML: "window.Beacon('init', '9d640825-f226-46b1-9a92-dbed14392554')",
+        typ: 'text/javascript'
       }
     ]
   },
