@@ -268,7 +268,7 @@ export default {
     const [totalShares, totalUsers, user1, user2, user3] = await Promise.all([
       $axios.$get('total-shares'),
       $axios.$get('total-users'),
-      ...['66358983@N07', '123007605@N05', '55346444@N08'].map(user_id =>
+      ...['66358983@N07', '91905103@N02', '55346444@N08'].map(user_id =>
         flickr.people
           .getInfo({ user_id: user_id })
           .then(({ body }) => body)
