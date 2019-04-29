@@ -174,7 +174,7 @@ export default {
           {
             question: 'Why does Skedr.io requires write permissions to run?',
             answer:
-              'In order to add a photo to a group of your choice Flickr needs writen permissions from you account.'
+              'In order to add a photo to a group of your choice Flickr needs <strong>WRITE PERMISSIONS</strong> from you account. Under the \'<i>Authentication</i>\' title you can read all the related information <a href="https://www.flickr.com/services/api/flickr.groups.pools.add.html">https://www.flickr.com/services/api/flickr.groups.pools.add.html</a>'
           },
           {
             question: 'How do I start using Skedr.io?',
