@@ -17,7 +17,7 @@
         v-html="user.realname._content"/>
       <h6
         class="category text-primary"
-        v-html="`${user.photos.count._content} photos`"/>
+        v-html="`${totalPhotos} photos`"/>
       <p class="card-description">"{{ testimonial }}"</p>
     </div>
   </div>
@@ -33,6 +33,15 @@ export default {
     testimonial: {
       type: String,
       required: true
+    }
+  },
+  computed: {
+    totalPhotos() {
+      if (this.user.id === '55346444@N08') {
+        return 1063
+      } else {
+        return this.user.photos.count._content
+      }
     }
   }
 }

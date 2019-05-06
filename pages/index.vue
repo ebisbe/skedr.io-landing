@@ -74,7 +74,7 @@
                   <div class="device-frame">
                     <img
                       class="device-content"
-                      src="~/assets/img/View_photostream_desktop_small.png">
+                      src="~/assets/img/View_autoimport_tags_desktop.png">
                   </div>
                   <div class="device-stripe"/>
                   <div class="device-header"/>
