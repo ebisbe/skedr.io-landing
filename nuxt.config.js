@@ -71,7 +71,12 @@ module.exports = {
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
     ['bootstrap-vue/nuxt', { css: false }],
-    ['@nuxtjs/google-analytics'],
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-53011336-4'
+      }
+    ],
     [
       'nuxt-i18n',
       {
@@ -109,14 +114,7 @@ module.exports = {
     baseURL: `https://${process.env.NUXT_ENV_API_ID}.execute-api.eu-west-1.amazonaws.com/${process.env.NUXT_ENV_STAGE}`
   },
 
-  'google-analytics': {
-    id: 'UA-53011336-4',
-    debug: {
-      sendHitTask: process.env.NODE_ENV === 'production'
-    }
-  },
-
-  generate: {
+s generate: {
     minify: {
       removeOptionalTags: false
     },

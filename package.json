@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "@nuxtjs/dotenv": "^1.3.0",
-    "@nuxtjs/google-analytics": "^2.0.2",
+    "@nuxtjs/google-analytics": "^2.2.0",
     "bootstrap": "^4.0.0-beta.2",
     "bootstrap-vue": "^2.0.0-rc.11",
     "devices.css": "^0.1.15",
