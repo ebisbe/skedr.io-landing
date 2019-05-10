@@ -114,7 +114,7 @@ module.exports = {
     baseURL: `https://${process.env.NUXT_ENV_API_ID}.execute-api.eu-west-1.amazonaws.com/${process.env.NUXT_ENV_STAGE}`
   },
 
-s generate: {
+  generate: {
     minify: {
       removeOptionalTags: false
     },
