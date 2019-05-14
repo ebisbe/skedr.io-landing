@@ -1,7 +1,6 @@
 export default {
   app_name: 'Skedr',
-  slogan: 'Automated import and schedule for Flickr Groups',
-  slogan2: '<strong>Rediscover</strong> your free time',
+  slogan: 'Automated sharing and scheduling for Flickr Groups',
   layout: {
     contact: 'Get in touch at'
   },
@@ -14,7 +13,7 @@ export default {
   },
   home: {
     atention: {
-      title: 'Make the most of every day',
+      title: '<strong>Rediscover</strong> your free time',
       desc: 'Skedr helps you <strong>spend less time</strong><br> sharing photos to Flickr groups.'
     },
     interest: [
