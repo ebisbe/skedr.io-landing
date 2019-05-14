@@ -1,11 +1,6 @@
 <template>
   <div class="page-header page-header-small">
-    <div
-      :style="bgImageStyle"
-      :class="className"
-      class="page-header-image"
-      data-parallax="true"
-    />
+    <div :style="bgImageStyle" :class="className" class="page-header-image" data-parallax="true" />
     <div class="content-center">
       <slot />
     </div>

@@ -1,5 +1,7 @@
-const pkg = require('./package')
-const webpack = require('webpack')
+//const pkg = require('./package')
+import pkg from './package'
+//const webpack = require('webpack')
+import webpack from 'webpack'
 require('dotenv').config()
 
 module.exports = {

@@ -11,6 +11,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "dependencies": {
@@ -22,21 +23,24 @@
     "bootstrap-vue": "^2.0.0-rc.11",
     "devices.css": "^0.1.15",
     "flickr-sdk": "^3.8.0",
-    "nuxt": "^1.0.0",
+    "nuxt": "^2.0.0",
     "nuxt-i18n": "^5.2.1",
     "vue-googlemaps": "^0.1.1",
     "vue-i18n": "^8.1.0"
   },
   "devDependencies": {
     "@vue/eslint-config-prettier": "^3.0.0-beta.9",
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^10.0.1",
     "cross-env": "^5.0.1",
-    "eslint": "^4.15.0",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.2",
     "image-webpack-loader": "^4.2.0",
     "imagemin-webpack-plugin": "^2.1.5",
     "node-sass": "^4.9.0",
+    "prettier": "^1.17.1",
     "sass-loader": "^7.0.1"
   }
 }

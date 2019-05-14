@@ -1,56 +1,33 @@
 <template>
-  <div
-    id="page-home"
-    :class="{'nav-open': navbar_menu_visible, 'blog-post': true}">
+  <div id="page-home" :class="{ 'nav-open': navbar_menu_visible, 'blog-post': true }">
     <!-- Navbar -->
-    <nav
-      :class="{'navbar-transparent': navbarTransparent}"
-      class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav :class="{ 'navbar-transparent': navbarTransparent }" class="navbar navbar-expand-lg bg-white fixed-top">
       <div class="container">
         <div class="navbar-translate">
-          <a
-            class="navbar-brand"
-            href="/"
-            v-html="$t('app_name')"/>
+          <a class="navbar-brand" href="/" v-html="$t('app_name')" />
           <button
-            :class="{'navbar-toggler': true, 'toggled': toggledMenu}"
+            :class="{ 'navbar-toggler': true, toggled: toggledMenu }"
             type="button"
             aria-controls="navigation-index"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            @click="openNavBar">
-            <span class="navbar-toggler-bar bar1"/>
-            <span class="navbar-toggler-bar bar2"/>
-            <span class="navbar-toggler-bar bar3"/>
+            @click="openNavBar"
+          >
+            <span class="navbar-toggler-bar bar1" />
+            <span class="navbar-toggler-bar bar2" />
+            <span class="navbar-toggler-bar bar3" />
           </button>
         </div>
-        <div
-          class="collapse navbar-collapse has-image"
-          data-color="orange">
+        <div class="collapse navbar-collapse has-image" data-color="orange">
           <ul class="navbar-nav ml-auto">
-            <li
-              v-for="menu in menus"
-              :key="menu.name"
-              class="nav-item">
-              <a
-                v-if="menu.external"
-                :href="menu.path"
-                :class="menu.class">
-                <i
-                  v-if="menu.icon"
-                  :class="menu.icon"
-                  class="now-ui-icons"/>
-                <p v-html="$t(`menu.${menu.name}`)"/>
+            <li v-for="menu in menus" :key="menu.name" class="nav-item">
+              <a v-if="menu.external" :href="menu.path" :class="menu.class">
+                <i v-if="menu.icon" :class="menu.icon" class="now-ui-icons" />
+                <p v-html="$t(`menu.${menu.name}`)" />
               </a>
-              <nuxt-link
-                v-else
-                :to="menu.path"
-                :class="menu.class" >
-                <i
-                  v-if="menu.icon"
-                  :class="menu.icon"
-                  class="now-ui-icons"/>
-                <p v-html="$t(`menu.${menu.name}`)"/>
+              <nuxt-link v-else :to="menu.path" :class="menu.class">
+                <i v-if="menu.icon" :class="menu.icon" class="now-ui-icons" />
+                <p v-html="$t(`menu.${menu.name}`)" />
               </nuxt-link>
             </li>
           </ul>
@@ -58,7 +35,7 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <nuxt/>
+    <nuxt />
 
     <footer class="footer footer-default ">
       <div class="container">
@@ -68,29 +45,26 @@
               <a href="/privacy-policy">Privacy policy</a>
             </li>
             <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
-            <li>
+            <!-- <li>
               <nuxt-link
                 v-for="locale in $i18n.locales"
                 v-if="locale.code !== $i18n.locale"
                 :key="locale.code"
-                :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
-            </li>
+                :to="switchLocalePath(locale.code)"
+              >
+                {{ locale.name }}
+              </nuxt-link>
+            </li> -->
           </ul>
         </nav>
         <div class="copyright">
-          <span v-html="$t('layout.contact')"/>&nbsp;
+          <span v-html="$t('layout.contact')" />&nbsp;
           <a href="mailto:info@skedr.io">info@skedr.io</a>
-          &nbsp;
-          &nbsp;
-          &copy;
-          2017-{{ year }}, {{ $t('app_name') }}
+          &nbsp; &nbsp; &copy; 2017-{{ year }}, {{ $t('app_name') }}
         </div>
       </div>
     </footer>
-    <div
-      v-if="showCloseNavBar"
-      id="bodyClick"
-      @click="closeNavBar()"/>
+    <div v-if="showCloseNavBar" id="bodyClick" @click="closeNavBar()" />
   </div>
 </template>
 
@@ -179,12 +153,12 @@ export default {
   transform: rotate(90deg);
   bottom: 0;
   z-index: 9999;
-  background: url(~/assets/img/beta-label-bottom-right.svg) center center;
+  background: url(~assets/img/beta-label-bottom-right.svg) center center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .privacy-policy {
-  background-image: url(~/assets/img/privacy-policy.jpg);
+  background-image: url(~assets/img/privacy-policy.jpg);
 }
 </style>

@@ -1,27 +1,16 @@
 <template>
   <div>
-    <div :class="{container: useContainer}">
-      <div
-        v-if="title !== '' || desc !== ''"
-        class="row">
-        <div
-          class="col-md-8 ml-auto mr-auto text-center">
-          <h2
-            class="title"
-            v-html="title"/>
-          <h4
-            class="description"
-            v-html="desc"/>
-          <a
-            v-if="cta_link"
-            :href="cta_link"
-            class="btn btn-primary btn-round"
-            v-html="cta_text"/>
+    <div :class="{ container: useContainer }">
+      <div v-if="title !== '' || desc !== ''" class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h2 class="title" v-html="title" />
+          <h4 class="description" v-html="desc" />
+          <a v-if="ctaLink" :href="cta_link" class="btn btn-primary btn-round" v-html="ctaText" />
         </div>
       </div>
     </div>
     <div class="container">
-      <slot name="container"/>
+      <slot name="container" />
     </div>
   </div>
 </template>
@@ -40,11 +29,11 @@ export default {
       type: Boolean,
       default: false
     },
-    cta_link: {
+    ctaLink: {
       type: String,
       default: ''
     },
-    cta_text: {
+    ctaText: {
       type: String,
       default: 'Read more'
     }
