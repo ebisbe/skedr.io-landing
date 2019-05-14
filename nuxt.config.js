@@ -77,6 +77,7 @@ module.exports = {
         id: 'UA-53011336-4'
       }
     ],
+    '@tanakaworld/nuxt-sentry',
     [
       'nuxt-i18n',
       {
