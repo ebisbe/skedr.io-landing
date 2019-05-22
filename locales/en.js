@@ -25,7 +25,7 @@ export default {
       {
         title: 'For enthusiasts',
         desc:
-          "Gain views and likes by sharing easily to more groups. Don't waste your time and improve your photography.",
+          "Gain views and likes by sharing easily to your desired groups. Don't waste your time and improve your photography.",
         icon: 'objects_spaceship'
       },
       {
@@ -36,21 +36,21 @@ export default {
       }
     ],
     desire: {
-      title: 'We have improved your photos share workflow',
+      title: 'We have improved your group sharing workflow',
       desc:
-        "We think Flickr is a great tool and groups is a great way to enjoy other people photos. But let's face it, the experience is terrible.<br> We have improved that part.",
+        "Flickr is a great tool and groups is a great way to enjoy other people photos. But let's face it, the experience is terrible.<br> We have improved that part.",
       items: [
         {
           title: 'Autoschedule built-in',
           desc:
-            "We autoschedule every time a photo is pushed to a group and fails due to group restrictions. We won't miss it.",
+            "Every rejected photo due to group restriction limits is autoscheduled. We won't miss it.",
           icon: 'emoticons_satisfied',
           color: 'icon-success'
         },
         {
           title: 'Tag your groups',
           desc:
-            'When you upload a tagged photo, it will be added to your groups automatically. One shot configuration.',
+            'When you upload a new photo, it will be added to your groups with the desired tag/s automatically. One shot configuration.',
           icon: 'loader_refresh',
           color: 'icon-danger'
         },
