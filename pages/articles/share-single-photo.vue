@@ -22,10 +22,9 @@
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>Where do you start?</h3>
                 <p>
-                  To share a single photo you can find them through your
-                  <a href="https://app.skedr.io/photostream" target="_blank">Photostream</a>* or viewing all images from
-                  one of your <a href="https://app.skedr.io/groups" target="_blank">Groups</a>* ( and clicking the arrow
-                  button). In both cases you will see that each image has a Sked button.
+                  To share a single photo you can select it on your
+                  <a href="https://app.skedr.io/photostream" target="_blank">Photostream</a>*  and select the photo with the arrow
+                  button.
                 </p>
                 <p><i>*You need to be logged into Skedr account</i></p>
                 <br>
@@ -36,8 +35,8 @@
                 <br>
                 <br>
                 <p>
-                  Let's dig into the Share functionality by pressing the Sked button of any of your photos. A popup menu
-                  will open with all your groups.
+                  Let's dig into the Share functionality by hitting the Sked button of any of your photos. A popup menu
+                  will open offering all your groups.
                 </p>
               </div>
             </div>
@@ -50,15 +49,15 @@
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>Dialog menu</h3>
-                <p>Selecting the groups it's pretty simple but let's see see what we currently have:</p>
+                <p>Selecting the groups it's pretty simple but let's see what other information we have:</p>
                 <ul>
                   <li><strong>Title:</strong> Name of the photo you want to share.</li>
-                  <li><strong>Search bar:</strong> To filter through your groups and find the correct one.</li>
+                  <li><strong>Search bar:</strong> To search photos among your groups.</li>
                   <li>
-                    <strong>Group list:</strong> Each group from the list has it's name, photo ( with a link to that
-                    groups page ), members count, pool count and posting limits for that group.
+                    <strong>Group list:</strong> Each group from the list has it's name, picture ( with a link to that
+                    groups page ), number of members, number of pictures and posting limits for that group.
                   </li>
-                  <li><strong>Bottom toolbar:</strong> A list of selected groups and the send button.</li>
+                  <li><strong>Bottom toolbar:</strong> Suggested groups and the send button.</li>
                 </ul>
                 <div v-b-modal.sked-dialog class="image-container sked-dialog" />
                 <b-modal id="sked-dialog" size="lg" hide-header hide-footer>
@@ -74,10 +73,13 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>Choosing which groups you will share your photo</h3>
+                <h3>Choosing  groups you will share your photo</h3>
                 <p>
-                  Choose into which groups do you want to share the photo and click the Share button at the bottom
+                  Choose which groups do you want to share the photo with and click the Share button at the bottom
                   toolbar of the dialog menu.
+                </p>
+                <p>
+                  If you still have doubts about any of the steps, please do not hesitate to write us at info@skedr.io and we will be more than happy to offer you help.
                 </p>
                 <div v-b-modal.sked-sharing-photos class="image-container sked-sharing-photos" />
                 <b-modal id="sked-sharing-photos" size="lg" hide-header hide-footer>

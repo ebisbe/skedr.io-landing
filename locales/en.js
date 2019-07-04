@@ -19,38 +19,37 @@ export default {
     interest: [
       {
         title: 'For professionals',
-        desc: 'Share easily your work to any group because we will do it for you. Ever',
+        desc: 'Share your work easily with any group at any time. We will do it for you.',
         icon: 'shopping_delivery-fast'
       },
       {
         title: 'For enthusiasts',
         desc:
-          "Gain views and likes by sharing easily to your desired groups. Don't waste your time and improve your photography.",
+          "Gain views and likes by easily sharing your pictures in lots of groups. Don't waste your time and improve your photography skills.",
         icon: 'objects_spaceship'
       },
       {
         title: 'For beginners',
         desc:
-          "Improve your photography through other photographers eyes. Share and discover. And don't forget to have fun!",
+          "Improve your shots and photography through other photographer’s eyes. Share and discover. And always have fun.",
         icon: 'design_image'
       }
     ],
     desire: {
       title: 'We have improved your group sharing workflow',
       desc:
-        "Flickr is a great tool and groups is a great way to enjoy other people photos. But let's face it, the experience is terrible.<br> We have improved that part.",
+        "Flickr is a great tool and using photo groups is a great way to enjoy other people photos. But let's face it, the tool experience can be way better.<br> We, as users, have taken the time to improve that part.",
       items: [
         {
           title: 'Autoschedule built-in',
-          desc:
-            "Every rejected photo due to group restriction limits is autoscheduled. We won't miss it.",
+          desc: "Every rejected photo due to group restriction limits is autoscheduled for reshare. You won't miss it.",
           icon: 'emoticons_satisfied',
           color: 'icon-success'
         },
         {
           title: 'Tag your groups',
           desc:
-            'When you upload a new photo, it will be added to your groups with the desired tag/s automatically. One shot configuration.',
+            'When you upload a new photo, it will be automatically added to your groups by means of the desired tag/s. One shot configuration.',
           icon: 'loader_refresh',
           color: 'icon-danger'
         },
@@ -112,38 +111,39 @@ export default {
         title: 'General',
         items: [
           {
-            question: 'I want to see first the app working without registering, Can I do that?',
+            question:
+              'I would like to see how does the app work in the first place without registering. Could I do that?',
             answer:
-              "Sure.<br><br> Go to <a href='https://app.skedr.io/login'>https://app.skedr.io/login</a> and click on 'Demo Account' then click Login to sign in with our demo account. We have added 20 photos from Unsplash as a show case and we have created 4 groups with different restrictions."
+              "Sure.<br><br> Go to <a href='https://app.skedr.io/login'>https://app.skedr.io/login</a> and click on 'Demo Account' and then click on the Continue button to sign in with our demo account. We have added 20 photos from Unsplash as a show case and we have created 4 groups with different restrictions."
           },
           {
-            question: 'What Skedr.io does to help me?',
-            answer: 'We do two things to help you Group tagging and automated photo scheduling.'
+            question: 'What does Skedr.io do to help me?',
+            answer: 'Skedr.io will help you with two basic tasks: Group tagging and Automated photo scheduling.'
           },
           {
-            question: 'Will Skedr post any photo without my specific instructions?',
+            question: 'Will Skedr.io post any photo without my specific instructions?',
             answer:
-              'No. <br><br>Skedr will never post any photos without your specific instructions. You give specific instructions for each photo by way of Group Tagging  and Skedr will act only when Group Tagging is activated by you.'
+              'No. <br><br>Skedr.io will never post any photos without having specifically configured the tool to do so. Specific instructions and configuration is needed for each and every action on a photo, including activating the Group Tagging feature.'
           },
           {
-            question: 'Will Skedr steal my photos?',
+            question: 'Will Skedr.io keep my photos and have rights on them?',
             answer:
-              'No. <br><br> We just share photos to your groups. We don’t download, upload or modify any of your photos.'
+              'No. <br><br>We just share your photos to your groups. We do not download, keep, upload or modify any of your photos.'
           },
           {
-            question: 'Will Skedr send messages to any other member on my behalf?',
+            question: 'Will Skedr.io send messages to any other member on my behalf?',
             answer:
-              'No. <br><br>Flickr’s API doesn’t have that functionality and anyway it’s out of the scope of the app.'
+              'No. <br><br>Flickr’s API does not have that functionality and it is out of the scope of the Skedr.io app.'
           },
           {
-            question: 'Will Skedr join new groups on my behalf?',
+            question: 'Will Skedr.io join new groups on my behalf?',
             answer:
-              'No. <br><br>We plan on the future to share interesting groups for your photos but it will suggest only. You will have to join if you want.'
+              'No. <br><br>It is on the Skedr.io plans in the future to include a functionality which will recommend interesting groups for you to share your photos with. However, groups will be suggested and the user will decide whether to join them or not.'
           },
           {
-            question: 'How Skedr handles PRIVATE photos from flickr?',
+            question: 'How does Skedr.io handle PRIVATE photos from Flickr?',
             answer:
-              "It will share that photo to the group. Private photos show a LOCK icon.<br><br>In Flickr when you share a private photo from your Photostream to any group that photo is visible to any member of the group. That's a behaviour from Flickr and we cannot do anything with that. If you have many private photos sharing TAGS with public photos you are willing to share send us and email and we will find a solution."
+              'All photos are shared with the users registered in each group. Private photos will show a LOCK icon.<br><br>When you share a private photo in Flickr from your Photostream to any group, that photo is visible to any member of the group. This is a behaviour within Flickr and there is nothing we can do to change it. If this is at any case causing you a major problem when sharing your photos, please contact us at our email and we will do our best to find a solution.'
           }
         ]
       },
@@ -153,17 +153,17 @@ export default {
           {
             question: 'What is Automated scheduling?',
             answer:
-              "Retrying in the future share a photo to a group. The date to share the photo is based on the posting limits by that group configuration.<br><br> Flickr's API tells us that a particular photo has not been added to a group with the a code error. For the case we are using it is number 5. More information about error codes can be found here  (<a href='https://www.flickr.com/services/api/flickr.groups.pools.add.html'>https://www.flickr.com/services/api/flickr.groups.pools.add.html</a>) ."
+              "This functionality will allow you to share a photo to a group in a future date. This date is limited by the posting limits according to the group configuration.<br><br>Whenever a photo is not successfully added to a group, Flickr’s API will inform us with an error code (code number 5). For more information about error codes please visit <a href='https://www.flickr.com/services/api/flickr.groups.pools.add.html'>https://www.flickr.com/services/api/flickr.groups.pools.add.html</a>."
           },
           {
             question: 'What is Group Tagging?',
             answer:
-              'Bind any tag of your choice to one or more groups. Every photo with that tag will be added to every group that has been tagged.<br><br> For example: If you choose #landscape to be bind to 3 groups related to Landscape photography when a photo with that tag is uploaded to your photostream it will be added to those 3 groups.'
+              'To bind any tag of your choice to one or more groups. That is, to define the content of the photos included in the group by keywords (tags).<br><br>Every photo uploaded with one tag will be automatically added to every group that has been tagged with this same keyword.<br><br>For example: If you choose the tag #landscape to be bound to 3 different groups which are related to landscape photography, whenever a photo with that tag is uploaded to your photostream it will be automatically added to those 3 groups.'
           },
           {
             question: 'What is Autoimported comment?',
             answer:
-              "Every time you share a photo with us we automatically add a message like: 'Autoimported with Skedr.io to X groups.'. We do it as a way of promoting our app because we will never add ADS or resell any data. The comment can be deleted but if in the future you share it again will apear again."
+              "Every time you share a photo through the Skedr.io app, a message will be displayed saying: 'Shared with Skedr.io to X groups.'. We do this as a way of promoting our app.<br><br> We will not allow ads on our pages or resell any data as a way of promotion or for getting incomes."
           }
         ]
       },
@@ -173,32 +173,32 @@ export default {
           {
             question: 'Why does Skedr.io requires write permissions to run?',
             answer:
-              'In order to add a photo to a group of your choice Flickr needs <strong>WRITE PERMISSIONS</strong> from you account. Under the \'<i>Authentication</i>\' title you can read all the related information <a href="https://www.flickr.com/services/api/flickr.groups.pools.add.html">https://www.flickr.com/services/api/flickr.groups.pools.add.html</a>'
+              'In order to add a photo to a group Flickr needs <strong>WRITE PERMISSIONS</strong> from you account. Under the \'<i>Authentication</i>\' headline you can read all the related information <a href="https://www.flickr.com/services/api/flickr.groups.pools.add.html">https://www.flickr.com/services/api/flickr.groups.pools.add.html</a>'
           },
           {
             question: 'How do I start using Skedr.io?',
             answer:
-              "Skedr.io is a Flickr App ( https://www.flickr.com/services/apps/about/ ) . It's main page is https://www.flickr.com/services/apps/72157686812430944/ . And follows all Community Guidelines"
+              "Skedr.io is a Flickr App ( <a href='https://www.flickr.com/services/apps/about/'>https://www.flickr.com/services/apps/about/</a> ) therefore it follows all the Community Guidelines. Its page under Flickr is <a href='https://www.flickr.com/services/apps/72157686812430944/'>https://www.flickr.com/services/apps/72157686812430944/</a>."
           },
           {
             question: 'How will I know what photos are posted in which groups?',
             answer:
-              'At the top right of the toolbar there is a Notification center with all notifications from your actions.'
+              'At the top right of the toolbar there is a Notification center with all the notifications from your actions.'
           },
           {
-            question: 'We need to upload our photos to Skedr.io?',
+            question: 'Do we need to upload our photos to Skedr.io?',
             answer:
-              "No. We don't want you to alter your workflow. Whether you work with Lightroom, Apple Photos or any kind of Flickr Uploader you will continue working as you like. We just need you to use our feature Group Tagging"
+              "No. We don't want you to alter your workflow. Whether you work with Lightroom, Apple Photos or any kind of Flickr Uploader you will continue working with them. We just need you to use our Group Tagging feature."
           },
           {
-            question: 'My photos are not added to groups is something wrong?',
+            question: 'My photos are not being added to groups. Is there something wrong?',
             answer:
-              'We update all your photos every start of the hour. If you upload a photo to Flickr at 18:36 you will have to wait until the start of next hour ( 19:00 ).'
+              'We update all your photos every hour on the hour. It means that if you upload a photo to Flickr let’s say at 6.36pm, it will not be uploaded until 7pm.'
           },
           {
             question: 'Do I need to install any software?',
             answer:
-              'Skedr.io is a web based app so you don’t require to install any software. You can access with any browser in any device. It has been optimized to work in the latests browsers such as Firefox, Chrome, Edge, Safari and Opera. As it runs on browsers you can use it on Mac, Linux or Windows operative systems.'
+              'Skedr.io is a web based app so you it does not require to install any software. You can access with any browser in any device. It has been optimized to work better in the latests versions of browsers such as Firefox, Chrome, Edge, Safari and Opera. You can use it on Mac, Linux or Windows.'
           }
         ]
       },
@@ -208,12 +208,12 @@ export default {
           {
             question: 'Who is behind Skedr.io?',
             answer:
-              'Enric Bisbe Gil built Skedr.io.  His Flickr profile can be found at <a href="https://www.flickr.com/photos/enric-bisbe" target="_blank">https://www.flickr.com/photos/enric-bisbe</a> '
+              'Enric Bisbe Gil is the owner and creator of Skedr.io. His Flickr profile can be found at https://www.flickr.com/photos/enric-bisbe'
           },
           {
             question: 'What is the purpose of Skedr.io?',
             answer:
-              'The purpose is to be able to spend less time sharing your photos in Flickr. Adding the same photo to groups with different Posting Limits may throttle your tries, so we are automating this for you.'
+              'Skedr.io aims to help you by saving time when sharing your photos in Flickr. Adding the same photo to groups with different Posting Limits may make your life harder, so we are automating this process for you.'
           }
         ]
       }
@@ -238,7 +238,7 @@ export default {
       img: require('~/assets/img/ben-white-226176-unsplash.jpg'),
       publishedAt: 123415151,
       introduction:
-        'When you need to share an existing photo from your Flickr photostream into many groups, traditionally, you need to select one by one and pray that you don\'t reach the posting limit for any group.<br><br>Sharing photos into your prefered groups from Flickr is really easy. The benefit of doing it with Skedr is that you will automatically benefit from the <strong><a href="/faq#1-what-is-automated-scheduling">automated scheduler</a></strong> feature. Let\'s get stared!'
+        'As a passionate and proud-of-your-work photographer, you often find yourself in the need of sharing some of your brilliant shots.<br><br> So you go to share your amazing pictures on your Flickr photostream into many different groups and... you find that not only you have to select each photo one by one, but pray that you do not reach the posting limit for any group.<br><br> Ouch. Sharing photos into your preferred groups on Flickr is easy. But there are some benefits of doing it through Skedr.io that should be taken into account, as the automated scheduler feature for a start. Ready to know more?'
     }
   ]
 }

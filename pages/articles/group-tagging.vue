@@ -22,12 +22,12 @@
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>Where do you start?</h3>
                 <p>
-                  In order to use this feature you have to add tags to your photos when uploading them. That’s a
+                  In order to use this feature you have to add tags to your photos when uploading them. That is a
                   requirement because we will use your tags to bind them to your groups. Flickr automatically adds tags
-                  to your photos based on their AI algorithm but, for the moment ( Oct 2018 ), those tags are hidden
-                  from the API so we cannot see them through the API. This is something we need to be careful because
-                  you may see that some of your photos have tags but their are not all valid. Let’s take for example one
-                  of my photos (
+                  to your photos based on their AI algorithm but, for time being ( Oct 2018 ), those tags are hidden
+                  from the API so we cannot see them through the API.  This is something we need to pay attention on,
+                  as you may see that some of your photos have tags but not all of them are recognized as valid.
+                  Let’s use as an example one of my photos in Flickr (
                   <a href="https://www.flickr.com/photos/enric-bisbe/29869174207" target="_blank">https://www.flickr.com/photos/enric-bisbe/29869174207</a>
                   )
                 </p>
@@ -42,35 +42,35 @@
                 <br>
                 <br>
                 <p>
-                  <strong>The ones you add will show up in dark gray</strong>. Flickr’s friendly robots will try to help
+                  <strong>The tags you add will show up in dark gray</strong>. Flickr’s friendly robots will try to help
                   out by adding some for you; these will appear with just a gray outline.
                 </p>
                 <p>
-                  Tags should represent something related to the photo you are uploading and that can be related to a
-                  group you are participating and willing to share an image.
+                  Tags should represent and describe something related to the photo you are uploading and that can be related to a
+                  group you are participating and willing to share an image with.
                 </p>
                 <p>
-                  If we follow the tags from the image you will see that we have: bird, wildlife, ngc and perching. I
-                  like to share all my birds photos to Birding groups but I also share them to Natural lovers groups or
+                  In the example above, some of the tags of the image are: bird, wildlife, ngc and perching. I
+                  like to share all my bird photos to Birding groups but I also share them to Natural lovers groups or
                   National geographic ones. So we have the following schema:
                 </p>
 
                 <ul>
                   <li><strong>Bird</strong>: Birding groups ( 7 groups * ).</li>
-                  <li><strong>Wildlife</strong>: Natural lovers all kind of animals not just birds ( 4 groups * ).</li>
+                  <li><strong>Wildlife</strong>: Natural lovers of all kind of animals not just birds ( 4 groups * ).</li>
                   <li><strong>ngc</strong>: National geographic groups. ( 3 groups * )</li>
                   <li>
-                    <strong>perching</strong>: Perching birds groups. This group is for birds only and that have to be
-                    perching on a branch or cable. ( 1 group * )
+                    <strong>perching</strong>: Perching birds groups. This group is only for birds which are perching
+                    on a branch or cable. ( 1 group * )
                   </li>
                 </ul>
                 <p>
-                  With four tags we could be easily sharing this photo to at least 15 different groups (*) just in one
-                  step. <i><small>* Those numbers are just for a sample.</small></i>
+                  With four tags we could be easily sharing this photo into at least 15 different groups (*) just in one
+                  step. <i><small>* The figures are just an example.</small></i>
                 </p>
                 <p>
-                  <strong>Remember!</strong> You can add tags while uploading the photo to Flickr or later on. We will
-                  have all the information updated no matter when they were tagged.
+                  Keep in mind that you can add the tags while uploading the photo to Flickr or later on.
+                  All the photo information will be updated no matter the moment when it is tagged.
                 </p>
               </div>
             </div>
@@ -84,19 +84,19 @@
               <div class="col-md-8 ml-auto mr-auto">
                 <h3>How to configure each group</h3>
                 <p>
-                  To configure each group you have to go
-                  <a href="https://app.skedr.io/autoimport-tags">app.skedr.io/autoimport-tags</a> then filter with the
-                  search option at the toolbar. Searching groups will first search through the groups you have already
-                  joined, there is a checkbox with the label 'Search joined groups only' active by default. If you
-                  deactivate the checkbox you will be able to search new groups and join them.
+                  To configure each group you have to go to
+                  <a href="https://app.skedr.io/autoimport-tags">app.skedr.io/autoimport-tags</a> and then filter with the
+                  search option at the toolbar. It will first search between the groups you have already
+                  joined. There is a checkbox with the label 'Search joined groups only' active by default. If you
+                  deactivate this checkbox you will be able to search new groups and join them.
                 </p>
                 <p>
-                  Once you know which group do you want to add there's a 'settings' icon where you can manage the tags.
-                  Clicking the button will open a dialog. There you can type as many tags as you want. Hitting enter
+                  Once you know which group do you want to join, there is a 'settings' icon where you can adminstrate and manage the tags.
+                  By clicking the setting button a dialog will be opened. There you can type as many tags as you want. Hitting enter
                   will show you which photos will be added for each particular tag. Once you have added all tags hit
-                  save. Automatically we will add all your photos to each required group.
+                  save. We will automatically add all your photos to the corresponding group.
                 </p>
-                <p>By clicking the below image a pop up will show you a better view of the process.</p>
+                <p>Click on the video below to see a bigger and more complete view of the process.</p>
                 <div v-b-modal.filter-groups class="image-container filter-groups" />
                 <b-modal id="filter-groups" size="lg" hide-header hide-footer>
                   <img class="image-fluid" src="~/assets/img/articles/group-tagging/large.gif">
