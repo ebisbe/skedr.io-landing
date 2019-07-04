@@ -40,8 +40,7 @@
               <h2>Information Collection And Use</h2>
 
               <p>
-                We collect several different types of information for various purposes to provide and improve our
-                Service to you.
+                We collect different types of information for various purposes to provide and improve our Service to you.
               </p>
 
               <h3>Types of Data Collected</h3>
@@ -84,7 +83,7 @@
               </p>
               <p>
                 Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies
-                are sent to your browser from a website and stored on your device. Tracking technologies also used are
+                are sent to your browser from a website and stored on your device. Some tracking technologies also used are
                 beacons, tags, and scripts to collect and track information and to improve and analyze our Service.
               </p>
               <p>
