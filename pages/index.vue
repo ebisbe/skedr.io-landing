@@ -131,7 +131,7 @@
           <div
             v-for="(plan, index) in $t('home.cta.plans')"
             :key="plan.name"
-            :class="{ 'col-md-4': true, 'ml-auto': index === 0, 'mx-auto': index === 1 }"
+            :class="{ 'col-md-4': true, 'mx-auto': index === 0 }"
           >
             <div
               :class="{ card: true, 'card-pricing': true, 'card-raised': index === 1 }"
@@ -140,7 +140,7 @@
               <div class="card-body">
                 <h5 class="category" v-html="plan.name" />
                 <h1 class="card-title">
-                  Free
+                  1,5<small>&euro;/mo</small>
                 </h1>
                 <ul v-if="plan.features.length">
                   <li v-for="feature in plan.features" :key="feature" v-html="feature" />

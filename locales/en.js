@@ -70,25 +70,17 @@ export default {
     cta: {
       title: 'Want to feel the new experience?',
       desc:
-        'While we are in Beta the product will be completely free. We want more users to enjoy the product and give us feedback to improve it.',
-      text: 'Sign up',
+        'While we are in Beta the product will have a 50% discount. We want more users to enjoy the product and give us feedback to improve it.',
+      text: 'Access Now!',
       link: 'https://app.skedr.io/auth/sign-up',
       plans: [
         {
-          name: 'Amateur',
-          price: 0,
-          features: [
-            '<strong>Unlimited</strong> support',
-            '<strong>250</strong> photo shares',
-            'Autoimported comment *'
-          ]
-        },
-        {
           name: 'Professional',
-          price: 3,
           features: [
+            'Early access <strong>50% discount</strong>',
             '<strong>Unlimited</strong> support',
-            '<strong>Unlimited</strong> photo shares',
+            '<strong>Suggest Tags</strong> for group tagging',
+            '<strong>Schedule</strong> throttled pictures',
             'Autoimported comment *'
           ]
         }
