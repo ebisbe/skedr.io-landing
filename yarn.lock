@@ -6509,11 +6509,6 @@ nuxt-i18n@^5.2.1:
     vue-i18n "^8.11.2"
     vue-i18n-extensions "^0.2.1"
 
-nuxt-trailingslash-module@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/nuxt-trailingslash-module/-/nuxt-trailingslash-module-1.1.0.tgz#9038b82c2b426b07d9c1279bd1758829571beeee"
-  integrity sha512-cZHN+I3FPaQuJ0pDmXJ+E+7Sl2HTsLrh2vEV2ZW6HmRWRHDuooKIfxYgSrJfemZejiumyGjB8/5LA4MpVO5rfg==
-
 nuxt@^2.0.0:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.8.1.tgz#10a307e51973fa7b55abfeb41b84c76cbdd6f2f6"

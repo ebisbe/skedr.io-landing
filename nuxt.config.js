@@ -68,7 +68,6 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    'nuxt-trailingslash-module',
     '@nuxtjs/dotenv',
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
