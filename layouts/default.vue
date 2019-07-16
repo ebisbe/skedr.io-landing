@@ -42,9 +42,9 @@
         <nav>
           <ul>
             <li>
-              <a href="/privacy-policy">Privacy policy</a>
+              <a href="/privacy-policy/">Privacy policy</a>
             </li>
-            <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+            <li><a href="/terms-and-conditions/">Terms and Conditions</a></li>
             <!-- <li>
               <nuxt-link
                 v-for="locale in $i18n.locales"
@@ -90,7 +90,7 @@ export default {
         },
         {
           name: 'faq',
-          path: this.localePath('faq'),
+          path: this.localePath('faq') + '/',
           class: 'nav-link'
         },
         {

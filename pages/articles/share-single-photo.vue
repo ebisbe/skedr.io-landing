@@ -211,7 +211,6 @@ import QHeaderSmall from '@/components/QHeaderSmall'
 export default {
   components: { QHeaderSmall },
   validate({ params }) {
-    console.log(params.slug)
     return true
   },
   head() {

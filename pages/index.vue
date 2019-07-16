@@ -158,7 +158,7 @@
         </div>
         <div class="row">
           <div class="text-white ml-auto mr-auto text-center">
-            <span>* See our <a href="/faq#3-what-is-autoimported-comment">FAQ</a></span>
+            <span>* See our <a href="/faq/#3-what-is-autoimported-comment">FAQ</a></span>
           </div>
         </div>
       </template>
@@ -180,11 +180,11 @@
                 </div>
                 <div class="col-md-7">
                   <h3 class="card-title">
-                    <a :href="`/articles/${article.slug}`" v-html="article.title" />
+                    <a :href="`/articles/${article.slug}/`" v-html="article.title" />
                   </h3>
                   <p class="card-description" v-html="article.introduction" />
                   <p class="card-description">
-                    <a :href="`/articles/${article.slug}`"> Read More </a>
+                    <a :href="`/articles/${article.slug}/`"> Read More </a>
                   </p>
                   <p class="author">
                     by
