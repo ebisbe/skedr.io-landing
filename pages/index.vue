@@ -139,9 +139,13 @@
             >
               <div class="card-body">
                 <h5 class="category" v-html="plan.name" />
-                <h1 class="card-title">
+                <div class="card-title">
+                  <strike>3&euro;/mo</strike>
+                </div>
+                <h1>
                   1,5<small>&euro;/mo</small>
                 </h1>
+
                 <ul v-if="plan.features.length">
                   <li v-for="feature in plan.features" :key="feature" v-html="feature" />
                 </ul>
