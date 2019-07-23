@@ -31,7 +31,7 @@ export default {
       {
         title: 'For beginners',
         desc:
-          "Improve your shots and photography through other photographer’s eyes. Share and discover. And always have fun.",
+          'Improve your shots and photography through other photographer’s eyes. Share and discover. And always have fun.',
         icon: 'design_image'
       }
     ],
@@ -75,13 +75,23 @@ export default {
       link: 'https://app.skedr.io/auth/sign-up',
       plans: [
         {
-          name: 'Professional',
+          name: 'Starter',
+          price_text: 'Free',
           features: [
-            'Early access <strong>50% discount</strong>',
+            'Configure <strong>10 Autoimport tags</strong>',
             '<strong>Unlimited</strong> support',
             '<strong>Suggest Tags</strong> for group tagging',
             '<strong>Schedule</strong> throttled pictures',
             'Autoimported comment *'
+          ]
+        },
+        {
+          name: 'Pro',
+          price: '1,5',
+          features: [
+            'All Free plan features +',
+            'Early access <strong>50% discount</strong>',
+            '<strong>Unlimited</strong> Autoimport tags'
           ]
         }
       ]
