@@ -131,7 +131,7 @@
           <div
             v-for="(plan, index) in $t('home.cta.plans')"
             :key="plan.name"
-            :class="{ 'col-md-4': true, 'mx-auto': index === 0 }"
+            :class="{ 'col-md-4': true, 'mx-auto': true }"
           >
             <div
               :class="{ card: true, 'card-pricing': true, 'card-raised': index === 1 }"
