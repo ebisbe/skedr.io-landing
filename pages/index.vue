@@ -131,7 +131,7 @@
           <div
             v-for="(plan, index) in $t('home.cta.plans')"
             :key="plan.name"
-            :class="{ 'col-md-4': true, 'mx-auto': index === 0 }"
+            :class="{ 'col-md-4': true, 'mx-auto': true }"
           >
             <div
               :class="{ card: true, 'card-pricing': true, 'card-raised': index === 1 }"
@@ -139,8 +139,11 @@
             >
               <div class="card-body">
                 <h5 class="category" v-html="plan.name" />
-                <h1 class="card-title">
-                  1,5<small>&euro;/mo</small>
+                <h1 v-if="plan.price" class="card-title">
+                  {{ plan.price }}<small>&euro;/mo</small>
+                </h1>
+                <h1 v-else>
+                  {{ plan.price_text }}
                 </h1>
                 <ul v-if="plan.features.length">
                   <li v-for="feature in plan.features" :key="feature" v-html="feature" />
@@ -158,7 +161,7 @@
         </div>
         <div class="row">
           <div class="text-white ml-auto mr-auto text-center">
-            <span>* See our <a href="/faq/#3-what-is-autoimported-comment">FAQ</a></span>
+            <span>* Based on annual subscription</span>
           </div>
         </div>
       </template>
