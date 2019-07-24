@@ -139,10 +139,15 @@
             >
               <div class="card-body">
                 <h5 class="category" v-html="plan.name" />
-                <h1 v-if="plan.price" class="card-title">
+                <p v-if="plan.original_price" class="card-title">
+                  <strike>
+                    {{ plan.original_price }}&euro;
+                  </strike>
+                </p>
+                <h1 v-if="plan.price">
                   {{ plan.price }}<small>&euro;/mo</small>
                 </h1>
-                <h1 v-else>
+                <h1 v-else class="card-title">
                   {{ plan.price_text }}
                 </h1>
                 <ul v-if="plan.features.length">
