@@ -161,7 +161,7 @@
         </div>
         <div class="row">
           <div class="text-white ml-auto mr-auto text-center">
-            <span>* See our <a href="/faq/#3-what-is-autoimported-comment">FAQ</a></span>
+            <span>* Based on annual subscription</span>
           </div>
         </div>
       </template>
