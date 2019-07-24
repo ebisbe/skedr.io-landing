@@ -74,7 +74,7 @@ export default {
             '<strong>Unlimited</strong> support',
             '<strong>Suggest Tags</strong> for group tagging',
             '<strong>Schedule</strong> throttled pictures',
-            'Autoimported comment *'
+            'Start a free 15 days PRO trial'
           ]
         },
         {
@@ -82,9 +82,11 @@ export default {
           original_price: '3',
           price: '1,5',
           features: [
-            'All Free plan features +',
-            'Early access <strong>50% discount</strong>',
-            '<strong>Unlimited</strong> Autoimport tags'
+            '<strong>Unlimited</strong> Autoimport tags',
+            '<strong>Unlimited</strong> support',
+            '<strong>Suggest Tags</strong> for group tagging',
+            '<strong>Schedule</strong> throttled pictures',
+            '15 days money back gaurantee',
           ]
         }
       ]
