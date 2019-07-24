@@ -140,9 +140,9 @@
               <div class="card-body">
                 <h5 class="category" v-html="plan.name" />
                 <p v-if="plan.original_price" class="card-title">
-                  <strike>
+                  <del>
                     {{ plan.original_price }}&euro;
-                  </strike>
+                  </del>
                 </p>
                 <h1 v-if="plan.price">
                   {{ plan.price }}<small>&euro;/mo</small>
