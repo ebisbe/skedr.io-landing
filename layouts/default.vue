@@ -144,20 +144,6 @@ export default {
 </script>
 
 <style>
-#page-home:before {
-  content: '';
-  width: 6em;
-  height: 6em;
-  position: fixed;
-  left: 0;
-  transform: rotate(90deg);
-  bottom: 0;
-  z-index: 9999;
-  background: url(~assets/img/beta-label-bottom-right.svg) center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .privacy-policy {
   background-image: url(~assets/img/privacy-policy.jpg);
 }
