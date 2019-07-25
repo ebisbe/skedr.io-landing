@@ -77,23 +77,24 @@ export default {
         {
           name: 'Starter',
           price_text: 'Free',
+          cta: 'Try now!',
           features: [
             'Configure <strong>10 Autoimport tags</strong>',
             '<strong>Unlimited</strong> support',
             '<strong>Suggest Tags</strong> for group tagging',
-            '<strong>Schedule</strong> throttled pictures',
-            'Start a free 15 days PRO trial'
+            '<strong>Schedule</strong> throttled pictures'
           ]
         },
         {
           name: 'Pro',
           price: '1,5',
+          cta: 'Buy now!',
           features: [
             '<strong>Unlimited</strong> Autoimport tags',
             '<strong>Unlimited</strong> support',
             '<strong>Suggest Tags</strong> for group tagging',
             '<strong>Schedule</strong> throttled pictures',
-            '15 days money back gaurantee',
+            '15 days money back gaurantee'
           ]
         }
       ]

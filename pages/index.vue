@@ -153,7 +153,7 @@
                   :class="index === 0 ? 'btn-primary' : 'btn-neutral'"
                   class="btn btn-round"
                 >
-                  {{ $t('home.cta.text') }}
+                  {{ plan.cta }}
                 </a>
               </div>
             </div>
