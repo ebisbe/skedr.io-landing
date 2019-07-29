@@ -6,6 +6,7 @@
           <h2 class="title" v-html="title" />
           <h4 class="description" v-html="desc" />
           <a v-if="ctaLink" :href="cta_link" class="btn btn-primary btn-round" v-html="ctaText" />
+          <slot name="pills" />
         </div>
       </div>
     </div>

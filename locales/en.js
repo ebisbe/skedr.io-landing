@@ -87,7 +87,11 @@ export default {
         },
         {
           name: 'Pro',
-          price: '1,5',
+          //price: '1,5',
+          price: {
+            mo: { price: '1,5', name: 'Monthly' },
+            yr: { price: '15', name: 'Yearly' }
+          },
           cta: 'Buy now!',
           features: [
             '<strong>Unlimited</strong> Autoimport tags',

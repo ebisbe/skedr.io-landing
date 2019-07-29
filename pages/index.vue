@@ -126,6 +126,13 @@
       use-container
       class="subscribe-line subscribe-line-image aaron-burden"
     >
+      <template slot="pills">
+        <b-nav pills class="justify-content-center nav-pills-primary">
+          <b-nav-item v-for="(price, index) in $t('home.cta.plans[1].price')" :key="index" :active="activePlan === index" @click="activePlan = index">
+            {{ price.name }}
+          </b-nav-item>
+        </b-nav>
+      </template>
       <template slot="container">
         <div class="row">
           <div
@@ -138,9 +145,11 @@
               :data-background-color="index === 1 ? 'orange' : null"
             >
               <div class="card-body">
-                <h5 class="category" v-html="plan.name" />
+                <h5 class="category">
+                  {{ plan.name }}&nbsp;<span v-if="plan.price" v-html="`(${plan.price[activePlan].name})`" />
+                </h5>
                 <h1 v-if="plan.price" class="card-title">
-                  {{ plan.price }}<small>&euro;/mo</small>
+                  {{ plan.price[activePlan].price }}<small>&euro;/{{ activePlan }}</small>
                 </h1>
                 <h1 v-else>
                   {{ plan.price_text }}
@@ -213,7 +222,8 @@ import QTestimonial from '~/components/QTestimonial'
 export default {
   components: { QHeaderSmall, QBlock, QTestimonial },
   data: () => ({
-    timer: null
+    timer: null,
+    activePlan: 'mo'
   }),
   async asyncData({ $axios }) {
     const flickr = Flickr(process.env.NUXT_ENV_FLICKR_API_ID)
