@@ -89,8 +89,8 @@ export default {
           name: 'Pro',
           //price: '1,5',
           price: {
-            mo: { price: '1,5', name: 'Monthly' },
-            yr: { price: '15', name: 'Yearly' }
+            mo: { price: '1,5', name: 'Monthly', original_price: '3' },
+            yr: { price: '15', name: 'Yearly', original_price: '30' }
           },
           cta: 'Buy now!',
           features: [

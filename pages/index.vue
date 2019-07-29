@@ -149,9 +149,9 @@
                   {{ plan.name }}&nbsp;<span v-if="plan.price" v-html="`(${plan.price[activePlan].name})`" />
                 </h5>
                 <h1 v-if="plan.price" class="card-title">
-                  {{ plan.price[activePlan].price }}<small>&euro;/{{ activePlan }}</small>
+                  <small v-if="plan.price[activePlan].original_price"><del>{{ plan.price[activePlan].original_price }}&euro;</del></small> {{ plan.price[activePlan].price }}<small>&euro;/{{ activePlan }}</small>
                 </h1>
-                <h1 v-else>
+                <h1 v-else class="card-title">
                   {{ plan.price_text }}
                 </h1>
                 <ul v-if="plan.features.length">
