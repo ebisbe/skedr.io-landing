@@ -167,11 +167,6 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="text-white ml-auto mr-auto text-center">
-            <span>* Based on annual subscription</span>
-          </div>
-        </div>
       </template>
     </q-block>
     <div id="blogs-1" class="blogs-1">
