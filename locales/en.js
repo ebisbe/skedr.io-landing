@@ -68,10 +68,7 @@ export default {
       ]
     },
     cta: {
-      title: 'Want to feel the new experience?',
-      desc:
-        'While we are in Beta the product will have a 50% discount. We want more users to enjoy the product and give us feedback to improve it.',
-      text: 'Access Now!',
+      title: 'Pricing',
       link: 'https://app.skedr.io/auth/sign-up',
       plans: [
         {

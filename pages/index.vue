@@ -122,7 +122,6 @@
     <q-block
       id="pricing"
       :title="$t('home.cta.title')"
-      :desc="$t('home.cta.desc')"
       use-container
       class="subscribe-line subscribe-line-image aaron-burden"
     >

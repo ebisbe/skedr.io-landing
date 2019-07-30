@@ -4,7 +4,7 @@
       <div v-if="title !== '' || desc !== ''" class="row">
         <div class="col-md-8 ml-auto mr-auto text-center">
           <h2 class="title" v-html="title" />
-          <h4 class="description" v-html="desc" />
+          <h4 v-if="desc !== ''" class="description" v-html="desc" />
           <a v-if="ctaLink" :href="cta_link" class="btn btn-primary btn-round" v-html="ctaText" />
           <slot name="pills" />
         </div>
