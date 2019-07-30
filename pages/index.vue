@@ -122,25 +122,36 @@
     <q-block
       id="pricing"
       :title="$t('home.cta.title')"
-      :desc="$t('home.cta.desc')"
       use-container
       class="subscribe-line subscribe-line-image aaron-burden"
     >
+      <template slot="pills">
+        <b-nav pills class="justify-content-center nav-pills-primary">
+          <b-nav-item v-for="(price, index) in $t('home.cta.plans[1].price')" :key="index" :active="activePlan === index" @click="activePlan = index">
+            {{ price.name }}
+          </b-nav-item>
+        </b-nav>
+      </template>
       <template slot="container">
         <div class="row">
           <div
             v-for="(plan, index) in $t('home.cta.plans')"
             :key="plan.name"
-            :class="{ 'col-md-4': true, 'mx-auto': index === 0 }"
+            :class="{ 'col-md-4': true, 'mx-auto': true }"
           >
             <div
               :class="{ card: true, 'card-pricing': true, 'card-raised': index === 1 }"
               :data-background-color="index === 1 ? 'orange' : null"
             >
               <div class="card-body">
-                <h5 class="category" v-html="plan.name" />
-                <h1 class="card-title">
-                  1,5<small>&euro;/mo</small>
+                <h5 class="category">
+                  {{ plan.name }}&nbsp;<span v-if="plan.price" v-html="`(${plan.price[activePlan].name})`" />
+                </h5>
+                <h1 v-if="plan.price" class="card-title">
+                  <small v-if="plan.price[activePlan].original_price"><del>{{ plan.price[activePlan].original_price }}&euro;</del></small> {{ plan.price[activePlan].price }}<small>&euro;/{{ activePlan }}</small>
+                </h1>
+                <h1 v-else class="card-title">
+                  {{ plan.price_text }}
                 </h1>
                 <ul v-if="plan.features.length">
                   <li v-for="feature in plan.features" :key="feature" v-html="feature" />
@@ -150,7 +161,7 @@
                   :class="index === 0 ? 'btn-primary' : 'btn-neutral'"
                   class="btn btn-round"
                 >
-                  {{ $t('home.cta.text') }}
+                  {{ plan.cta }}
                 </a>
               </div>
             </div>
@@ -158,7 +169,7 @@
         </div>
         <div class="row">
           <div class="text-white ml-auto mr-auto text-center">
-            <span>* See our <a href="/faq/#3-what-is-autoimported-comment">FAQ</a></span>
+            <span>* Based on annual subscription</span>
           </div>
         </div>
       </template>
@@ -210,7 +221,8 @@ import QTestimonial from '~/components/QTestimonial'
 export default {
   components: { QHeaderSmall, QBlock, QTestimonial },
   data: () => ({
-    timer: null
+    timer: null,
+    activePlan: 'mo'
   }),
   async asyncData({ $axios }) {
     const flickr = Flickr(process.env.NUXT_ENV_FLICKR_API_ID)

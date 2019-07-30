@@ -31,7 +31,7 @@ export default {
       {
         title: 'For beginners',
         desc:
-          "Improve your shots and photography through other photographer’s eyes. Share and discover. And always have fun.",
+          'Improve your shots and photography through other photographer’s eyes. Share and discover. And always have fun.',
         icon: 'design_image'
       }
     ],
@@ -68,20 +68,34 @@ export default {
       ]
     },
     cta: {
-      title: 'Want to feel the new experience?',
-      desc:
-        'While we are in Beta the product will have a 50% discount. We want more users to enjoy the product and give us feedback to improve it.',
-      text: 'Access Now!',
+      title: 'Pricing',
       link: 'https://app.skedr.io/auth/sign-up',
       plans: [
         {
-          name: 'Professional',
+          name: 'Starter',
+          price_text: 'Free',
+          cta: 'Try now!',
           features: [
-            'Early access <strong>50% discount</strong>',
+            'Configure <strong>10 Autoimport tags</strong>',
+            '<strong>Unlimited</strong> support',
+            '<strong>Suggest Tags</strong> for group tagging',
+            '<strong>Schedule</strong> throttled pictures'
+          ]
+        },
+        {
+          name: 'Pro',
+          //price: '1,5',
+          price: {
+            mo: { price: '1,5', name: 'Monthly', original_price: '3' },
+            yr: { price: '15', name: 'Yearly', original_price: '30' }
+          },
+          cta: 'Buy now!',
+          features: [
+            '<strong>Unlimited</strong> Autoimport tags',
             '<strong>Unlimited</strong> support',
             '<strong>Suggest Tags</strong> for group tagging',
             '<strong>Schedule</strong> throttled pictures',
-            'Autoimported comment *'
+            '15 days money back gaurantee'
           ]
         }
       ]
