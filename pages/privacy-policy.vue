@@ -297,7 +297,7 @@ export default {
   components: { QHeaderSmall },
   head() {
     return {
-      title: this.$t('policy.title'),
+      title: this.$t('policy.meta_title'),
       meta: [{ hid: 'description', name: 'description', content: this.$t('policy.meta_desc') }]
     }
   }

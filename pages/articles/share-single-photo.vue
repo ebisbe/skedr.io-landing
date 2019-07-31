@@ -215,7 +215,7 @@ export default {
   },
   head() {
     return {
-      title: this.article.title,
+      title: this.article.meta_title,
       meta: [
         {
           hid: 'description',

@@ -252,7 +252,7 @@ export default {
   head() {
     return {
       title: this.$t('slogan'),
-      meta: [{ hid: 'description', name: 'description', content: this.$t('home.atention.desc') }]
+      meta: [{ hid: 'description', name: 'description', content: this.$t('home.atention.meta_desc') }]
     }
   }
 }
