@@ -85,7 +85,7 @@
                 <h3>How to configure each group</h3>
                 <p>
                   To configure each group you have to go to
-                  <a href="https://app.skedr.io/autoimport-tags">app.skedr.io/autoimport-tags</a> and then filter with the
+                  <a href="https://app.skedr.io/autoimport-tags/">app.skedr.io/autoimport-tags</a> and then filter with the
                   search option at the toolbar. It will first search between the groups you have already
                   joined. There is a checkbox with the label 'Search joined groups only' active by default. If you
                   deactivate this checkbox you will be able to search new groups and join them.

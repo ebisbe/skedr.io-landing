@@ -23,7 +23,7 @@
                 <h3>Where do you start?</h3>
                 <p>
                   To share a single photo you can select it on your
-                  <a href="https://app.skedr.io/photostream" target="_blank">Photostream</a>*  and select the photo with the arrow
+                  <a href="https://app.skedr.io/photostream/" target="_blank">Photostream</a>*  and select the photo with the arrow
                   button.
                 </p>
                 <p><i>*You need to be logged into Skedr account</i></p>

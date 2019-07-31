@@ -96,13 +96,13 @@ export default {
         {
           name: 'login',
           external: true,
-          path: 'https://app.skedr.io',
+          path: 'https://app.skedr.io/',
           class: 'nav-link btn btn-primary'
         },
         {
           name: 'signup',
           external: true,
-          path: 'https://app.skedr.io/auth/sign-up',
+          path: 'https://app.skedr.io/auth/sign-up/',
           class: 'nav-link btn btn-primary'
         }
       ]
