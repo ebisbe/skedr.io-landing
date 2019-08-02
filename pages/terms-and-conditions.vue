@@ -297,7 +297,7 @@ export default {
   components: { QHeaderSmall },
   head() {
     return {
-      title: this.$t('terms.title'),
+      title: this.$t('terms.meta_title'),
       meta: [{ hid: 'description', name: 'description', content: this.$t('terms.meta_desc') }]
     }
   }

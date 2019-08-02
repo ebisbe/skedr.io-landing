@@ -14,7 +14,8 @@ export default {
   home: {
     atention: {
       title: '<strong>Rediscover</strong> your free time',
-      desc: 'Skedr helps you <strong>spend less time</strong><br> sharing photos to Flickr groups.'
+      desc: 'Skedr helps you <strong>spend less time</strong><br> sharing photos to Flickr groups.',
+      meta_desc: 'Skedr helps you spend less time sharing photos to Flickr groups.'
     },
     interest: [
       {
@@ -69,7 +70,7 @@ export default {
     },
     cta: {
       title: 'Pricing',
-      link: 'https://app.skedr.io/auth/sign-up',
+      link: 'https://app.skedr.io/auth/sign-up/',
       plans: [
         {
           name: 'Starter',
@@ -101,15 +102,18 @@ export default {
     }
   },
   terms: {
-    title: 'Terms and Conditions - Skedr.io',
-    meta_desc: 'Terms and Conditions for Skedr.io. Last update: October 16, 2018'
+    title: 'Terms and Conditions',
+    meta_title: 'Terms and Conditions - Skedr.io',
+    meta_desc: 'Terms and Conditions for Skedr.io'
   },
   policy: {
-    title: 'Privacy Policy - Skedr.io',
-    meta_desc: 'Privacy policy for Skedr.io. Last update: October 16, 2018'
+    title: 'Privacy Policy',
+    meta_title: 'Privacy Policy - Skedr.io',
+    meta_desc: 'Privacy Policy for Skedr.io'
   },
   faq: {
     title: 'Frequently Asked Questions',
+    meta_title: 'Frequently Asked Questions - Skedr.io',
     meta_desc: 'Answers to common questions about Skedr.io for Flickr.',
     groups: [
       {
@@ -119,7 +123,7 @@ export default {
             question:
               'I would like to see how does the app work in the first place without registering. Could I do that?',
             answer:
-              "Sure.<br><br> Go to <a href='https://app.skedr.io/auth/login'>https://app.skedr.io/auth/login</a> and click on 'Demo Account' and then click on the Continue button to sign in with our demo account. We have added 20 photos from Unsplash as a show case and we have created 4 groups with different restrictions."
+              "Sure.<br><br> Go to <a href='https://app.skedr.io/auth/login/'>https://app.skedr.io/auth/login</a> and click on 'Demo Account' and then click on the Continue button to sign in with our demo account. We have added 20 photos from Unsplash as a show case and we have created 4 groups with different restrictions."
           },
           {
             question: 'What does Skedr.io do to help me?',
@@ -229,6 +233,7 @@ export default {
       slug: 'group-tagging',
       author: 'Enric Bisbe Gil',
       title: 'Group tagging',
+      meta_title: 'Group tagging. Easily sharing new photos in Flickr - Skedr.io',
       subtitle: 'Sharing made easy',
       img: require('~/assets/img/articles/group-tagging/main.jpg'),
       publishedAt: 89124912,
@@ -239,6 +244,7 @@ export default {
       slug: 'share-single-photo',
       author: 'Enric Bisbe Gil',
       title: 'Sharing an existing photo',
+      meta_title: 'Sharing an existing photo to different Flickr groups - Skedr.io',
       subtitle: 'From your photostream to many Flickr groups',
       img: require('~/assets/img/ben-white-226176-unsplash.jpg'),
       publishedAt: 123415151,

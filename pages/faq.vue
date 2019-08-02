@@ -28,7 +28,7 @@ export default {
   components: { QCollapse, QHeaderSmall },
   head() {
     return {
-      title: this.$t('faq.title'),
+      title: this.$t('faq.meta_title'),
       meta: [{ hid: 'description', name: 'description', content: this.$t('faq.meta_desc') }]
     }
   }

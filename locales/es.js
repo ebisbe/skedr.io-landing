@@ -100,7 +100,7 @@ export default {
           {
             question: 'I want to see first the app working without registering, Can I do that?',
             answer:
-              "Sure.<br><br> Go to <a href='https://app.skedr.io/login'>https://app.skedr.io/login</a> and click on 'Demo Account' then click Login to sign in with our demo account. We have added 20 photos from Unsplash as a show case and we have created 4 groups with different restrictions."
+              "Sure.<br><br> Go to <a href='https://app.skedr.io/login/'>https://app.skedr.io/login</a> and click on 'Demo Account' then click Login to sign in with our demo account. We have added 20 photos from Unsplash as a show case and we have created 4 groups with different restrictions."
           },
           {
             question: 'What Skedr.io does to help me?',
