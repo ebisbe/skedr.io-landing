@@ -293,12 +293,20 @@
 </template>
 <script>
 import QHeaderSmall from '~/components/QHeaderSmall'
+import ogImage from '~/assets/img/privacy-policy.jpg'
+
 export default {
   components: { QHeaderSmall },
   head() {
     return {
       title: this.$t('policy.meta_title'),
-      meta: [{ hid: 'description', name: 'description', content: this.$t('policy.meta_desc') }]
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('policy.meta_desc') },
+        {
+          name: 'image',
+          content: `https://skedr.io${ogImage}`
+        }
+      ]
     }
   }
 }
