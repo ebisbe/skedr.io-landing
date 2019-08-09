@@ -24,12 +24,20 @@
 <script>
 import QCollapse from '~/components/QCollapse'
 import QHeaderSmall from '~/components/QHeaderSmall'
+import ogImage from '~/assets/img/evan-dennis-75563-unsplash.jpg'
+
 export default {
   components: { QCollapse, QHeaderSmall },
   head() {
     return {
       title: this.$t('faq.meta_title'),
-      meta: [{ hid: 'description', name: 'description', content: this.$t('faq.meta_desc') }]
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('faq.meta_desc') },
+        {
+          name: 'image',
+          content: `https://skedr.io${ogImage}`
+        }
+      ]
     }
   }
 }
