@@ -214,6 +214,8 @@
 </template>
 <script>
 import QHeaderSmall from '@/components/QHeaderSmall'
+import ogImage from '~/assets/img/ben-white-226176-unsplash.jpg'
+
 export default {
   components: { QHeaderSmall },
   validate({ params }) {
@@ -227,6 +229,10 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Sharing images into your prefered groups from Flickr is really easy.'
+        },
+        {
+          name: 'image',
+          content: `https://skedr.io${ogImage}`
         }
       ]
     }

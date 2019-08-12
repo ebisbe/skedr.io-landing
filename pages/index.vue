@@ -215,6 +215,8 @@ import QHeaderSmall from '~/components/QHeaderSmall'
 import QBlock from '~/components/QBlock'
 import QTestimonial from '~/components/QTestimonial'
 
+import ogImage from '~/assets/img/averie-woodard-111831-unsplash.jpg'
+
 export default {
   components: { QHeaderSmall, QBlock, QTestimonial },
   data: () => ({
@@ -254,7 +256,13 @@ export default {
   head() {
     return {
       title: this.$t('slogan'),
-      meta: [{ hid: 'description', name: 'description', content: this.$t('home.atention.meta_desc') }]
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('home.atention.meta_desc') },
+        {
+          name: 'image',
+          content: `https://skedr.io${ogImage}`
+        }
+      ]
     }
   }
 }
