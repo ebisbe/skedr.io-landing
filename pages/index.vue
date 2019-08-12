@@ -4,7 +4,9 @@
       <h1 class="title">
         <img :alt="$t('app_name')" src="/skedr-full-logo.png" height="100">
       </h1>
-      <h3><strong v-html="totalShares" /> photos delivered from <strong v-html="totalUsers" /> Flickr users</h3>
+      <p class="h3">
+        <strong v-html="totalShares" /> photos delivered from <strong v-html="totalUsers" /> Flickr users
+      </p>
     </q-header-small>
     <div class="">
       <div class="testimonials-3">
@@ -12,7 +14,7 @@
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto text-center">
               <h2 class="title" v-html="$t('home.atention.title')" />
-              <h4 class="description" v-html="$t('home.atention.desc')" />
+              <p class="description h4" v-html="$t('home.atention.desc')" />
             </div>
           </div>
           <div class="row">
@@ -47,7 +49,7 @@
                     <i :class="item.icon" class="now-ui-icons " />
                   </div>
                   <div class="description">
-                    <h4 class="info-title" v-html="item.title" />
+                    <h3 class="info-title h4" v-html="item.title" />
                     <p class="description" style="font-weight:400;" v-html="item.desc" />
                   </div>
                 </div>
@@ -76,7 +78,7 @@
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto text-center">
             <h2 class="title" v-html="$t('home.desire.title')" />
-            <h4 class="description" v-html="$t('home.desire.desc')" />
+            <p class="description h4" v-html="$t('home.desire.desc')" />
           </div>
         </div>
         <div class="row">
@@ -86,7 +88,7 @@
                 <i :class="item.icon" class="now-ui-icons" />
               </div>
               <div class="description">
-                <h5 class="info-title" v-html="item.title" />
+                <h3 class="info-title h5" v-html="item.title" />
                 <p v-html="item.desc" />
               </div>
             </div>
@@ -111,7 +113,7 @@
                 <i :class="item.icon" class="now-ui-icons" />
               </div>
               <div class="description">
-                <h5 class="info-title" v-html="item.title" />
+                <h3 class="info-title h5" v-html="item.title" />
                 <p v-html="item.desc" />
               </div>
             </div>
@@ -144,15 +146,15 @@
               :data-background-color="index === 1 ? 'orange' : null"
             >
               <div class="card-body">
-                <h5 class="category">
+                <p class="category h5">
                   {{ plan.name }}&nbsp;<span v-if="plan.price" v-html="`(${plan.price[activePlan].name})`" />
-                </h5>
-                <h1 v-if="plan.price" class="card-title">
+                </p>
+                <p v-if="plan.price" class="card-title h1">
                   <small v-if="plan.price[activePlan].original_price"><del>{{ plan.price[activePlan].original_price }}&euro;</del></small> {{ plan.price[activePlan].price }}<small>&euro;/{{ activePlan }}</small>
-                </h1>
-                <h1 v-else class="card-title">
+                </p>
+                <p v-else class="card-title h1">
                   {{ plan.price_text }}
-                </h1>
+                </p>
                 <ul v-if="plan.features.length">
                   <li v-for="feature in plan.features" :key="feature" v-html="feature" />
                 </ul>

@@ -8,7 +8,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
-              <h1>Terms and Conditions</h1>
+              <p class="h1">
+                Terms and Conditions
+              </p>
 
               <p>Last updated: October 16, 2018</p>
               <p>

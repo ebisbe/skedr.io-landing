@@ -31,6 +31,18 @@
               </nuxt-link>
             </li>
           </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li v-for="menu in call_to_action" :key="menu.name" class="nav-item">
+              <a v-if="menu.external" :href="menu.path" :class="menu.class">
+                <i v-if="menu.icon" :class="menu.icon" class="now-ui-icons" />
+                <p v-html="$t(`menu.${menu.name}`)" />
+              </a>
+              <nuxt-link v-else :to="menu.path" :class="menu.class">
+                <i v-if="menu.icon" :class="menu.icon" class="now-ui-icons" />
+                <p v-html="$t(`menu.${menu.name}`)" />
+              </nuxt-link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -92,12 +104,14 @@ export default {
           name: 'faq',
           path: this.localePath('faq') + '/',
           class: 'nav-link'
-        },
+        }
+      ],
+      call_to_action: [
         {
           name: 'login',
           external: true,
           path: 'https://app.skedr.io/',
-          class: 'nav-link btn btn-primary'
+          class: 'nav-link btn btn-neutral '
         },
         {
           name: 'signup',

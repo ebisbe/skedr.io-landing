@@ -2,14 +2,14 @@
   <div class="wrapper">
     <q-header-small class-name="ben-white">
       <h1 class="title" v-html="article.title" />
-      <h3 v-html="article.subtitle" />
+      <p v-html="article.subtitle" />
     </q-header-small>
     <div class="section">
       <div class="">
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
-              <h3 class="title" v-html="article.title" />
+              <p class="title h1" v-html="article.title" />
               <p v-html="article.introduction" />
             </div>
           </div>
@@ -20,7 +20,9 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>Where do you start?</h3>
+                <h2 class="h3">
+                  Where do you start?
+                </h2>
                 <p>
                   To share a single photo you can select it on your
                   <a href="https://app.skedr.io/photostream/" target="_blank">Photostream</a>*  and select the photo with the arrow
@@ -48,7 +50,9 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>Dialog menu</h3>
+                <h2 class="h3">
+                  Dialog menu
+                </h2>
                 <p>Selecting the groups it's pretty simple but let's see what other information we have:</p>
                 <ul>
                   <li><strong>Title:</strong> Name of the photo you want to share.</li>
@@ -73,7 +77,9 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>Choosing  groups you will share your photo</h3>
+                <h2 class="h3">
+                  Choosing  groups you will share your photo
+                </h2>
                 <p>
                   Choose which groups do you want to share the photo with and click the Share button at the bottom
                   toolbar of the dialog menu.
@@ -112,9 +118,9 @@
                     </div>
                   </div>
                   <div class="col-md-8">
-                    <h4 class="card-title">
+                    <p class="card-title h4">
                       Enric Bisbe Gil
-                    </h4>
+                    </p>
                     <p class="description">
                       <a href="https://github.com/ebisbe">Developer</a> and
                       <a href="https://www.flickr.com/photos/enric-bisbe">Photography enthusiast</a>. Creator of
