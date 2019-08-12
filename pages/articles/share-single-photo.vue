@@ -2,14 +2,14 @@
   <div class="wrapper">
     <q-header-small class-name="ben-white">
       <h1 class="title" v-html="article.title" />
-      <p v-html="article.subtitle" />
+      <p class="h3" v-html="article.subtitle" />
     </q-header-small>
     <div class="section">
       <div class="">
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
-              <p class="title h1" v-html="article.title" />
+              <p class="title h3" v-html="article.title" />
               <p v-html="article.introduction" />
             </div>
           </div>

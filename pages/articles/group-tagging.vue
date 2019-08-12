@@ -9,7 +9,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
-              <p class="title h1" v-html="article.title" />
+              <p class="title h3" v-html="article.title" />
               <p v-html="article.introduction" />
             </div>
           </div>
