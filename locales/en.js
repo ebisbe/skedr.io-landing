@@ -15,7 +15,7 @@ export default {
     atention: {
       title: '<strong>Rediscover</strong> your free time',
       desc: 'Skedr helps you <strong>spend less time</strong><br> sharing photos to Flickr groups.',
-      meta_desc: 'Skedr helps you spend less time sharing photos to Flickr groups.'
+      meta_desc: 'Skedr helps you spend less time sharing photos to Flickr groups.',
     },
     interest: [
       {

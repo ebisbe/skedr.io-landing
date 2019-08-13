@@ -1,7 +1,7 @@
 <template>
   <div v-if="user" class="card card-testimonial card-plain">
     <div class="card-avatar">
-      <a :href="user.profileurl._content" target="_blank">
+      <a :href="user.profileurl._content" target="_blank" rel="noopener">
         <img
           :src="`https://farm${user.iconfarm}.staticflickr.com/${user.iconserver}/buddyicons/${user.nsid}_r.jpg`"
           class="img img-raised rounded cover"
