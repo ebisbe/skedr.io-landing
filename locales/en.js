@@ -15,7 +15,7 @@ export default {
     atention: {
       title: '<strong>Rediscover</strong> your free time',
       desc: 'Skedr helps you <strong>spend less time</strong><br> sharing photos to Flickr groups.',
-      meta_desc: 'Skedr helps you spend less time sharing photos to Flickr groups.',
+      meta_desc: 'Skedr helps you spend less time sharing photos to Flickr groups.'
     },
     interest: [
       {
@@ -239,7 +239,7 @@ export default {
       alt_txt: 'Photo Art',
       publishedAt: 89124912,
       introduction:
-        'In the <a href="/articles/share-single-photo/">first article</a> we explained how to share photos from your photostream. In this article, we will explain how to automatically share your new photos to each of your desired groups. Are you ready?'
+        'In the <a href="/articles/share-single-photo/">first article</a> we explained how to share photos from your photostream. In this article, we will explain <strong>how to automatically share your new photos</strong> to each of your desired groups. Are you ready?'
     },
     {
       slug: 'share-single-photo',
@@ -251,7 +251,7 @@ export default {
       publishedAt: 123415151,
       alt_txt: 'Photo by Ben White on Unsplash',
       introduction:
-        'As a passionate and proud-of-your-work photographer, you often find yourself in the need of sharing some of your brilliant shots.<br><br> So you go to share your amazing pictures on your Flickr photostream into many different groups and... you find that not only you have to select each photo one by one, but pray that you do not reach the posting limit for any group.<br><br> Ouch. Sharing photos into your preferred groups on Flickr is easy. But there are some benefits of doing it through Skedr.io that should be taken into account, as the automated scheduler feature for a start. Ready to know more?'
+        'As a passionate and proud-of-your-work photographer, you often find yourself in the need of sharing some of your brilliant shots.<br><br> So you go to share your amazing pictures on your Flickr photostream into many different groups and... you find that not only you have to select each photo one by one, but pray that you do not reach the posting limit for any group.<br><br> Ouch! Sharing photos into your preferred groups on Flickr is not easy. But there are some benefits of doing it through Skedr.io that should be taken into account, as the automated scheduler feature for a start. Ready to know more?'
     }
   ]
 }
