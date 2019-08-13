@@ -30,8 +30,6 @@
                 <p v-html="$t(`menu.${menu.name}`)" />
               </nuxt-link>
             </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
             <li v-for="menu in call_to_action" :key="menu.name" class="nav-item">
               <a v-if="menu.external" :href="menu.path" :class="menu.class">
                 <i v-if="menu.icon" :class="menu.icon" class="now-ui-icons" />
