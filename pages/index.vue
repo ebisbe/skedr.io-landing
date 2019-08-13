@@ -59,7 +59,7 @@
               <div class="image-container">
                 <div class="device device-macbook device-spacegray">
                   <div class="device-frame">
-                    <img class="device-content" src="~assets/img/View_autoimport_tags_desktop.png">
+                    <img class="device-content" src="~assets/img/View_autoimport_tags_desktop.png" alt="View autoimport tags in desktop">
                   </div>
                   <div class="device-stripe" />
                   <div class="device-header" />
@@ -97,7 +97,7 @@
             <div class="phone-container" style="height:600px;">
               <div class="device device-google-pixel device-black scale">
                 <div class="device-frame">
-                  <img class="device-content" src="~assets/img/View_photostream.png">
+                  <img class="device-content" src="~assets/img/View_photostream.png" alt="View photostream in a mobile device">
                 </div>
                 <div class="device-stripe" />
                 <div class="device-header" />
@@ -183,7 +183,7 @@
               <div class="row">
                 <div class="col-md-5">
                   <div class="card-image">
-                    <img :src="article.img" class="img img-raised rounded">
+                    <img :src="article.img" class="img img-raised rounded" :alt="article.alt_txt">
                   </div>
                 </div>
                 <div class="col-md-7">

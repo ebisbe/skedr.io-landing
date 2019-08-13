@@ -5,6 +5,7 @@
         <img
           :src="`https://farm${user.iconfarm}.staticflickr.com/${user.iconserver}/buddyicons/${user.nsid}_r.jpg`"
           class="img img-raised rounded cover"
+          :alt="user.realname._content"
         >
       </a>
     </div>

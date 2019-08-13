@@ -37,9 +37,9 @@
                   <i><small>*You need to be logged into Skedr account</small></i>
                 </p>
                 <br>
-                <div v-b-modal.sked-button class="image-container image-tags" />
+                <div v-b-modal.sked-button class="image-container image-tags" title="Click on the photo for more information" />
                 <b-modal id="sked-button" hide-header hide-footer>
-                  <img class="image-fluid image-tags" src="~assets/img/articles/group-tagging/1-image-tags.png">
+                  <img class="image-fluid image-tags" src="~assets/img/articles/group-tagging/1-image-tags.png" alt="Photo tags">
                 </b-modal>
                 <br>
                 <br>
@@ -101,9 +101,9 @@
                   save. We will automatically add all your photos to the corresponding group.
                 </p>
                 <p>Click on the video below to see a bigger and more complete view of the process.</p>
-                <div v-b-modal.filter-groups class="image-container filter-groups" />
+                <div v-b-modal.filter-groups class="image-container filter-groups" title="Click on the photo for more information" />
                 <b-modal id="filter-groups" size="lg" hide-header hide-footer>
-                  <img class="image-fluid" src="~/assets/img/articles/group-tagging/large.gif">
+                  <img class="image-fluid" src="~/assets/img/articles/group-tagging/large.gif" alt="Group Tagging process">
                 </b-modal>
               </div>
             </div>
@@ -120,7 +120,7 @@
                   <div class="col-md-2">
                     <div class="card-avatar">
                       <a href="#pablo">
-                        <img class="img img-raised" src="~/assets/img/enric-bisbe-gil.jpg">
+                        <img class="img img-raised" src="~/assets/img/enric-bisbe-gil.jpg" alt="Enric Bisbe Gil, playing the accordion">
                       </a>
                       <div class="ripple-container" />
                     </div>
