@@ -2,14 +2,14 @@
   <div class="wrapper">
     <q-header-small class-name="article-main">
       <h1 class="title" v-html="article.title" />
-      <h3 v-html="article.subtitle" />
+      <p class="h3" v-html="article.subtitle" />
     </q-header-small>
     <div class="section">
       <div class="">
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
-              <h3 class="title" v-html="article.title" />
+              <p class="title h3" v-html="article.title" />
               <p v-html="article.introduction" />
             </div>
           </div>
@@ -20,7 +20,9 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>Where do you start?</h3>
+                <h2 class="h3">
+                  Where do you start?
+                </h2>
                 <p>
                   In order to use this feature you have to add tags to your photos when uploading them. That is a
                   requirement because we will use your tags to bind them to your groups. Flickr automatically adds tags
@@ -82,7 +84,9 @@
           <div class="section-story-overview">
             <div class="row">
               <div class="col-md-8 ml-auto mr-auto">
-                <h3>How to configure each group</h3>
+                <h2 class="h3">
+                  How to configure each group
+                </h2>
                 <p>
                   To configure each group you have to go to
                   <a href="https://app.skedr.io/autoimport-tags/">app.skedr.io/autoimport-tags</a> and then filter with the
@@ -122,9 +126,9 @@
                     </div>
                   </div>
                   <div class="col-md-8">
-                    <h4 class="card-title">
+                    <p class="card-title h4">
                       Enric Bisbe Gil
-                    </h4>
+                    </p>
                     <p class="description">
                       <a href="https://github.com/ebisbe">Developer</a> and
                       <a href="https://www.flickr.com/photos/enric-bisbe">Photography enthusiast</a>. Creator of
