@@ -383,22 +383,7 @@
 
   &.card-background-product .card-body {
     max-width: 400px;
-        &.icon-primary i{
-            @include icon-color($primary-color);
-        }
-        &.icon-info i{
-            @include icon-color($info-color);
-        }
-        &.icon-success i{
-            color: $success-color;
-            box-shadow:  0px 9px 30px -6px rgba(22, 199, 13, 0.85);
-        }
-        &.icon-warning i{
-            @include icon-color($warning-color);
-        }
-        &.icon-danger i{
-            @include icon-color($danger-color);
-        }
+       
     }
     h1, .h1{
         small{
