@@ -239,7 +239,7 @@ export default {
       alt_txt: 'Photo Art',
       publishedAt: 89124912,
       introduction:
-        'In the <a href="/articles/share-single-photo/">first article</a> we explained how to share photos from your photostream. In this article, we will explain <strong>how to automatically share your new photos</strong> to each of your desired groups. Are you ready?'
+        'In the <a href="/articles/share-single-photo/">first article</a> we explained how to share photos from your photostream. In this article, we will explain how to automatically share your new photos to each of your desired groups. Are you ready?'
     },
     {
       slug: 'share-single-photo',
