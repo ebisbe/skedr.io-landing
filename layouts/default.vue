@@ -109,13 +109,15 @@ export default {
           name: 'login',
           external: true,
           path: 'https://app.skedr.io/',
-          class: 'nav-link btn btn-neutral '
+          class: 'nav-link btn btn-neutral',
+          icon: 'now-ui-icons users_single-02'
         },
         {
           name: 'signup',
           external: true,
           path: 'https://app.skedr.io/auth/sign-up/',
-          class: 'nav-link btn btn-primary'
+          class: 'nav-link btn btn-primary',
+          icon: ''
         }
       ]
     }

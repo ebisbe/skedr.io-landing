@@ -8,7 +8,7 @@
         <div class="col-md-10 ml-auto mr-auto">
           <h2 class="title" v-html="group.title" />
           <br>
-          <div class="row justify-content-center">
+          <div class="col-md-6">
             <q-collapse
               v-for="(faq, index) in group.items"
               :key="faq.question"
