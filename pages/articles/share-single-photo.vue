@@ -26,11 +26,11 @@
                   <a href="https://app.skedr.io/photostream/" target="_blank">Photostream</a>*  and select the photo with the arrow
                   button.
                 </p>
-                <p><i>*You need to be logged into Skedr account</i></p>
+                <p><i><small>*You need to be logged into Skedr account</small></i></p>
                 <br>
-                <div v-b-modal.sked-button class="image-container sked-button" />
+                <div v-b-modal.sked-button class="image-container sked-button" title="Click on the photo for more information" />
                 <b-modal id="sked-button" size="lg" hide-header hide-footer>
-                  <img class="image-fluid" src="~assets/img/sked-button.png">
+                  <img class="image-fluid" src="~assets/img/sked-button.png" alt="View Share a photo">
                 </b-modal>
                 <br>
                 <br>
@@ -59,9 +59,9 @@
                   </li>
                   <li><strong>Bottom toolbar:</strong> Suggested groups and the send button.</li>
                 </ul>
-                <div v-b-modal.sked-dialog class="image-container sked-dialog" />
+                <div v-b-modal.sked-dialog class="image-container sked-dialog" title="click on the photo for more information" />
                 <b-modal id="sked-dialog" size="lg" hide-header hide-footer>
-                  <img class="image-fluid" src="~assets/img/sked-dialog.png">
+                  <img class="image-fluid" src="~assets/img/sked-dialog.png" alt="View how to select groups">
                 </b-modal>
               </div>
             </div>
@@ -78,12 +78,10 @@
                   Choose which groups do you want to share the photo with and click the Share button at the bottom
                   toolbar of the dialog menu.
                 </p>
-                <p>
-                  If you still have doubts about any of the steps, please do not hesitate to write us at info@skedr.io and we will be more than happy to offer you help.
-                </p>
-                <div v-b-modal.sked-sharing-photos class="image-container sked-sharing-photos" />
+
+                <div v-b-modal.sked-sharing-photos class="image-container sked-sharing-photos" title="Click on the photo for more information" />
                 <b-modal id="sked-sharing-photos" size="lg" hide-header hide-footer>
-                  <img class="image-fluid" src="~assets/img/sked-sharing-photos.png">
+                  <img class="image-fluid" src="~assets/img/sked-sharing-photos.png" alt="View how to choose groups to share a photo">
                 </b-modal>
                 <br>
                 <br>
@@ -106,7 +104,7 @@
                   <div class="col-md-2">
                     <div class="card-avatar">
                       <a href="#pablo">
-                        <img class="img img-raised" src="~assets/img/enric-bisbe-gil.jpg">
+                        <img class="img img-raised" src="~assets/img/enric-bisbe-gil.jpg" alt="Enric Bisbe Gil, playing the accordion">
                       </a>
                       <div class="ripple-container" />
                     </div>

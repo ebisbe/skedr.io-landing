@@ -1,21 +1,24 @@
 <template>
-  <div :id="name" class="card card-plain">
-    <div class="card-header">
-      <a
-        :class="showCollapse ? 'collapsed' : null"
-        :aria-expanded="showCollapse ? 'true' : 'false'"
-        :aria-controls="name"
-        :href="`#${name}`"
-        data-toggle="collapse"
-        @click.prevent="showCollapse = !showCollapse"
-      >
-        {{ title }}
-        <i class="now-ui-icons arrows-1_minimal-down" />
-      </a>
+  <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+    <div :id="name" class="card card-plain">
+      <div class="card-header">
+        <a
+          :class="showCollapse ? 'collapsed' : null"
+          :aria-expanded="showCollapse ? 'true' : 'false'"
+          :aria-controls="name"
+          :href="`#${name}`"
+          data-toggle="collapse"
+          data-parent="#accordion"
+          @click.prevent="showCollapse = !showCollapse"
+        >
+          {{ title }}
+          <i class="now-ui-icons arrows-1_minimal-down" />
+        </a>
+      </div>
+      <b-collapse :id="name" v-model="showCollapse" :visible="visible">
+        <div class="card-body" v-html="desc" />
+      </b-collapse>
     </div>
-    <b-collapse :id="name" v-model="showCollapse" :visible="visible">
-      <div class="card-body" v-html="desc" />
-    </b-collapse>
   </div>
 </template>
 
