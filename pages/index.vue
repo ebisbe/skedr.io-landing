@@ -7,6 +7,9 @@
       <p class="h3">
         <strong v-html="totalShares" /> photos delivered from <strong v-html="totalUsers" /> Flickr users
       </p>
+      <a href="https://app.skedr.io/auth/login" class="btn btn-info btn-lg mr-3">
+        Try a Demo
+      </a>
     </q-header-small>
     <div class="">
       <div class="testimonials-3">
@@ -192,7 +195,7 @@
                   </h3>
                   <p class="card-description" v-html="article.introduction" />
                   <p class="card-description">
-                    <a :href="`/articles/${article.slug}/`"> Read More </a>
+                    <a :href="`/articles/${article.slug}/`">[ Read More ]</a>
                   </p>
                   <p class="author">
                     by
@@ -200,6 +203,27 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-pre-footer" data-background-color="gray">
+      <div id="pre-footer-areas">
+        <div class="social-line social-line-white text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                <h4 class="title">
+                  Thank you for your support!
+                </h4>
+              </div>
+              <a href="https://twitter.com/intent/tweet?text=This%20app is super useful if you are a Flickr passionate" class="btn btn-twitter btn-round">
+                <i class="fa fa-twitter" /> Share on Twitter
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fskedr.io%2F&amp;src=sdkpreparse" class="btn btn-facebook btn-round">
+                <i class="fa fa-facebook-square" /> Share on Facebook
+              </a>
             </div>
           </div>
         </div>

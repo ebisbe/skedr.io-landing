@@ -7,6 +7,7 @@ export default {
   menu: {
     features: 'Features',
     pricing: 'Pricing',
+    blog: 'Blog',
     faq: 'FAQ',
     login: 'Log in',
     signup: 'Sign up'
