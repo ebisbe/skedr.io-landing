@@ -1,6 +1,8 @@
-# test
+# Skedr.io
+Hello and welcome to the GitHub repo for Skedr website! 
+Skedr is a webapp who helps you spend less time sharing photos to Flickr groups.
 
-> My hunky-dory Nuxt.js project
+We need help to improve the website, so, contributions are more than welcome!
 
 ## Build Setup
 
