@@ -224,7 +224,6 @@
               <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fskedr.io%2F&amp;src=sdkpreparse" class="btn btn-facebook btn-round">
                 <i class="fa fa-facebook-square" /> Share on Facebook
               </a>
-              </a>
             </div>
           </div>
         </div>
