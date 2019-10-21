@@ -272,6 +272,16 @@
 .card-testimonial {
   margin-top: 30px;
   text-align: center;
+<<<<<<< HEAD
+
+  .card-body .card-title {
+    margin-top: 0;
+  }
+
+  [class*=col-] {
+    .card-description {
+      margin-bottom: 0;
+=======
 
   .card-body .card-title {
     margin-top: 0;
@@ -285,7 +295,14 @@
         margin-top: 8px;
       }
     }
+>>>>>>> 78b1e5a65aa05c04776b7f00357e176f749743f0
 
+      &+.card-footer {
+        margin-top: 8px;
+      }
+    }
+
+<<<<<<< HEAD
 
   }
 
@@ -294,6 +311,15 @@
     max-height: 130px;
     margin: -60px auto 0;
 
+=======
+  }
+
+  .card-avatar {
+    max-width: 130px;
+    max-height: 130px;
+    margin: -60px auto 0;
+
+>>>>>>> 78b1e5a65aa05c04776b7f00357e176f749743f0
     img {
       border-radius: 50% !important;
     }
@@ -315,6 +341,28 @@
     }
   }
 }
+<<<<<<< HEAD
+
+.card-testimonial {
+  .card-body {
+    padding-top: 25px;
+  }
+
+  .card-avatar {
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: -50px;
+  }
+
+  .card-footer {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .card-description {
+    &+.card-title {
+      margin-top: 30px;
+=======
 
 .card-testimonial {
   .card-body {
@@ -341,8 +389,18 @@
   .icon {
     i {
       font-size: 32px;
+>>>>>>> 78b1e5a65aa05c04776b7f00357e176f749743f0
+    }
+  }
+
+<<<<<<< HEAD
+  .icon {
+    i {
+      font-size: 32px;
     }
 
+=======
+>>>>>>> 78b1e5a65aa05c04776b7f00357e176f749743f0
     &.icon-primary i {
       color: $primary-color;
     }
@@ -381,6 +439,7 @@
     ;
   }
 
+<<<<<<< HEAD
         &.icon-primary i{
             @include icon-color($primary-color);
         }
@@ -401,6 +460,8 @@
     h1{
         small{
             font-size: 18px;
+=======
+>>>>>>> 78b1e5a65aa05c04776b7f00357e176f749743f0
   &.card-background-product .card-body {
     max-width: 400px;
 

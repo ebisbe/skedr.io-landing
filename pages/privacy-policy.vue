@@ -8,7 +8,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
-              <h2>Privacy policy</h2>
+              <p class="h1">
+                Privacy policy
+              </p>
 
               <p>Effective date: October 16, 2018</p>
               <p>
@@ -282,7 +284,7 @@
               <h2>Contact Us</h2>
               <p>If you have any questions about this Privacy Policy, please contact us:</p>
               <ul>
-                <li>By email: info@skedr.io</li>
+                <li>By email: <a href="mailto:info@skedr.io">info@skedr.io</a></li>
               </ul>
             </div>
           </div>
@@ -293,12 +295,20 @@
 </template>
 <script>
 import QHeaderSmall from '~/components/QHeaderSmall'
+import ogImage from '~/assets/img/privacy-policy.jpg'
+
 export default {
   components: { QHeaderSmall },
   head() {
     return {
       title: this.$t('policy.meta_title'),
-      meta: [{ hid: 'description', name: 'description', content: this.$t('policy.meta_desc') }]
+      meta: [
+        { hid: 'description', name: 'description', content: this.$t('policy.meta_desc') },
+        {
+          name: 'image',
+          content: `https://skedr.io${ogImage}`
+        }
+      ]
     }
   }
 }

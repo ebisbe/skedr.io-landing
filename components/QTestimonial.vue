@@ -10,8 +10,8 @@
       </a>
     </div>
     <div class="card-body">
-      <h3 class="card-title" v-html="user.realname._content" />
-      <h6 class="category text-primary" v-html="`${totalPhotos} photos`" />
+      <p class="card-title h3" v-html="user.realname._content" />
+      <p class="category text-primary h6" v-html="`${totalPhotos} photos`" />
       <p class="card-description">
         "{{ testimonial }}"
       </p>

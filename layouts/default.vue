@@ -22,11 +22,21 @@
           <ul class="navbar-nav ml-auto">
             <li v-for="menu in menus" :key="menu.name" class="nav-item">
               <a v-if="menu.external" :href="menu.path" :class="menu.class">
-                <i v-if="menu.icon" :class="menu.icon" class="now-ui-icons" />
+                <i v-if="menu.icon" :class="menu.icon" />
                 <p v-html="$t(`menu.${menu.name}`)" />
               </a>
               <nuxt-link v-else :to="menu.path" :class="menu.class">
-                <i v-if="menu.icon" :class="menu.icon" class="now-ui-icons" />
+                <i v-if="menu.icon" :class="menu.icon" />
+                <p v-html="$t(`menu.${menu.name}`)" />
+              </nuxt-link>
+            </li>
+            <li v-for="menu in call_to_action" :key="menu.name" class="nav-item">
+              <a v-if="menu.external" :href="menu.path" :class="menu.class">
+                <i v-if="menu.icon" :class="menu.icon" />
+                <p v-html="$t(`menu.${menu.name}`)" />
+              </a>
+              <nuxt-link v-else :to="menu.path" :class="menu.class">
+                <i v-if="menu.icon" :class="menu.icon" />
                 <p v-html="$t(`menu.${menu.name}`)" />
               </nuxt-link>
             </li>
@@ -89,22 +99,30 @@ export default {
           class: 'nav-link'
         },
         {
+          name: 'blog',
+          path: this.localePath('index') + '#blogs-1',
+          class: 'nav-link'
+        },
+        {
           name: 'faq',
           path: this.localePath('faq') + '/',
           class: 'nav-link'
-        },
+        }
+      ],
+      call_to_action: [
         {
           name: 'login',
           external: true,
           path: 'https://app.skedr.io/',
-          class: 'nav-link btn btn-primary'
+          class: 'nav-link btn btn-neutral',
+          icon: 'now-ui-icons users_single-02'
         },
         {
           name: 'signup',
           external: true,
           path: 'https://app.skedr.io/auth/sign-up/',
           class: 'nav-link btn btn-primary',
-          icon: ''
+          icon: 'fas fa-sign-in-alt'
         }
       ]
     }
