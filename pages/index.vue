@@ -4,7 +4,16 @@
       <h1 class="title">
         <img :alt="$t('app_name')" src="/skedr-full-logo.png" height="100">
       </h1>
+      <<<<<<< HEAD
       <h3><strong v-html="totalShares" /> photos delivered from <strong v-html="totalUsers" /> Flickr users</h3>
+      =======
+      <p class="h3">
+        <strong v-html="totalShares" /> photos delivered from <strong v-html="totalUsers" /> Flickr users
+      </p>
+      <a href="https://app.skedr.io/auth/login" class="btn btn-primary btn-round btn-lg mr-3">
+        Try a Demo
+      </a>
+      >>>>>>> Chanche demo button style and share footer buttons t
     </q-header-small>
     <div class="">
       <div class="testimonials-3">
@@ -198,6 +207,27 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-pre-footer" data-background-color="gray">
+      <div id="pre-footer-areas">
+        <div class="social-line social-line-white text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-12">
+                <h4 class="title">
+                  Thank you for your support!
+                </h4>
+              </div>
+              <a href="https://twitter.com/intent/tweet?text=Skedr helps you spend less time sharing photos to Flickr groups." class="btn btn-twitter btn-round">
+                <i class="fa fa-twitter" /> Share on Twitter
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fskedr.io%2F&amp;src=sdkpreparse" class="btn btn-facebook btn-round">
+                <i class="fa fa-facebook-square" /> Share on Facebook
+              </a>
             </div>
           </div>
         </div>
