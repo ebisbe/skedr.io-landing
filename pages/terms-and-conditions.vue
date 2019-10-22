@@ -285,7 +285,7 @@
             <div class="col-md-8 ml-auto mr-auto">
               <h2>Contact Us</h2>
 
-              <p>If you have any questions about these Terms, please contact us.</p>
+              <p>If you have any questions about these Terms, please contact us by email: <a href="mailto:info@skedr.io">info@skedr.io</a></p>
             </div>
           </div>
         </div>

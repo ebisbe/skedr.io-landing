@@ -284,7 +284,7 @@
               <h2>Contact Us</h2>
               <p>If you have any questions about this Privacy Policy, please contact us:</p>
               <ul>
-                <li>By email: info@skedr.io</li>
+                <li>By email: <a href="mailto:info@skedr.io">info@skedr.io</a></li>
               </ul>
             </div>
           </div>

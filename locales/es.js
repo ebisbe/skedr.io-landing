@@ -8,6 +8,7 @@ export default {
   menu: {
     features: 'Caracteristicas',
     pricing: 'Precio',
+    blog: 'Blog',
     faq: 'FAQ',
     login: 'Iniciar sesión',
     signup: 'Registrarse'
