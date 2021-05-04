@@ -35,7 +35,7 @@
     "eslint-plugin-vue": "^5.2.2",
     "image-webpack-loader": "^4.2.0",
     "imagemin-webpack-plugin": "^2.1.5",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.17.1",
     "sass-loader": "^7.0.1"
   }
